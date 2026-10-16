@@ -21,6 +21,8 @@ list every morning from Ticketmaster.
 | `events.json` | The list of events the page shows (updated automatically) |
 | `feeds.json` | Optional: extra calendar (iCal) links to pull events from |
 | `scripts/update_events.py` | The robot's instructions for fetching events |
+| `scripts/build_seo_pages.py` | Builds the static city / kid-friendly / free / this-weekend pages and `sitemap.xml` from `events.json` (run daily by the robot right after the update) |
+| `events/`, `kid-friendly/`, `free-events/`, `this-weekend/` | Generated SEO pages – don't edit by hand, they're rebuilt every day |
 | `.github/workflows/update.yml` | Tells GitHub to run the robot every day |
 | `preview-desktop.png`, `preview-mobile.png` | Screenshots of how the site looks (you can delete these) |
 
@@ -144,3 +146,15 @@ type the name `.github/workflows/update.yml` (the slashes create the folders), p
 ### Sponsors and analytics
 - **Sponsored slot:** add an entry to `sponsors.json`, e.g. `[{"name":"Joe's Tacos","title":"2-for-1 Taco Tuesday","url":"https://example.com","blurb":"Short line.","image":"https://example.com/pic.jpg","until":"2026-12-31"}]` (`image` optional). It shows at the top of the list, labelled "Sponsored", with `rel="sponsored noopener"` links, and hides itself after the `until` date. `[]` = slot hidden. Advertise page: `advertise.html`.
 - **Analytics (Cloudflare Web Analytics, free, cookie-free):** get the token from the Cloudflare dashboard → Web Analytics → Add site, then paste it into `CF_ANALYTICS_TOKEN` at the top of `app.js`. While it is empty no analytics script loads.
+
+---
+
+## SEO pages, links and the weekly email
+
+- `python scripts/build_seo_pages.py` rebuilds `/events/<city>/`, `/kid-friendly/<city>/`, `/free-events/<city>/`,
+  `/this-weekend/`, the `/events/` hub and `sitemap.xml`. The daily GitHub Action runs it automatically.
+  Cities: San Ramon, Walnut Creek, Pleasanton, Livermore, San Francisco, Oakland, San Jose, plus every city with
+  15+ upcoming events. Kid-friendly / free pages are only made when a city has 5+ such events.
+- The app understands links like `/?city=San%20Ramon&kid=1&free=1&date=weekend&cat=Music&q=jazz`.
+- **Weekly email:** paste your signup URL into `EMAIL_SIGNUP_URL` at the top of `app.js` to show the signup box.
+  The form POSTs one field named `email` to that URL (works with Buttondown-style embed URLs; check your provider).

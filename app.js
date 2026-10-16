@@ -12,6 +12,10 @@ const PAGE_SIZE = 36;
 // → copy the token from the snippet it shows (the value of "token" in data-cf-beacon) and paste it below.
 // While this is empty, NO analytics script is loaded at all.
 const CF_ANALYTICS_TOKEN = "";
+// Weekly email signup. Paste the signup/subscribe URL from your email tool (e.g. Buttondown, Mailchimp,
+// ConvertKit, Substack) here. The form POSTs a field named "email" to this URL in a new tab.
+// While this is empty, the "Get the weekly email" section stays hidden.
+const EMAIL_SIGNUP_URL = "";
 // ===========================================================================
 
 const CATEGORY_EMOJI = {
@@ -98,7 +102,7 @@ const cityCoords = (c) => CITY_LOOKUP.get(normCity(c)) || null;
 
 const $ = (id) => document.getElementById(id);
 const DEFAULTS = { search: "", city: "", date: "all", category: "", freeOnly: false, kidOnly: false };
-const state = { all: [], ...DEFAULTS, view: "list", shown: PAGE_SIZE, list: [] };
+const state = { all: [], ...DEFAULTS, view: "list", shown: PAGE_SIZE, list: [], byId: new Map() };
 
 // ---------- date helpers (everything in Pacific time) ----------
 const keyFmt = new Intl.DateTimeFormat("en-CA", { timeZone: TIME_ZONE, year: "numeric", month: "2-digit", day: "2-digit" });
@@ -211,6 +215,97 @@ function filtered() {
   });
 }
 
+// ---------- share + add to calendar ----------
+const pad2 = (n) => String(n).padStart(2, "0");
+function icsUtc(ms) {             // 20261016T170000Z
+  const d = new Date(ms);
+  return `${d.getUTCFullYear()}${pad2(d.getUTCMonth() + 1)}${pad2(d.getUTCDate())}T${pad2(d.getUTCHours())}${pad2(d.getUTCMinutes())}${pad2(d.getUTCSeconds())}Z`;
+}
+const compactDay = (key) => key.replace(/-/g, "");
+function calTimes(e) {            // [start, end] in iCal/Google format; all-day end is exclusive
+  if (isDateOnly(e.start)) return [compactDay(e.start), compactDay(addDays(e.end && isDateOnly(e.end) ? e.end : e._kEnd || e.start, 1)), true];
+  return [icsUtc(e._start), icsUtc(e._end), false];
+}
+const eventWhere = (e) => [e.venue, e.city, "CA"].filter(Boolean).join(", ");
+function eventDetails(e) {
+  const url = safeUrl(e.url);
+  return [e.description, url ? "More info: " + url : "", "Found on BayBuzz – " + location.origin + "/"].filter(Boolean).join("\n\n");
+}
+function googleCalUrl(e) {
+  const [s, en] = calTimes(e);
+  const q = new URLSearchParams({ action: "TEMPLATE", text: e.title, dates: `${s}/${en}`, details: eventDetails(e), location: eventWhere(e), ctz: TIME_ZONE });
+  return "https://calendar.google.com/calendar/render?" + q.toString();
+}
+function icsEscape(s) { return String(s || "").replace(/\\/g, "\\\\").replace(/\r?\n/g, "\\n").replace(/([,;])/g, "\\$1"); }
+const utf8 = new TextEncoder();
+function icsFold(line) {          // fold lines at 75 octets (RFC 5545) without splitting characters
+  const out = []; let cur = "", bytes = 0;
+  for (const ch of line) {
+    const n = utf8.encode(ch).length;
+    if (bytes + n > 75) { out.push(cur); cur = " "; bytes = 1; }
+    cur += ch; bytes += n;
+  }
+  out.push(cur); return out.join("\r\n");
+}
+function downloadIcs(e) {
+  const [s, en, allDay] = calTimes(e);
+  const url = safeUrl(e.url);
+  const lines = [
+    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//BayBuzz//thebaybuzz.com//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+    "BEGIN:VEVENT",
+    `UID:${String(e.id || e.title).replace(/[^\w.-]/g, "")}@thebaybuzz.com`,
+    `DTSTAMP:${icsUtc(Date.now())}`,
+    allDay ? `DTSTART;VALUE=DATE:${s}` : `DTSTART:${s}`,
+    allDay ? `DTEND;VALUE=DATE:${en}` : `DTEND:${en}`,
+    `SUMMARY:${icsEscape(e.title)}`,
+    eventWhere(e) ? `LOCATION:${icsEscape(eventWhere(e))}` : "",
+    `DESCRIPTION:${icsEscape(eventDetails(e))}`,
+    url ? `URL:${url}` : "",
+    "END:VEVENT", "END:VCALENDAR"
+  ].filter(Boolean).map(icsFold);
+  const blob = new Blob([lines.join("\r\n") + "\r\n"], { type: "text/calendar;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = (String(e.title).replace(/[^\w]+/g, "-").replace(/^-|-$/g, "").slice(0, 60) || "event") + ".ics";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  toast("📅 Calendar file downloaded");
+}
+let toastTimer;
+function toast(msg) {
+  let t = $("toast");
+  if (!t) { t = document.createElement("div"); t.id = "toast"; t.className = "toast"; t.setAttribute("role", "status"); document.body.appendChild(t); }
+  t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 2600);
+}
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; }
+  catch {
+    const ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    let ok = false; try { ok = document.execCommand("copy"); } catch { /* ignore */ }
+    ta.remove(); return ok;
+  }
+}
+async function shareEvent(e) {
+  const url = safeUrl(e.url) || (location.origin + "/?q=" + encodeURIComponent(e.title));
+  const text = `${e.title} – ${dateLabel(e)}, ${whenText(e)}${e.city ? " · " + e.city : ""}`;
+  if (navigator.share) {
+    try { await navigator.share({ title: e.title, text, url }); return; }
+    catch (err) { if (err && err.name === "AbortError") return; }   // user closed the share sheet
+  }
+  toast(await copyText(url) ? "🔗 Link copied!" : "Couldn't copy – long-press the event title to copy its link");
+}
+function onCardAction(ev) {
+  const btn = ev.target.closest("[data-act]");
+  if (!btn) return;
+  const cardEl = btn.closest(".card");
+  const e = cardEl && state.byId.get(cardEl.dataset.id);
+  if (!e) return;
+  if (btn.dataset.act === "share") shareEvent(e);
+  if (btn.dataset.act === "ics") { downloadIcs(e); const d = btn.closest("details"); if (d) d.open = false; }
+}
+
 // ---------- list view ----------
 function card(e, i) {
   const url = safeUrl(e.url);
@@ -220,7 +315,7 @@ function card(e, i) {
   const price = priceText(e);
   const where = [e.venue, e.city].filter(Boolean).join(", ");
   return `
-  <article class="card cat-${ck}" style="--i:${i % PAGE_SIZE}">
+  <article class="card cat-${ck}" style="--i:${i % PAGE_SIZE}" data-id="${esc(e.id)}">
     <div class="card-img">
       ${img ? `<img src="${esc(img)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : ""}
       <span class="emoji" aria-hidden="true">${emoji}</span>
@@ -240,6 +335,16 @@ function card(e, i) {
       <div class="card-foot">
         <span class="price ${e.isFree ? "free" : ""}">${esc(price)}</span>
         <span class="src">via ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(e.source || "source")}</a>` : esc(e.source || "source")}</span>
+      </div>
+      <div class="card-actions">
+        <button type="button" class="act act-share" data-act="share" aria-label="Share ${esc(e.title)}"><span aria-hidden="true">📤</span> Share</button>
+        <details class="cal-menu">
+          <summary class="act act-cal" aria-label="Add ${esc(e.title)} to calendar"><span aria-hidden="true">📅</span> Add to calendar</summary>
+          <div class="cal-pop">
+            <button type="button" data-act="ics"><span aria-hidden="true">🍎</span> Apple / Outlook (.ics)</button>
+            <a href="${esc(googleCalUrl(e))}" target="_blank" rel="noopener"><span aria-hidden="true">🗓️</span> Google Calendar</a>
+          </div>
+        </details>
       </div>
     </div>
   </article>`;
@@ -285,6 +390,54 @@ function render() {
   $("active-count").hidden = !ac; $("active-count").textContent = ac;
   renderList(false);
   if (state.view === "map") renderMap();
+  syncUrl();
+}
+
+// ---------- URL query params: ?city=San%20Ramon&kid=1&free=1&date=weekend&cat=Music&q=jazz ----------
+function readUrlParams() {
+  const p = new URLSearchParams(location.search);
+  const cityOpts = [...$("city").options].map((o) => o.value).filter(Boolean);
+  const pick = (val, opts) => {                       // match by exact name, case-insensitive name, or slug
+    if (!val) return "";
+    const slug = (x) => normCity(x).replace(/[^a-z0-9]+/g, "-");
+    return opts.find((o) => o === val) || opts.find((o) => o.toLowerCase() === val.toLowerCase()) || opts.find((o) => slug(o) === slug(val)) || "";
+  };
+  const truthy = (v) => v === "1" || v === "true" || v === "yes";
+  const city = p.get("city");
+  if (city) {
+    let c = pick(city, cityOpts);
+    if (!c) { c = city.trim(); fillSelect($("city"), [c]); }   // unknown city: keep it so the count says "0 events in …"
+    state.city = c;
+  }
+  if (p.get("cat")) state.category = pick(p.get("cat"), [...$("category").options].map((o) => o.value).filter(Boolean));
+  if (["today", "weekend", "week"].includes(p.get("date"))) state.date = p.get("date");
+  if (truthy(p.get("kid"))) state.kidOnly = true;
+  if (truthy(p.get("free"))) state.freeOnly = true;
+  if (p.get("q")) state.search = p.get("q").slice(0, 100);
+}
+function syncUrl() {
+  if (!history.replaceState) return;
+  const p = new URLSearchParams();
+  if (state.city) p.set("city", state.city);
+  if (state.category) p.set("cat", state.category);
+  if (state.date !== "all") p.set("date", state.date);
+  if (state.kidOnly) p.set("kid", "1");
+  if (state.freeOnly) p.set("free", "1");
+  if (state.search.trim()) p.set("q", state.search.trim());
+  const qs = p.toString().replace(/\+/g, "%20");
+  const next = location.pathname + (qs ? "?" + qs : "") + location.hash;
+  if (next !== location.pathname + location.search + location.hash) history.replaceState(null, "", next);
+}
+
+// ---------- weekly email signup (only shown if EMAIL_SIGNUP_URL is set) ----------
+function setupSignup() {
+  const sec = $("signup");
+  if (!sec) return;
+  const url = safeUrl(String(EMAIL_SIGNUP_URL || "").trim());
+  if (!url) { sec.hidden = true; return; }
+  const form = $("signup-form");
+  form.action = url;
+  sec.hidden = false;
 }
 
 // ---------- controls ----------
@@ -314,7 +467,7 @@ function setView(view, { scroll = false } = {}) {
   $("map-view").hidden = !isMap;
   $("load-more").hidden = isMap || state.shown >= state.list.length;
   document.body.classList.toggle("is-map", isMap);
-  if (history.replaceState) history.replaceState(null, "", isMap ? "#map" : location.pathname + location.search);
+  if (history.replaceState) history.replaceState(null, "", location.pathname + location.search + (isMap ? "#map" : ""));
   if (isMap) renderMap(); else renderList(false);
   if (scroll) $("main").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
 }
@@ -398,10 +551,13 @@ async function renderMap() {
   for (const [city, g] of groups) {
     const n = g.evs.length;
     const size = Math.round(28 + 30 * Math.sqrt(n / max));
-    const hot = n / max > 0.4 ? "hot" : n / max > 0.1 ? "warm" : "cool";
+    // color each bubble by the most common category in that city
+    const tally = {};
+    for (const e of g.evs) tally[e.category] = (tally[e.category] || 0) + 1;
+    const top = Object.entries(tally).sort((a, b) => b[1] - a[1])[0][0];
     const icon = L.divIcon({
       className: "city-pin-wrap",
-      html: `<span class="city-pin ${hot}" style="--s:${size}px">${n > 999 ? Math.round(n / 100) / 10 + "k" : n}</span>`,
+      html: `<span class="city-pin cat-${catKey(top)}" style="--s:${size}px"><span class="pin-n">${n > 999 ? Math.round(n / 100) / 10 + "k" : n}</span></span>`,
       iconSize: [size, size], iconAnchor: [size / 2, size / 2], popupAnchor: [0, -size / 2]
     });
     L.marker(g.ll, { icon, title: `${city}: ${n} event${n === 1 ? "" : "s"}`, alt: `${city}: ${n} events`, riseOnHover: true, zIndexOffset: n })
@@ -503,6 +659,11 @@ async function init() {
   loadAnalytics();
   if (!$("grid")) return;                  // other pages (e.g. advertise.html) only need analytics
   loadSponsors();
+  setupSignup();
+  $("grid").addEventListener("click", onCardAction);
+  document.addEventListener("click", (ev) => {           // close an open calendar menu when clicking elsewhere
+    for (const d of document.querySelectorAll(".cal-menu[open]")) if (!d.contains(ev.target)) d.open = false;
+  });
   for (const id of ["add-event-link", "add-event-link-footer"]) { $(id).href = ADD_EVENT_FORM_URL; $(id).removeAttribute("target"); }
   $("search").addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(readControls, 140); });
   ["city", "date", "category", "free-only", "kid-only"].forEach((id) => $(id).addEventListener("change", () => { if (id === "city") mapFitPending = true; readControls(); }));
@@ -545,6 +706,7 @@ async function init() {
   }
   events.sort((a, b) => a._start - b._start || String(a.title).localeCompare(String(b.title)));
   state.all = events;
+  state.byId = new Map(events.map((e) => [String(e.id), e]));
 
   $("sample-banner").hidden = !events.some((e) => e.sample === true);
   if (data.lastUpdated) $("updated").textContent = "Last updated: " + stampFmt.format(new Date(data.lastUpdated)) + " (Pacific)";
@@ -554,7 +716,8 @@ async function init() {
   fillSelect($("category"), [...new Set(upcoming.map((e) => e.category).filter(Boolean))].sort());
   showCredits(data, events);
   showStats(upcoming);
-  render();
+  readUrlParams();
+  setControls();
   if (location.hash === "#map") setView("map");
 }
 

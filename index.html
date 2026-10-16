@@ -34,6 +34,15 @@
 
   <header class="hero">
     <div class="hero-blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="confetti" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <svg class="hero-art" viewBox="0 0 320 220" aria-hidden="true" focusable="false">
+      <circle cx="250" cy="60" r="44" fill="#ffd43b"/>
+      <rect x="40" y="120" width="70" height="70" rx="18" fill="#22d3ee" transform="rotate(-14 75 155)"/>
+      <path d="M150 40l12 26 28 3-21 19 6 28-25-14-25 14 6-28-21-19 28-3z" fill="#fff" opacity=".95"/>
+      <path d="M180 170c20-30 50-30 70 0s50 30 70 0" fill="none" stroke="#a3e635" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="40" cy="50" r="10" fill="#fb7185"/><circle cx="290" cy="150" r="8" fill="#fff"/>
+      <circle cx="120" cy="200" r="6" fill="#ffd43b"/><circle cx="210" cy="110" r="7" fill="#c084fc"/>
+    </svg>
     <div class="wrap hero-inner">
       <div class="hero-copy">
         <p class="eyebrow"><span aria-hidden="true">🐝</span> BayBuzz</p>
@@ -46,6 +55,7 @@
         <a class="btn btn-hero-ghost" href="advertise.html">📣 Advertise</a>
       </div>
     </div>
+    <div class="hero-wave" aria-hidden="true"></div>
   </header>
 
   <div id="sample-banner" class="sample-banner" hidden role="status">
@@ -130,6 +140,36 @@
     </section>
 
     <p id="empty" class="empty" hidden>No events match those filters. Try a different date or city, or <button type="button" class="linklike" id="empty-reset">reset filters</button>.</p>
+    <!-- Weekly email signup: stays hidden unless EMAIL_SIGNUP_URL is set in app.js -->
+    <section id="signup" class="signup" aria-labelledby="signup-title" hidden>
+      <div class="signup-copy">
+        <h2 id="signup-title"><span aria-hidden="true">💌</span> Get the weekend buzz in your inbox</h2>
+        <p>One friendly email a week with the best free, family and can't-miss events around the Bay. Unsubscribe anytime.</p>
+      </div>
+      <form id="signup-form" class="signup-form" method="post" target="_blank" rel="noopener">
+        <label class="visually-hidden" for="signup-email">Email address</label>
+        <input id="signup-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+        <button type="submit" class="btn btn-load">Subscribe ✨</button>
+      </form>
+    </section>
+
+    <nav class="browse" aria-labelledby="browse-title">
+      <hr class="rainbow" aria-hidden="true">
+      <h2 id="browse-title">Browse by city</h2>
+      <ul class="browse-links">
+        <li><a class="bl bl-1" href="/this-weekend/">📅 This weekend</a></li>
+        <li><a class="bl bl-2" href="/events/san-francisco/">San Francisco</a></li>
+        <li><a class="bl bl-3" href="/events/oakland/">Oakland</a></li>
+        <li><a class="bl bl-4" href="/events/san-jose/">San Jose</a></li>
+        <li><a class="bl bl-5" href="/events/walnut-creek/">Walnut Creek</a></li>
+        <li><a class="bl bl-6" href="/events/san-ramon/">San Ramon</a></li>
+        <li><a class="bl bl-1" href="/events/pleasanton/">Pleasanton</a></li>
+        <li><a class="bl bl-2" href="/events/livermore/">Livermore</a></li>
+        <li><a class="bl bl-3" href="/free-events/san-francisco/">🎟️ Free in SF</a></li>
+        <li><a class="bl bl-4" href="/kid-friendly/san-jose/">🧸 Kids in San Jose</a></li>
+        <li><a class="bl bl-6" href="/events/">All cities →</a></li>
+      </ul>
+    </nav>
   </main>
 
   <footer class="site-footer">
@@ -148,6 +188,7 @@
       <p class="small">More Bay Area events: <a href="https://www.eventbrite.com/d/ca--san-francisco/events/" target="_blank" rel="noopener">Eventbrite</a>. Know about an event? <a id="add-event-link-footer" href="#" target="_blank" rel="noopener">Add your event</a>.
         Local business? <a href="advertise.html">Advertise with BayBuzz</a>.
         Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
+      <p class="small">Browse: <a href="/events/">Events by city</a> · <a href="/this-weekend/">This weekend in the Bay Area</a> · <a href="/free-events/san-francisco/">Free events in San Francisco</a> · <a href="/kid-friendly/san-jose/">Kid-friendly events in San Jose</a></p>
     </div>
   </footer>
 
