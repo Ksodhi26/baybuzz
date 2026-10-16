@@ -7,6 +7,11 @@ const ADD_EVENT_FORM_URL = "mailto:Ksodhihuntington@gmail.com?subject=Add%20my%2
 const TIME_ZONE = "America/Los_Angeles";
 // How many event cards to show at once before "Load more".
 const PAGE_SIZE = 36;
+// Cloudflare Web Analytics (free, cookie-free, privacy-friendly).
+// To turn it on: Cloudflare dashboard → Analytics & Logs → Web Analytics → Add a site (thebaybuzz.com)
+// → copy the token from the snippet it shows (the value of "token" in data-cf-beacon) and paste it below.
+// While this is empty, NO analytics script is loaded at all.
+const CF_ANALYTICS_TOKEN = "";
 // ===========================================================================
 
 const CATEGORY_EMOJI = {
@@ -442,8 +447,62 @@ function showStats(upcoming) {
   $("hero-stats").innerHTML = stat(upcoming.length, "upcoming events") + stat(cities, "cities") + stat(free, "free") + stat(kid, "kid-friendly");
 }
 
+// ---------- analytics (only if CF_ANALYTICS_TOKEN is set above) ----------
+function loadAnalytics() {
+  const token = String(CF_ANALYTICS_TOKEN || "").trim();
+  if (!token || !/^[A-Za-z0-9_-]+$/.test(token)) return;   // empty (or malformed) token → load nothing
+  // Placeholder snippet, equivalent to Cloudflare's:
+  // <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "..."}'></script>
+  const s = document.createElement("script");
+  s.defer = true;
+  s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+  s.setAttribute("data-cf-beacon", JSON.stringify({ token }));
+  document.head.appendChild(s);
+}
+
+// ---------- sponsored slot (sponsors.json) ----------
+// sponsors.json is a list like:
+// [{ "name": "Joe's Tacos", "title": "Taco Tuesday, 2-for-1", "url": "https://example.com",
+//    "blurb": "One or two short sentences.", "image": "https://example.com/pic.jpg", "until": "2026-12-31" }]
+// "image" is optional. A sponsor shows through the end of its "until" day (Pacific time); past ones are hidden.
+// With [] (or no active sponsor) the slot stays hidden.
+function activeSponsors(list) {
+  const today = dayKey(new Date().toISOString());
+  return (Array.isArray(list) ? list : []).filter((s) =>
+    s && s.name && s.title && safeUrl(s.url) && typeof s.until === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s.until) && s.until >= today);
+}
+function sponsorHtml(s) {
+  const url = safeUrl(s.url), img = safeUrl(s.image || "");
+  return `
+  <article class="sponsor-card">
+    ${img ? `<a class="sponsor-img" href="${esc(url)}" target="_blank" rel="sponsored noopener" tabindex="-1" aria-hidden="true"><img src="${esc(img)}" alt="" loading="lazy" decoding="async" onerror="this.parentNode.remove()"></a>` : ""}
+    <div class="sponsor-body">
+      <p class="sponsor-label"><span aria-hidden="true">📣</span> Sponsored · ${esc(s.name)}</p>
+      <h3><a href="${esc(url)}" target="_blank" rel="sponsored noopener">${esc(s.title)}</a></h3>
+      ${s.blurb ? `<p class="sponsor-blurb">${esc(s.blurb)}</p>` : ""}
+    </div>
+    <a class="btn sponsor-cta" href="${esc(url)}" target="_blank" rel="sponsored noopener">Learn more →</a>
+  </article>`;
+}
+async function loadSponsors() {
+  const slot = $("sponsor-slot");
+  if (!slot) return;
+  try {
+    const res = await fetch("sponsors.json?v=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) return;
+    const live = activeSponsors(await res.json());
+    if (!live.length) { slot.hidden = true; slot.innerHTML = ""; return; }
+    slot.innerHTML = live.slice(0, 1).map(sponsorHtml).join("") +
+      `<p class="sponsor-note">Sponsored listing · <a href="advertise.html">Advertise with BayBuzz</a></p>`;
+    slot.hidden = false;
+  } catch (err) { console.warn("sponsors.json not loaded", err); }
+}
+
 // ---------- start ----------
 async function init() {
+  loadAnalytics();
+  if (!$("grid")) return;                  // other pages (e.g. advertise.html) only need analytics
+  loadSponsors();
   for (const id of ["add-event-link", "add-event-link-footer"]) { $(id).href = ADD_EVENT_FORM_URL; $(id).removeAttribute("target"); }
   $("search").addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(readControls, 140); });
   ["city", "date", "category", "free-only", "kid-only"].forEach((id) => $(id).addEventListener("change", () => { if (id === "city") mapFitPending = true; readControls(); }));

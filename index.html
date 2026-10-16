@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>BayBuzz – What's happening around the Bay</title>
   <meta name="description" content="Free listings of concerts, festivals, family fun, sports and community events across the San Francisco Bay Area.">
+  <link rel="canonical" href="https://thebaybuzz.com/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BayBuzz">
+  <meta property="og:title" content="BayBuzz – What's happening around the Bay">
+  <meta property="og:description" content="Free listings of concerts, festivals, family fun, sports and community events across the San Francisco Bay Area.">
+  <meta property="og:url" content="https://thebaybuzz.com/">
+  <meta property="og:image" content="https://thebaybuzz.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BayBuzz – What's happening around the Bay">
+  <meta name="twitter:description" content="Free listings of concerts, festivals, family fun, sports and community events across the San Francisco Bay Area.">
+  <meta name="twitter:image" content="https://thebaybuzz.com/og-image.png">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ff4d6d" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0d0b1e" media="(prefers-color-scheme: dark)">
@@ -26,7 +41,10 @@
         <p class="sub">Concerts, festivals, family fun and more from San Jose to San Rafael.</p>
         <ul class="hero-stats" id="hero-stats" aria-label="At a glance"></ul>
       </div>
-      <a id="add-event-link" class="btn btn-hero" href="#" target="_blank" rel="noopener">＋ Add your event</a>
+      <div class="hero-actions">
+        <a id="add-event-link" class="btn btn-hero" href="#" target="_blank" rel="noopener">＋ Add your event</a>
+        <a class="btn btn-hero-ghost" href="advertise.html">📣 Advertise</a>
+      </div>
     </div>
   </header>
 
@@ -96,6 +114,8 @@
     </div>
 
     <section id="events" class="events" aria-label="Events" tabindex="-1">
+      <!-- Sponsored slot: stays hidden unless sponsors.json has an active sponsor (see app.js "sponsors"). -->
+      <aside id="sponsor-slot" class="sponsor-slot" aria-label="Sponsored" hidden></aside>
       <div class="day-grid" id="grid"></div>
       <div class="skeletons" id="skeletons" aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </section>
@@ -126,6 +146,7 @@
         Map pins are placed at the city center, not the exact venue.
       </p>
       <p class="small">More Bay Area events: <a href="https://www.eventbrite.com/d/ca--san-francisco/events/" target="_blank" rel="noopener">Eventbrite</a>. Know about an event? <a id="add-event-link-footer" href="#" target="_blank" rel="noopener">Add your event</a>.
+        Local business? <a href="advertise.html">Advertise with BayBuzz</a>.
         Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
     </div>
   </footer>

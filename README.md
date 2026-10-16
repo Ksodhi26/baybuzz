@@ -140,3 +140,7 @@ type the name `.github/workflows/update.yml` (the slashes create the folders), p
 - Run the updater locally: `pip install requests && TICKETMASTER_API_KEY=xxx python3 scripts/update_events.py`
 - With no key and no feeds, the script exits without touching `events.json`. If every source fails or returns nothing, it also leaves the file alone.
 - `events.json` format: `{ "lastUpdated", "sources": [{name,url}], "events": [{ id, title, start, end, venue, city, category, price: {min,max,currency}|null, isFree, url, source, description, image, sample? }] }`. Dates are ISO 8601 with Pacific offset, or `YYYY-MM-DD` for all-day.
+
+### Sponsors and analytics
+- **Sponsored slot:** add an entry to `sponsors.json`, e.g. `[{"name":"Joe's Tacos","title":"2-for-1 Taco Tuesday","url":"https://example.com","blurb":"Short line.","image":"https://example.com/pic.jpg","until":"2026-12-31"}]` (`image` optional). It shows at the top of the list, labelled "Sponsored", with `rel="sponsored noopener"` links, and hides itself after the `until` date. `[]` = slot hidden. Advertise page: `advertise.html`.
+- **Analytics (Cloudflare Web Analytics, free, cookie-free):** get the token from the Cloudflare dashboard → Web Analytics → Add site, then paste it into `CF_ANALYTICS_TOKEN` at the top of `app.js`. While it is empty no analytics script loads.
