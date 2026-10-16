@@ -17,6 +17,7 @@ Only needs the Python standard library plus `requests`.
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import os
 import re
@@ -83,7 +84,7 @@ def iso(dt: datetime) -> str:
 def clean_text(s, limit: int = 400) -> str:
     if not s:
         return ""
-    s = re.sub(r"<[^>]+>", " ", str(s))
+    s = html.unescape(re.sub(r"<[^>]+>", " ", str(s)))
     s = re.sub(r"\s+", " ", s).strip()
     return (s[: limit - 1].rstrip() + "…") if len(s) > limit else s
 
@@ -357,6 +358,142 @@ def _dt_to_field(v):
     return None
 
 
+# --------------------------------------------------------------------------- RSS
+# Two public RSS dialects are understood:
+#   * BiblioCommons "BiblioEvents" feeds   (https://<library>.bibliocommons.com/events/rss/all)
+#   * CivicPlus city calendars             (https://<city>/RSSFeed.aspx?ModID=58&CID=All-calendar.xml)
+BC_NS = "{http://bibliocommons.com/rss/1.0/modules/event/}"
+FAMILY_AUDIENCES = {"kids", "families", "babies", "toddlers", "preschoolers", "grade schoolers", "tweens",
+                    "children", "family", "teens"}
+
+
+def _txt(el, tag):
+    child = el.find(tag)
+    return (child.text or "").strip() if child is not None and child.text else ""
+
+
+def _bc_category(item) -> str | None:
+    types = {(c.text or "").strip().lower() for c in item.findall("category") if c.get("domain") == "Type"}
+    aud = {(c.text or "").strip().lower() for c in item.findall("category") if c.get("domain") == "Audience"}
+    if "storytime" in types or (aud & FAMILY_AUDIENCES and not (aud & {"adults", "seniors"})):
+        return "Family"
+    if types & {"film", "movies", "movie"}:
+        return "Film"
+    if types & {"art at the library", "arts & crafts", "music", "performance"}:
+        return "Arts & Theatre"
+    if types & {"outdoor", "outdoors"}:
+        return "Outdoors"
+    return None
+
+
+def parse_bibliocommons_rss(root, library: str) -> list[dict]:
+    out = []
+    for item in root.iter("item"):
+        if _txt(item, BC_NS + "is_cancelled").lower() == "true":
+            continue
+        start = parse_any_dt(_txt(item, BC_NS + "start_date"))
+        if not isinstance(start, datetime):
+            continue
+        end = parse_any_dt(_txt(item, BC_NS + "end_date"))
+        loc = item.find(BC_NS + "location")
+        branch = _txt(loc, BC_NS + "name") if loc is not None else ""
+        city = _txt(loc, BC_NS + "city") if loc is not None else ""
+        street = " ".join(x for x in (_txt(loc, BC_NS + "number"), _txt(loc, BC_NS + "street")) if x) if loc is not None else ""
+        virtual = _txt(item, BC_NS + "is_virtual").lower() == "true"
+        if virtual:
+            venue = "Online event"
+        elif branch:
+            venue = branch if "library" in branch.lower() else f"{branch} Library"
+        else:
+            venue = library
+        enc = item.find("enclosure")
+        desc = clean_text(_txt(item, "description"))
+        if street and not virtual:
+            desc = (f"{street}, {city}. " if city else f"{street}. ") + desc
+        out.append({
+            "SUMMARY": _txt(item, "title"),
+            "DTSTART": start,
+            "DTEND": end if isinstance(end, datetime) else None,
+            "DESCRIPTION": desc,
+            "URL": _txt(item, "link"),
+            "UID": _txt(item, "guid") or _txt(item, "link"),
+            "_venue": venue,
+            "_city": normalize_city(city) if city else "",
+            "_category": _bc_category(item),
+            "_image": enc.get("url", "").replace("http://", "https://") if enc is not None else "",
+        })
+    return out
+
+
+_CP_DATE_RE = re.compile(r"([A-Z][a-z]+ \d{1,2}, \d{4})")
+_CP_TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*([AP]M)", re.I)
+
+
+def _cp_date(s: str):
+    try:
+        return datetime.strptime(s, "%B %d, %Y").date()
+    except ValueError:
+        return None
+
+
+def _cp_time(m):
+    h, mi, ap = int(m.group(1)), int(m.group(2)), m.group(3).upper()
+    h = h % 12 + (12 if ap == "PM" else 0)
+    return h, mi
+
+
+def parse_civicplus_rss(root) -> list[dict]:
+    out = []
+    for item in root.iter("item"):
+        dates = [d for d in (_cp_date(x) for x in _CP_DATE_RE.findall(_txt_ns(item, "EventDates"))) if d]
+        if not dates:
+            continue
+        times = _CP_TIME_RE.findall(_txt_ns(item, "EventTimes"))
+        d0, d1 = dates[0], dates[-1]
+        if times:
+            h, mi = _cp_time(_CP_TIME_RE.search(_txt_ns(item, "EventTimes")))
+            start = datetime(d0.year, d0.month, d0.day, h, mi, tzinfo=PACIFIC)
+            end = None
+            if len(times) > 1:
+                m2 = list(_CP_TIME_RE.finditer(_txt_ns(item, "EventTimes")))[-1]
+                h2, mi2 = _cp_time(m2)
+                end = datetime(d1.year, d1.month, d1.day, h2, mi2, tzinfo=PACIFIC)
+        else:
+            start, end = d0, (d1 + timedelta(days=1) if d1 != d0 else None)   # all-day; DTEND exclusive
+        raw_desc = _txt(item, "description")
+        loc_html = re.search(r"Location:</strong>\s*(?:<br\s*/?>)?(.*?)(?:<br\s*/?><strong>|$)", raw_desc, re.S | re.I)
+        location = clean_text(re.sub(r"<br\s*/?>", ", ", loc_html.group(1)) if loc_html else _txt_ns(item, "Location"), 200)
+        body = re.search(r"Description:</strong>(.*)$", raw_desc, re.S | re.I)
+        title = _txt(item, "title")
+        out.append({
+            "SUMMARY": title,
+            "DTSTART": start,
+            "DTEND": end,
+            "LOCATION": location.strip(", "),
+            "DESCRIPTION": body.group(1) if body else "",
+            "URL": _txt(item, "link"),
+            "UID": _txt(item, "link"),
+        })
+    return out
+
+
+def _txt_ns(item, local):
+    for child in item:
+        if child.tag.endswith("}" + local):
+            return (child.text or "").strip()
+    return ""
+
+
+def parse_rss(text: str, fmt: str | None, feed: dict) -> list[dict]:
+    import xml.etree.ElementTree as ET
+    root = ET.fromstring(text.encode("utf-8") if isinstance(text, str) else text)
+    if fmt == "bibliocommons" or "bibliocommons.com/rss" in text[:600]:
+        title = _txt(root.find("channel"), "title") if root.find("channel") is not None else ""
+        library = title.split("|", 1)[-1].strip() or feed.get("name", "")
+        return parse_bibliocommons_rss(root, library)
+    return parse_civicplus_rss(root)
+
+
 def fetch_ical_feeds(feeds: list[dict]) -> list[dict] | None:
     out: list[dict] = []
     any_ok = False
@@ -366,10 +503,14 @@ def fetch_ical_feeds(feeds: list[dict]) -> list[dict] | None:
         if not url:
             continue
         name = feed.get("name") or re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
+        feed_horizon = now_utc() + timedelta(days=int(feed.get("max_days") or DAYS_AHEAD))
         try:
-            r = requests.get(url, timeout=30, headers={"User-Agent": USER_AGENT})
+            r = requests.get(url, timeout=60, headers={"User-Agent": USER_AGENT})
             r.raise_for_status()
-            raw_events = parse_ical(r.text)
+            if r.text.lstrip()[:5] == "<?xml" or "<rss" in r.text[:500]:
+                raw_events = parse_rss(r.text, feed.get("format"), feed)
+            else:
+                raw_events = parse_ical(r.text)
             any_ok = True
         except Exception as e:  # noqa: BLE001 - one bad feed shouldn't stop the rest
             log(f"iCal feed '{name}' failed: {e}")
@@ -381,7 +522,7 @@ def fetch_ical_feeds(feeds: list[dict]) -> list[dict] | None:
             if not title or start is None or (ve.get("STATUS", "").upper() == "CANCELLED"):
                 continue
             start_cmp = start if isinstance(start, datetime) else datetime(start.year, start.month, start.day, tzinfo=PACIFIC)
-            if start_cmp > horizon:
+            if start_cmp > feed_horizon:
                 continue
             end = ve.get("DTEND")
             if isinstance(end, date) and not isinstance(end, datetime):
@@ -389,7 +530,7 @@ def fetch_ical_feeds(feeds: list[dict]) -> list[dict] | None:
                 if isinstance(start, date) and not isinstance(start, datetime) and end <= start:
                     end = None
             location = clean_text(ve.get("LOCATION"), 200)
-            venue = location.split(",")[0].strip() if location else ""
+            venue = ve.get("_venue") or (location.split(",")[0].strip() if location else "")
             desc = clean_text(ve.get("DESCRIPTION"))
             text_blob = (title + " " + desc).lower()
             out.append({
@@ -398,15 +539,15 @@ def fetch_ical_feeds(feeds: list[dict]) -> list[dict] | None:
                 "start": _dt_to_field(start),
                 "end": _dt_to_field(end),
                 "venue": venue,
-                "city": normalize_city(None, location) or feed.get("city", ""),
-                "category": feed.get("category") or "Community",
+                "city": ve.get("_city") or normalize_city(None, location) or feed.get("city", ""),
+                "category": ve.get("_category") or feed.get("category") or "Community",
                 "price": None,
                 "isFree": bool(feed.get("free")) or bool(re.search(r"\bfree\b", text_blob)),
                 "url": ve.get("URL") or feed.get("homepage") or url,
                 "source": name,
                 "sourceUrl": feed.get("homepage") or url,
                 "description": desc,
-                "image": "",
+                "image": ve.get("_image", ""),
             })
             if not out[-1]["city"]:
                 out[-1]["city"] = feed.get("city", "")

@@ -2,7 +2,7 @@
 
 // ====== SETTINGS YOU CAN EDIT ==============================================
 // Paste the link to your Google Form here (the "Send" > link URL from Google Forms).
-const ADD_EVENT_FORM_URL = "https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM";
+const ADD_EVENT_FORM_URL = "mailto:Ksodhihuntington@gmail.com?subject=Add%20my%20event%20to%20BayBuzz&body=Event%20name%3A%0ADate%20and%20time%3A%0APlace%20and%20city%3A%0APrice%20%28or%20Free%29%3A%0ALink%20for%20more%20info%3A%0AShort%20description%3A%0A";
 // Time zone used for all dates on the site.
 const TIME_ZONE = "America/Los_Angeles";
 // ===========================================================================
@@ -204,7 +204,7 @@ function showCredits(data, events) {
 }
 
 async function init() {
-  for (const id of ["add-event-link", "add-event-link-footer"]) $(id).href = ADD_EVENT_FORM_URL;
+  for (const id of ["add-event-link", "add-event-link-footer"]) { $(id).href = ADD_EVENT_FORM_URL; $(id).removeAttribute("target"); }
   ["search"].forEach((id) => $(id).addEventListener("input", readControls));
   ["city", "date", "category", "free-only"].forEach((id) => $(id).addEventListener("change", readControls));
   $("quick-weekend").addEventListener("click", () => { state.date = state.date === "weekend" ? "all" : "weekend"; setControls(); });

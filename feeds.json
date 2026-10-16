@@ -1,5 +1,106 @@
 {
-  "_help": "Add public iCal (.ics) calendar links below. Each entry needs a url; name, city and category are optional defaults for that feed.",
-  "_example": {"name": "Example City Calendar", "url": "https://example.org/events.ics", "city": "San Ramon", "category": "Community", "homepage": "https://example.org/events"},
-  "feeds": []
+ "_help": "Add public event feeds below. Supported: iCal (.ics) and RSS (BiblioCommons library feeds, CivicPlus city calendars). Each entry needs a url; name, city, category, free and homepage are optional defaults for that feed. \"format\" is optional (auto-detected).",
+ "_example": {
+  "name": "Example City Calendar",
+  "url": "https://example.org/events.ics",
+  "city": "San Ramon",
+  "category": "Community",
+  "homepage": "https://example.org/events"
+ },
+ "feeds": [
+  {
+   "name": "Alameda County Library",
+   "url": "https://aclibrary.bibliocommons.com/events/rss/all",
+   "format": "bibliocommons",
+   "city": "Fremont",
+   "category": "Community",
+   "free": true,
+   "homepage": "https://aclibrary.bibliocommons.com/events",
+   "max_days": 7
+  },
+  {
+   "name": "Contra Costa County Library",
+   "url": "https://ccclib.bibliocommons.com/events/rss/all",
+   "format": "bibliocommons",
+   "city": "Martinez",
+   "category": "Community",
+   "free": true,
+   "homepage": "https://ccclib.bibliocommons.com/events",
+   "max_days": 7
+  },
+  {
+   "name": "Oakland Public Library",
+   "url": "https://oaklandlibrary.bibliocommons.com/events/rss/all",
+   "format": "bibliocommons",
+   "city": "Oakland",
+   "category": "Community",
+   "free": true,
+   "homepage": "https://oaklandlibrary.bibliocommons.com/events",
+   "max_days": 7
+  },
+  {
+   "name": "San Jos\u00e9 Public Library",
+   "url": "https://sjpl.bibliocommons.com/events/rss/all",
+   "format": "bibliocommons",
+   "city": "San Jose",
+   "category": "Community",
+   "free": true,
+   "homepage": "https://sjpl.bibliocommons.com/events",
+   "max_days": 7
+  },
+  {
+   "name": "Santa Clara County Library",
+   "url": "https://sccl.bibliocommons.com/events/rss/all",
+   "format": "bibliocommons",
+   "city": "Los Altos",
+   "category": "Community",
+   "free": true,
+   "homepage": "https://sccl.bibliocommons.com/events",
+   "max_days": 7
+  },
+  {
+   "name": "Palo Alto City Library",
+   "url": "https://paloalto.bibliocommons.com/events/rss/all",
+   "format": "bibliocommons",
+   "city": "Palo Alto",
+   "category": "Community",
+   "free": true,
+   "homepage": "https://paloalto.bibliocommons.com/events",
+   "max_days": 7
+  },
+  {
+   "name": "San Mateo County Libraries",
+   "url": "https://smcl.bibliocommons.com/events/rss/all",
+   "format": "bibliocommons",
+   "city": "San Mateo",
+   "category": "Community",
+   "free": true,
+   "homepage": "https://smcl.bibliocommons.com/events",
+   "max_days": 7
+  },
+  {
+   "name": "Town of Danville",
+   "url": "https://www.danville.ca.gov/RSSFeed.aspx?ModID=58&CID=All-calendar.xml",
+   "format": "civicplus",
+   "city": "Danville",
+   "category": "Community",
+   "homepage": "https://www.danville.ca.gov/Calendar.aspx"
+  },
+  {
+   "name": "City of Dublin",
+   "url": "https://www.dublin.ca.gov/RSSFeed.aspx?ModID=58&CID=All-calendar.xml",
+   "format": "civicplus",
+   "city": "Dublin",
+   "category": "Community",
+   "homepage": "https://dublin.ca.gov/m/calendar"
+  },
+  {
+   "name": "City of San Mateo",
+   "url": "https://www.cityofsanmateo.org/RSSFeed.aspx?ModID=58&CID=All-calendar.xml",
+   "format": "civicplus",
+   "city": "San Mateo",
+   "category": "Community",
+   "homepage": "https://www.cityofsanmateo.org/calendar.aspx"
+  }
+ ]
 }
