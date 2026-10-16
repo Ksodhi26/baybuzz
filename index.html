@@ -2,20 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>BayBuzz – What's happening around the Bay</title>
   <meta name="description" content="Free listings of concerts, festivals, family fun, sports and community events across the San Francisco Bay Area.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ff4d6d" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0b1e" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <div>
-        <h1 class="brand"><span aria-hidden="true">🐝</span> BayBuzz <span class="tagline">– What's happening around the Bay</span></h1>
+  <a class="skip-link" href="#events">Skip to events</a>
+
+  <header class="hero">
+    <div class="hero-blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">🐝</span> BayBuzz</p>
+        <h1 class="hero-title">What's happening <span class="hl">around the Bay</span></h1>
         <p class="sub">Concerts, festivals, family fun and more from San Jose to San Rafael.</p>
+        <ul class="hero-stats" id="hero-stats" aria-label="At a glance"></ul>
       </div>
-      <a id="add-event-link" class="btn btn-accent" href="#" target="_blank" rel="noopener">+ Add your event</a>
+      <a id="add-event-link" class="btn btn-hero" href="#" target="_blank" rel="noopener">＋ Add your event</a>
     </div>
   </header>
 
@@ -24,18 +35,27 @@
     They are not real events. Real listings appear automatically once the daily update is connected.
   </div>
 
-  <main class="wrap">
-    <section class="filters" aria-label="Filter events">
-      <div class="quick">
-        <button type="button" class="chip" id="quick-weekend" aria-pressed="false">📅 This weekend</button>
-        <button type="button" class="chip" id="quick-free" aria-pressed="false">🎟️ Free events</button>
-        <button type="button" class="chip chip-ghost" id="reset">Reset filters</button>
-      </div>
-      <div class="filter-grid">
-        <label class="field field-search">
-          <span>Search</span>
+  <section class="filters" id="filters" aria-label="Filter events">
+    <div class="wrap">
+      <div class="filter-top">
+        <label class="search-box">
+          <span class="visually-hidden">Search events</span>
+          <span class="search-icon" aria-hidden="true">🔎</span>
           <input type="search" id="search" placeholder="Band, venue, keyword…" autocomplete="off">
         </label>
+        <div class="view-toggle" role="group" aria-label="View">
+          <button type="button" id="view-list" class="seg" aria-pressed="true">☰ List</button>
+          <button type="button" id="view-map" class="seg" aria-pressed="false">🗺️ Map</button>
+        </div>
+        <button type="button" id="more-filters" class="more-btn" aria-expanded="false" aria-controls="filter-grid">⚙️ Filters <span id="active-count" class="active-count" hidden></span></button>
+      </div>
+      <div class="quick" role="group" aria-label="Quick filters">
+        <button type="button" class="chip" id="quick-weekend" aria-pressed="false">📅 This weekend</button>
+        <button type="button" class="chip" id="quick-free" aria-pressed="false">🎟️ Free</button>
+        <button type="button" class="chip chip-kid" id="quick-kid" aria-pressed="false">🧸 Kid-friendly</button>
+        <button type="button" class="chip chip-ghost" id="reset">↺ Reset</button>
+      </div>
+      <div class="filter-grid" id="filter-grid">
         <label class="field">
           <span>City</span>
           <select id="city"><option value="">All Bay Area cities</option></select>
@@ -53,20 +73,42 @@
           <span>Category</span>
           <select id="category"><option value="">All categories</option></select>
         </label>
-        <label class="toggle">
-          <input type="checkbox" id="free-only">
-          <span class="toggle-ui" aria-hidden="true"></span>
-          <span>Free only</span>
-        </label>
+        <div class="toggles">
+          <label class="toggle">
+            <input type="checkbox" id="free-only">
+            <span class="toggle-ui" aria-hidden="true"></span>
+            <span>Free only</span>
+          </label>
+          <label class="toggle">
+            <input type="checkbox" id="kid-only">
+            <span class="toggle-ui" aria-hidden="true"></span>
+            <span>Kid-friendly</span>
+          </label>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <main class="wrap" id="main">
     <div class="meta-row">
       <p id="count" class="count" aria-live="polite">Loading events…</p>
       <p id="updated" class="updated"></p>
     </div>
 
-    <section id="events" class="events" aria-label="Events"></section>
+    <section id="events" class="events" aria-label="Events" tabindex="-1">
+      <div class="day-grid" id="grid"></div>
+      <div class="skeletons" id="skeletons" aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </section>
+    <div class="load-more-wrap">
+      <button type="button" id="load-more" class="btn btn-load" hidden>Load more events</button>
+      <div id="sentinel" aria-hidden="true"></div>
+    </div>
+
+    <section id="map-view" class="map-view" aria-label="Map of events by city" hidden>
+      <div id="map" class="map" role="region" aria-label="Map. Each bubble shows how many events match in that city."></div>
+      <p id="map-note" class="map-note"></p>
+    </section>
+
     <p id="empty" class="empty" hidden>No events match those filters. Try a different date or city, or <button type="button" class="linklike" id="empty-reset">reset filters</button>.</p>
   </main>
 
@@ -80,8 +122,11 @@
         BayBuzz is a free, independent listing site and is not affiliated with event organizers or ticket sellers.
         Event details (dates, times, prices, venues) come from third-party sources and can change —
         <strong>please verify with the organizer or the original listing before you go.</strong>
+        “Kid-friendly” tags are guessed automatically from event text, so check the listing for age limits.
+        Map pins are placed at the city center, not the exact venue.
       </p>
-      <p class="small">More Bay Area events: <a href="https://www.eventbrite.com/d/ca--san-francisco/events/" target="_blank" rel="noopener">Eventbrite</a>. Know about an event? <a id="add-event-link-footer" href="#" target="_blank" rel="noopener">Add your event</a>.</p>
+      <p class="small">More Bay Area events: <a href="https://www.eventbrite.com/d/ca--san-francisco/events/" target="_blank" rel="noopener">Eventbrite</a>. Know about an event? <a id="add-event-link-footer" href="#" target="_blank" rel="noopener">Add your event</a>.
+        Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</p>
     </div>
   </footer>
 

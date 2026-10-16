@@ -36,6 +36,7 @@ except Exception:  # pragma: no cover - zoneinfo/tzdata missing
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EVENTS_PATH = os.path.join(ROOT, "events.json")
 FEEDS_PATH = os.path.join(ROOT, "feeds.json")
+CURATED_PATH = os.path.join(ROOT, "curated_events.json")
 
 TM_URL = "https://app.ticketmaster.com/discovery/v2/events.json"
 TM_LATLONG = "37.77,-122.27"     # Oakland-ish centre of the Bay
@@ -43,6 +44,9 @@ TM_RADIUS_MILES = 60
 TM_PAGE_SIZE = 200               # Ticketmaster max page size
 TM_MAX_PAGES = 5                 # API only allows paging through the first 1000 results
 DAYS_AHEAD = 60
+# Cities whose own calendars block bots (or that the 60-mile search under-covers because of the
+# 1,000-result cap). We ask Ticketmaster for each one by name as well.
+TM_EXTRA_CITIES = ["San Francisco", "Walnut Creek", "Pleasanton", "Livermore", "San Ramon"]
 USER_AGENT = "BayBuzz-updater/1.0 (+static site)"
 
 # Titles we don't want to list (add-ons rather than events).
@@ -85,6 +89,11 @@ def clean_text(s, limit: int = 400) -> str:
     if not s:
         return ""
     s = html.unescape(re.sub(r"<[^>]+>", " ", str(s)))
+    if "√" in s or "¬" in s:  # repair mac-roman mojibake from some feeds
+        try:
+            s = s.encode("mac_roman").decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            pass
     s = re.sub(r"\s+", " ", s).strip()
     return (s[: limit - 1].rstrip() + "…") if len(s) > limit else s
 
@@ -229,21 +238,24 @@ def normalize_tm(ev: dict) -> dict | None:
     }
 
 
-def fetch_ticketmaster(api_key: str) -> list[dict] | None:
-    """Returns a list of normalized events, or None if the fetch failed entirely."""
+def fetch_ticketmaster(api_key: str, city: str | None = None) -> list[dict] | None:
+    """Returns a list of normalized events, or None if the fetch failed entirely.
+
+    With `city`, searches that city by name instead of the 60-mile radius around the Bay centre."""
     start = now_utc().replace(microsecond=0)
     end = start + timedelta(days=DAYS_AHEAD)
     params = {
         "apikey": api_key,
-        "latlong": TM_LATLONG,
-        "radius": TM_RADIUS_MILES,
-        "unit": "miles",
         "size": TM_PAGE_SIZE,
         "sort": "date,asc",
         "startDateTime": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "endDateTime": end.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "locale": "*",
     }
+    if city:
+        params.update({"city": city, "stateCode": "CA", "countryCode": "US"})
+    else:
+        params.update({"latlong": TM_LATLONG, "radius": TM_RADIUS_MILES, "unit": "miles"})
     out: list[dict] = []
     got_any_page = False
     for page in range(TM_MAX_PAGES):
@@ -274,7 +286,7 @@ def fetch_ticketmaster(api_key: str) -> list[dict] | None:
                 out.append(n)
         info = data.get("page") or {}
         total_pages = int(info.get("totalPages") or 0)
-        log(f"Ticketmaster page {page + 1}/{max(total_pages, 1)}: {len(items)} events")
+        log(f"Ticketmaster{' (' + city + ')' if city else ''} page {page + 1}/{max(total_pages, 1)}: {len(items)} events")
         if page + 1 >= total_pages or not items or (page + 2) * TM_PAGE_SIZE > 1000:
             break
         time.sleep(0.3)  # be polite: well under the 5 requests/second limit
@@ -569,6 +581,53 @@ def load_feeds() -> list[dict]:
     return [f for f in feeds if isinstance(f, dict) and f.get("url")]
 
 
+
+# --------------------------------------------------------------------------- curated events
+def load_curated() -> list[dict]:
+    """Hand-checked events (curated_events.json) for cities whose calendars block bots.
+
+    Each entry needs title, start and url. Missing optional fields are filled in with
+    safe defaults, and anything malformed is skipped with a log line rather than
+    breaking the whole update."""
+    try:
+        with open(CURATED_PATH, encoding="utf-8") as f:
+            cfg = json.load(f)
+    except FileNotFoundError:
+        return []
+    except ValueError as e:
+        log(f"curated_events.json is not valid JSON ({e}); ignoring it.")
+        return []
+    raw = cfg.get("events", []) if isinstance(cfg, dict) else cfg
+    out: list[dict] = []
+    for i, ev in enumerate(raw if isinstance(raw, list) else []):
+        if not isinstance(ev, dict):
+            continue
+        title = clean_text(ev.get("title"), 200)
+        start = ev.get("start")
+        if not title or not start or parse_any_dt(str(start)) is None:
+            log(f"curated_events.json entry #{i + 1} skipped (needs a title and a valid start).")
+            continue
+        end = ev.get("end")
+        if end and parse_any_dt(str(end)) is None:
+            end = None
+        city = normalize_city(ev.get("city"), ev.get("venue") or "")
+        out.append({
+            "id": ev.get("id") or "cur-" + make_id(title, start, ev.get("venue", "")),
+            "title": title,
+            "start": str(start),
+            "end": str(end) if end else None,
+            "venue": clean_text(ev.get("venue"), 120),
+            "city": city,
+            "category": ev.get("category") or "Other",
+            "price": ev.get("price"),
+            "isFree": bool(ev.get("isFree")),
+            "url": ev.get("url") or "",
+            "source": ev.get("source") or "Curated",
+            "description": clean_text(ev.get("description")),
+            "image": ev.get("image") or "",
+        })
+    return out
+
 # --------------------------------------------------------------------------- merge + write
 def dedupe(events: list[dict]) -> list[dict]:
     seen_ids, seen_keys, out = set(), set(), []
@@ -595,8 +654,10 @@ def main() -> int:
     api_key = os.environ.get("TICKETMASTER_API_KEY", "").strip()
     feeds = load_feeds()
 
-    if not api_key and not feeds:
-        log("No TICKETMASTER_API_KEY set and no iCal feeds in feeds.json – leaving events.json unchanged.")
+    curated = load_curated()
+
+    if not api_key and not feeds and not curated:
+        log("No TICKETMASTER_API_KEY set, no iCal feeds and no curated events – leaving events.json unchanged.")
         return 0
 
     collected: list[dict] = []
@@ -610,6 +671,11 @@ def main() -> int:
             collected += tm
             sources.append({"name": "Ticketmaster", "url": "https://www.ticketmaster.com/"})
             log(f"Ticketmaster: {len(tm)} usable events")
+            for extra_city in TM_EXTRA_CITIES:
+                extra = fetch_ticketmaster(api_key, city=extra_city)
+                if extra:
+                    collected += extra   # duplicates of the main search are removed by dedupe()
+                    log(f"Ticketmaster ({extra_city}): {len(extra)} usable events")
     else:
         log("No TICKETMASTER_API_KEY set – skipping Ticketmaster.")
 
@@ -621,6 +687,13 @@ def main() -> int:
             for name in sorted({e["source"] for e in ics}):
                 url = next((e.get("sourceUrl") for e in ics if e["source"] == name), "")
                 sources.append({"name": name, "url": url})
+
+    if curated:
+        ok = True
+        collected += curated
+        # One footer credit for the whole file; each event still names its own source and links to it.
+        sources.append({"name": "Local organizers' own event pages (curated)", "url": ""})
+        log(f"Curated: {len(curated)} events from curated_events.json")
 
     if not ok:
         log("All sources failed – leaving events.json unchanged.")
