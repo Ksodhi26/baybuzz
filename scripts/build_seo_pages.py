@@ -235,7 +235,9 @@ HEAD_FONTS = (
     '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
     '  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600;700&display=swap">'
 )
-FAVICON = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>"
+FAVICON_LINKS = """<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">"""
 
 HERO_ART = """<svg class="hero-art" viewBox="0 0 320 220" aria-hidden="true" focusable="false">
       <circle cx="250" cy="60" r="44" fill="#ffd43b"/>
@@ -279,7 +281,7 @@ def head(title: str, desc: str, path: str, jsonld: list[dict]) -> str:
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ff4d6d" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0d0b1e" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="{FAVICON}">
+  {FAVICON_LINKS}
   {HEAD_FONTS}
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/themes.css">
@@ -298,7 +300,8 @@ def hero(h1_html: str, sub: str, crumbs: list[tuple[str, str]], app_href: str, a
     <div class="wrap hero-inner">
       <div class="hero-copy">
         <nav class="crumbs" aria-label="Breadcrumb">{bc}</nav>
-        <p class="eyebrow"><a href="/"><span aria-hidden="true">🐝</span> BayBuzz</a></p>
+        <a class="brand-logo" href="/" aria-label="BayBuzz home"><img src="/logo-header.webp" width="142" height="80" alt="BayBuzz" decoding="async"></a>
+        <p class="eyebrow">Bay Area events</p>
         <h1 class="hero-title">{h1_html}</h1>
         <p class="sub">{esc(sub)}</p>
       </div>

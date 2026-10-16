@@ -598,3 +598,9 @@ hr.rainbow { border: 0; height: 6px; border-radius: 999px; background: var(--rai
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ---------- brand logo (header) ---------- */
+.brand-logo { display: inline-block; line-height: 0; margin: 0 0 12px; border-radius: 12px; box-shadow: 0 6px 20px rgba(20, 0, 40, .35); border: 2px solid rgba(255, 255, 255, .85); overflow: hidden; }
+.brand-logo img { display: block; height: 80px; width: auto; max-width: 100%; }
+.brand-logo + .eyebrow { display: flex; width: fit-content; }
+@media (max-width: 480px) { .brand-logo img { height: 64px; } }
