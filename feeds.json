@@ -1,0 +1,5 @@
+{
+  "_help": "Add public iCal (.ics) calendar links below. Each entry needs a url; name, city and category are optional defaults for that feed.",
+  "_example": {"name": "Example City Calendar", "url": "https://example.org/events.ics", "city": "San Ramon", "category": "Community", "homepage": "https://example.org/events"},
+  "feeds": []
+}

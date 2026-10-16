@@ -1,0 +1,241 @@
+{
+  "lastUpdated": "2026-10-16T21:00:00Z",
+  "note": "SAMPLE DATA ONLY - these events are made up for demonstration. They will be replaced automatically when scripts/update_events.py runs with a Ticketmaster API key or iCal feeds.",
+  "sources": [
+    {
+      "name": "BayBuzz sample data",
+      "url": ""
+    }
+  ],
+  "events": [
+    {
+      "id": "sample-13",
+      "title": "Friday Night Food Truck Rally",
+      "start": "2026-10-16T17:00:00-07:00",
+      "end": "2026-10-16T20:30:00-07:00",
+      "venue": "Example Community Park (sample venue)",
+      "city": "San Ramon",
+      "category": "Food & Drink",
+      "price": null,
+      "isFree": true,
+      "url": "https://example.com/baybuzz-sample-13",
+      "source": "BayBuzz sample data",
+      "description": "A dozen food trucks, lawn games and a kids' zone. Free entry; food sold separately. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-01",
+      "title": "San Ramon Fall Harvest Farmers' Market",
+      "start": "2026-10-17T10:00:00-07:00",
+      "end": "2026-10-17T13:00:00-07:00",
+      "venue": "Example Plaza (sample venue)",
+      "city": "San Ramon",
+      "category": "Food & Drink",
+      "price": null,
+      "isFree": true,
+      "url": "https://example.com/baybuzz-sample-01",
+      "source": "BayBuzz sample data",
+      "description": "Seasonal produce, apple cider tastings and live acoustic music. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-02",
+      "title": "Lakeside Sunset Jazz",
+      "start": "2026-10-17T18:00:00-07:00",
+      "end": "2026-10-17T21:00:00-07:00",
+      "venue": "Lakeside Bandshell (sample venue)",
+      "city": "Oakland",
+      "category": "Music",
+      "price": {
+        "min": 15,
+        "max": 15
+      },
+      "isFree": false,
+      "url": "https://example.com/baybuzz-sample-02",
+      "source": "BayBuzz sample data",
+      "description": "An evening of local jazz trios by the water. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-03",
+      "title": "Family Picnic Concert in the Park",
+      "start": "2026-10-18T12:00:00-07:00",
+      "end": "2026-10-18T15:00:00-07:00",
+      "venue": "Example Park Meadow (sample venue)",
+      "city": "San Francisco",
+      "category": "Family",
+      "price": null,
+      "isFree": true,
+      "url": "https://example.com/baybuzz-sample-03",
+      "source": "BayBuzz sample data",
+      "description": "Bring a blanket for kid-friendly music and face painting. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-04",
+      "title": "Author Talk: A Bay Area Food History",
+      "start": "2026-10-20T18:30:00-07:00",
+      "end": "2026-10-20T20:00:00-07:00",
+      "venue": "Community Library Hall (sample venue)",
+      "city": "Berkeley",
+      "category": "Community",
+      "price": null,
+      "isFree": true,
+      "url": "https://example.com/baybuzz-sample-04",
+      "source": "BayBuzz sample data",
+      "description": "A conversation about the dishes that shaped the East Bay. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-05",
+      "title": "Startup Demo Night",
+      "start": "2026-10-22T18:00:00-07:00",
+      "end": "2026-10-22T21:00:00-07:00",
+      "venue": "Example Innovation Hub (sample venue)",
+      "city": "Palo Alto",
+      "category": "Community",
+      "price": {
+        "min": 10,
+        "max": 10
+      },
+      "isFree": false,
+      "url": "https://example.com/baybuzz-sample-05",
+      "source": "BayBuzz sample data",
+      "description": "Ten early-stage founders demo their products, followed by networking. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-06",
+      "title": "Downtown Night Market",
+      "start": "2026-10-24T17:00:00-07:00",
+      "end": "2026-10-24T22:00:00-07:00",
+      "venue": "Example Paseo (sample venue)",
+      "city": "San Jose",
+      "category": "Food & Drink",
+      "price": {
+        "min": 5,
+        "max": 5
+      },
+      "isFree": false,
+      "url": "https://example.com/baybuzz-sample-06",
+      "source": "BayBuzz sample data",
+      "description": "Street food, makers and live DJs under the lights. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-07",
+      "title": "Stand-Up Comedy Showcase",
+      "start": "2026-10-24T20:00:00-07:00",
+      "end": "2026-10-24T22:00:00-07:00",
+      "venue": "Example Arts Center (sample venue)",
+      "city": "Walnut Creek",
+      "category": "Comedy",
+      "price": {
+        "min": 28,
+        "max": 45
+      },
+      "isFree": false,
+      "url": "https://example.com/baybuzz-sample-07",
+      "source": "BayBuzz sample data",
+      "description": "Five Bay Area comics, one night. 18+. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-08",
+      "title": "Diwali Festival of Lights",
+      "start": "2026-10-25T11:00:00-07:00",
+      "end": "2026-10-25T18:00:00-07:00",
+      "venue": "Example Central Park (sample venue)",
+      "city": "Fremont",
+      "category": "Festivals",
+      "price": null,
+      "isFree": true,
+      "url": "https://example.com/baybuzz-sample-08",
+      "source": "BayBuzz sample data",
+      "description": "Dance performances, rangoli, food stalls and fireworks finale. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-09",
+      "title": "Halloween Costume Bike Ride",
+      "start": "2026-10-31T10:00:00-07:00",
+      "end": "2026-10-31T12:30:00-07:00",
+      "venue": "Waterfront Meeting Point (sample venue)",
+      "city": "San Francisco",
+      "category": "Outdoors",
+      "price": null,
+      "isFree": true,
+      "url": "https://example.com/baybuzz-sample-09",
+      "source": "BayBuzz sample data",
+      "description": "A slow, family-friendly costumed ride along the waterfront. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-10",
+      "title": "Spooky Symphony for Kids",
+      "start": "2026-10-31T14:00:00-07:00",
+      "end": "2026-10-31T15:30:00-07:00",
+      "venue": "Example Theater (sample venue)",
+      "city": "Oakland",
+      "category": "Family",
+      "price": {
+        "min": 20,
+        "max": 35
+      },
+      "isFree": false,
+      "url": "https://example.com/baybuzz-sample-10",
+      "source": "BayBuzz sample data",
+      "description": "Orchestra favorites in costume; trick-or-treat in the lobby. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-11",
+      "title": "Fall Hills 10K Trail Run",
+      "start": "2026-11-01T08:00:00-08:00",
+      "end": "2026-11-01T11:00:00-08:00",
+      "venue": "Example Regional Park (sample venue)",
+      "city": "Dublin",
+      "category": "Sports",
+      "price": {
+        "min": 45,
+        "max": 45
+      },
+      "isFree": false,
+      "url": "https://example.com/baybuzz-sample-11",
+      "source": "BayBuzz sample data",
+      "description": "A scenic 10K and 5K through the East Bay hills. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    },
+    {
+      "id": "sample-12",
+      "title": "Indie Shorts Film Night",
+      "start": "2026-11-05T19:00:00-08:00",
+      "end": "2026-11-05T21:30:00-08:00",
+      "venue": "Example Cinema (sample venue)",
+      "city": "Mountain View",
+      "category": "Film",
+      "price": {
+        "min": 12,
+        "max": 12
+      },
+      "isFree": false,
+      "url": "https://example.com/baybuzz-sample-12",
+      "source": "BayBuzz sample data",
+      "description": "Short films by Bay Area filmmakers plus a director Q&A. (Sample listing for demo purposes.)",
+      "image": null,
+      "sample": true
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BayBuzz – What's happening around the Bay</title>
+  <meta name="description" content="Free listings of concerts, festivals, family fun, sports and community events across the San Francisco Bay Area.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐝</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div>
+        <h1 class="brand"><span aria-hidden="true">🐝</span> BayBuzz <span class="tagline">– What's happening around the Bay</span></h1>
+        <p class="sub">Concerts, festivals, family fun and more from San Jose to San Rafael.</p>
+      </div>
+      <a id="add-event-link" class="btn btn-accent" href="#" target="_blank" rel="noopener">+ Add your event</a>
+    </div>
+  </header>
+
+  <div id="sample-banner" class="sample-banner" hidden role="status">
+    <strong>Sample data:</strong> some or all events shown below are made-up examples for demonstration only.
+    They are not real events. Real listings appear automatically once the daily update is connected.
+  </div>
+
+  <main class="wrap">
+    <section class="filters" aria-label="Filter events">
+      <div class="quick">
+        <button type="button" class="chip" id="quick-weekend" aria-pressed="false">📅 This weekend</button>
+        <button type="button" class="chip" id="quick-free" aria-pressed="false">🎟️ Free events</button>
+        <button type="button" class="chip chip-ghost" id="reset">Reset filters</button>
+      </div>
+      <div class="filter-grid">
+        <label class="field field-search">
+          <span>Search</span>
+          <input type="search" id="search" placeholder="Band, venue, keyword…" autocomplete="off">
+        </label>
+        <label class="field">
+          <span>City</span>
+          <select id="city"><option value="">All Bay Area cities</option></select>
+        </label>
+        <label class="field">
+          <span>Date</span>
+          <select id="date">
+            <option value="all">All upcoming</option>
+            <option value="today">Today</option>
+            <option value="weekend">This weekend</option>
+            <option value="week">Next 7 days</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Category</span>
+          <select id="category"><option value="">All categories</option></select>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="free-only">
+          <span class="toggle-ui" aria-hidden="true"></span>
+          <span>Free only</span>
+        </label>
+      </div>
+    </section>
+
+    <div class="meta-row">
+      <p id="count" class="count" aria-live="polite">Loading events…</p>
+      <p id="updated" class="updated"></p>
+    </div>
+
+    <section id="events" class="events" aria-label="Events"></section>
+    <p id="empty" class="empty" hidden>No events match those filters. Try a different date or city, or <button type="button" class="linklike" id="empty-reset">reset filters</button>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="attribution">
+        <a href="https://www.ticketmaster.com/" target="_blank" rel="noopener">Events by Ticketmaster</a>
+        <span id="source-credits"></span>
+      </p>
+      <p class="disclaimer">
+        BayBuzz is a free, independent listing site and is not affiliated with event organizers or ticket sellers.
+        Event details (dates, times, prices, venues) come from third-party sources and can change —
+        <strong>please verify with the organizer or the original listing before you go.</strong>
+      </p>
+      <p class="small">Know about an event? <a id="add-event-link-footer" href="#" target="_blank" rel="noopener">Add your event</a>.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
