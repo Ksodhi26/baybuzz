@@ -158,3 +158,22 @@ type the name `.github/workflows/update.yml` (the slashes create the folders), p
 - The app understands links like `/?city=San%20Ramon&kid=1&free=1&date=weekend&cat=Music&q=jazz`.
 - **Weekly email:** paste your signup URL into `EMAIL_SIGNUP_URL` at the top of `app.js` to show the signup box.
   The form POSTs one field named `email` to that URL (works with Buttondown-style embed URLs; check your provider).
+
+## Seasonal themes
+
+`themes.js` (loaded in `<head>` of every page) picks a theme from today's date in Pacific time and sets
+`<html data-theme="…">`; `themes.css` holds each theme's colors (CSS variables) and the hero decorations.
+Preview any theme with `?theme=halloween|thanksgiving|christmas|newyear|winter|valentine|spring|summer|backtoschool`
+(`?theme=none` shows the original look).
+
+| Theme | Dates (Pacific) |
+|---|---|
+| halloween | Oct 1 – Nov 1 |
+| thanksgiving | Nov 2 – Nov 30 |
+| christmas | Dec 1 – Dec 31 |
+| newyear | Jan 1 – Jan 14 |
+| winter | Jan 15 – Feb 9 |
+| valentine (Valentine's + Lunar New Year) | Feb 10 – Mar 1, starting 3 days before Lunar New Year when it's earlier (table through 2035) |
+| spring | Mar 2 – May 31 |
+| summer | Jun 1 – Aug 31 |
+| backtoschool | Sep 1 – Sep 30 |

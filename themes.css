@@ -1,0 +1,193 @@
+/* BayBuzz seasonal themes (picked by themes.js from the Pacific date; preview with ?theme=halloween etc.).
+   Each theme only overrides CSS variables from style.css plus a few hero-only decorations.
+   Hero text stays white on gradients whose every stop is >= 4.5:1 against white. */
+
+/* ---------- shared hooks ---------- */
+:root[data-theme] .hero > .hero-art, :root[data-theme] .hero > .confetti { display: none; }
+:root[data-theme] .hero-blobs span { opacity: .3; }
+:root[data-theme] .hero::after { background: linear-gradient(180deg, rgba(10, 0, 25, .2), rgba(10, 0, 25, .34)); }
+:root[data-theme] .hero-blobs span:nth-child(1) { background: var(--blob-1); }
+:root[data-theme] .hero-blobs span:nth-child(2) { background: var(--blob-2); }
+:root[data-theme] .hero-blobs span:nth-child(3) { background: var(--blob-3); }
+:root[data-theme] .hero-title .hl { background: var(--hl); -webkit-background-clip: text; background-clip: text; }
+:root[data-theme] .btn-hero { color: var(--hero-btn-ink); }
+:root[data-theme] .count { background: linear-gradient(transparent 62%, var(--count-hl) 62%); }
+.eyebrow::after { content: var(--theme-emoji, ""); }
+.theme-tagline { display: none; }
+:root[data-theme] .theme-tagline {
+  display: block; margin: 0 0 10px; min-height: 1.5em; line-height: 1.5;
+  font-family: var(--font-display); font-weight: 800; font-size: clamp(1rem, 2.2vw, 1.2rem); letter-spacing: .01em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .45);
+}
+.theme-tagline::before { content: var(--theme-tagline, ""); }
+
+/* ---------- decoration layer (absolute, inside the hero: no layout shift) ---------- */
+.theme-deco { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; contain: strict; }
+.td-particles { position: absolute; inset: 0; }
+.tp { position: absolute; left: var(--x); top: var(--y); width: var(--s); height: var(--s); opacity: .92;
+  animation: var(--anim, td-float) var(--dur) ease-in-out var(--delay) infinite alternate; will-change: transform; }
+.tp svg, .td-art, .td-web, .td-spider svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.tp-pencil { height: calc(var(--s) * .3); }
+.tp-butterfly { height: calc(var(--s) * .75); }
+.tp-butterfly .wing { transform-origin: 16px 12px; animation: td-flap .35s ease-in-out infinite alternate; }
+.tp-dot { opacity: .8; }
+.motion-fall .tp, .motion-snow .tp { --anim: td-fall; animation-timing-function: linear; animation-direction: normal; }
+.motion-rise .tp { --anim: td-rise; animation-timing-function: linear; animation-direction: normal; }
+.motion-twinkle .tp { --anim: td-twinkle; }
+.motion-drift .tp { --anim: td-drift; }
+@keyframes td-float { to { transform: translate(12px, -16px) rotate(10deg); } }
+@keyframes td-drift { to { transform: translate(34px, -14px) rotate(25deg); } }
+@keyframes td-fall {
+  0% { transform: translate(0, -170px) rotate(0); opacity: 0; }
+  12%, 85% { opacity: .92; }
+  100% { transform: translate(36px, 170px) rotate(var(--r)); opacity: 0; }
+}
+@keyframes td-rise {
+  0% { transform: translate(0, 170px) scale(.8); opacity: 0; }
+  15%, 80% { opacity: .9; }
+  100% { transform: translate(-18px, -170px) scale(1.05); opacity: 0; }
+}
+@keyframes td-twinkle { from { transform: scale(.45) rotate(0); opacity: .35; } to { transform: scale(1.1) rotate(25deg); opacity: 1; } }
+@keyframes td-flap { to { transform: scaleX(.35); } }
+@keyframes td-swing { from { transform: rotate(-4deg); } to { transform: rotate(4deg); } }
+@keyframes td-dangle { to { transform: translateY(16px); } }
+@keyframes td-glow { 0%, 45% { opacity: .15; } 55%, 100% { opacity: .9; } }
+@keyframes td-spin { to { transform: rotate(360deg); } }
+
+.td-art { position: absolute; right: max(2vw, calc(50% - 640px)); top: 18px; width: min(34vw, 330px); height: auto; aspect-ratio: 32 / 22;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, .25)); animation: bob 7s ease-in-out infinite alternate; }
+.hero-small .td-art { width: min(30vw, 280px); }
+.td-sun { transform-box: view-box; transform-origin: 250px 64px; animation: td-spin 60s linear infinite; }
+
+/* Halloween corner web + a friendly little spider */
+.td-web { position: absolute; left: 0; top: 0; width: 130px; height: 130px; }
+.td-spider { position: absolute; left: 92px; top: 0; width: 24px; height: 80px; animation: td-dangle 3.5s ease-in-out infinite alternate; }
+.td-spider::before { content: ""; position: absolute; left: 11.5px; top: 0; height: 58px; border-left: 1px solid rgba(255, 255, 255, .6); }
+.td-spider svg { position: absolute; top: 52px; height: 24px; }
+
+/* Christmas lights garland along the top of the hero */
+.td-garland { position: absolute; left: 0; right: 0; top: 0; height: 30px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 30'%3E%3Cpath d='M0 3Q30 17 60 3T120 3T180 3T240 3' fill='none' stroke='%2314532d' stroke-width='2'/%3E%3Crect x='27.5' y='8' width='5' height='4' rx='1' fill='%231f2937'/%3E%3Cellipse cx='30' cy='17' rx='4.2' ry='6.2' fill='%23ef4444'/%3E%3Cellipse cx='28.6' cy='15' rx='1.2' ry='2.2' fill='%23fff' opacity='.6'/%3E%3Crect x='87.5' y='8' width='5' height='4' rx='1' fill='%231f2937'/%3E%3Cellipse cx='90' cy='17' rx='4.2' ry='6.2' fill='%23facc15'/%3E%3Cellipse cx='88.6' cy='15' rx='1.2' ry='2.2' fill='%23fff' opacity='.6'/%3E%3Crect x='147.5' y='8' width='5' height='4' rx='1' fill='%231f2937'/%3E%3Cellipse cx='150' cy='17' rx='4.2' ry='6.2' fill='%2322c55e'/%3E%3Cellipse cx='148.6' cy='15' rx='1.2' ry='2.2' fill='%23fff' opacity='.6'/%3E%3Crect x='207.5' y='8' width='5' height='4' rx='1' fill='%231f2937'/%3E%3Cellipse cx='210' cy='17' rx='4.2' ry='6.2' fill='%237dd3fc'/%3E%3Cellipse cx='208.6' cy='15' rx='1.2' ry='2.2' fill='%23fff' opacity='.6'/%3E%3C/svg%3E") repeat-x 0 0 / 240px 30px; }
+.td-garland.td-glow { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 30'%3E%3Ccircle cx='30' cy='17' r='9' fill='%23ef4444'/%3E%3Ccircle cx='150' cy='17' r='9' fill='%2322c55e'/%3E%3C/svg%3E"); filter: blur(4px); animation: td-glow 1.8s steps(1) infinite alternate; }
+/* Summer waves */
+.td-waves { position: absolute; left: 0; right: 0; bottom: 30px; height: 20px; opacity: .22; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 20'%3E%3Cpath d='M0 10q15-10 30 0t30 0 30 0 30 0V20H0z' fill='%23fff'/%3E%3C/svg%3E") repeat-x 0 0 / 120px 20px; }
+
+/* ---------- themes ---------- */
+:root[data-theme="halloween"] {
+  --sunset: linear-gradient(120deg, #2e1065 0%, #581c87 38%, #9a3412 76%, #c2410c 100%);
+  --sunset-ink: linear-gradient(120deg, #3b0764 0%, #6b21a8 45%, #c2410c 100%);
+  --rainbow: linear-gradient(90deg, #f97316 0 25%, #facc15 25% 50%, #fff7ed 50% 60%, #7e22ce 60% 85%, #1c0f2e 85%);
+  --hot: #ea580c; --orange: #ea580c; --brand: #6b21a8; --brand-ink: #581c87;
+  --bg: #fff7ed; --bg-glow-1: rgba(249, 115, 22, .2); --bg-glow-2: rgba(126, 34, 206, .14); --bg-glow-3: rgba(250, 204, 21, .16);
+  --blob-1: #f97316; --blob-2: #7e22ce; --blob-3: #eab308;
+  --hl: linear-gradient(90deg, #fed7aa, #fde047 55%, #fff7ed); --hero-btn-ink: #3b0764;
+  --count-hl: rgba(249, 115, 22, .4);
+}
+:root[data-theme="thanksgiving"] {
+  --sunset: linear-gradient(120deg, #7f1d1d 0%, #b91c1c 35%, #c2410c 68%, #92400e 100%);
+  --sunset-ink: linear-gradient(120deg, #7f1d1d 0%, #b91c1c 50%, #9a3412 100%);
+  --rainbow: linear-gradient(90deg, #b91c1c, #ea580c, #f59e0b, #facc15, #65a30d, #b45309);
+  --hot: #c2410c; --orange: #d97706; --brand: #9a3412; --brand-ink: #7c2d12;
+  --bg: #fffbeb; --bg-glow-1: rgba(220, 38, 38, .13); --bg-glow-2: rgba(245, 158, 11, .18); --bg-glow-3: rgba(101, 163, 13, .1);
+  --blob-1: #d97706; --blob-2: #dc2626; --blob-3: #ea580c;
+  --hl: linear-gradient(90deg, #fde68a, #fff 55%, #fed7aa); --hero-btn-ink: #7f1d1d;
+  --count-hl: rgba(245, 158, 11, .45);
+}
+:root[data-theme="christmas"] {
+  --sunset: linear-gradient(120deg, #7f1d1d 0%, #b91c1c 32%, #166534 70%, #14532d 100%);
+  --sunset-ink: linear-gradient(120deg, #991b1b 0%, #b91c1c 40%, #166534 100%);
+  --rainbow: linear-gradient(90deg, #dc2626 0 20%, #fff 20% 25%, #16a34a 25% 45%, #facc15 45% 55%, #7dd3fc 55% 75%, #fff 75% 80%, #dc2626 80%);
+  --hot: #dc2626; --orange: #16a34a; --brand: #b91c1c; --brand-ink: #991b1b;
+  --bg: #f5fbff; --bg-glow-1: rgba(220, 38, 38, .1); --bg-glow-2: rgba(22, 163, 74, .12); --bg-glow-3: rgba(125, 211, 252, .22);
+  --blob-1: #22c55e; --blob-2: #ef4444; --blob-3: #7dd3fc;
+  --hl: linear-gradient(90deg, #fef9c3, #fff 55%, #bae6fd); --hero-btn-ink: #991b1b;
+  --count-hl: rgba(125, 211, 252, .5);
+}
+:root[data-theme="newyear"] {
+  --sunset: linear-gradient(120deg, #0b1437 0%, #1e3a8a 45%, #312e81 75%, #0f172a 100%);
+  --sunset-ink: linear-gradient(120deg, #172554 0%, #1e3a8a 50%, #312e81 100%);
+  --rainbow: linear-gradient(90deg, #ca8a04, #facc15, #fef3c7, #facc15, #ca8a04, #fde68a, #ca8a04);
+  --hot: #ca8a04; --orange: #ca8a04; --brand: #1e3a8a; --brand-ink: #172554;
+  --bg: #fffdf5; --bg-glow-1: rgba(250, 204, 21, .18); --bg-glow-2: rgba(30, 58, 138, .12); --bg-glow-3: rgba(167, 139, 250, .12);
+  --blob-1: #facc15; --blob-2: #3b82f6; --blob-3: #a78bfa;
+  --hl: linear-gradient(90deg, #fde68a, #facc15 50%, #fff); --hero-btn-ink: #172554;
+  --count-hl: rgba(250, 204, 21, .5);
+}
+:root[data-theme="winter"] {
+  --sunset: linear-gradient(120deg, #0c4a6e 0%, #1d4ed8 45%, #4338ca 78%, #1e1b4b 100%);
+  --sunset-ink: linear-gradient(120deg, #0c4a6e 0%, #1d4ed8 50%, #3730a3 100%);
+  --rainbow: linear-gradient(90deg, #38bdf8, #bae6fd, #818cf8, #e0f2fe, #38bdf8, #a5b4fc);
+  --hot: #2563eb; --orange: #0284c7; --brand: #1d4ed8; --brand-ink: #1e3a8a;
+  --bg: #f0f7ff; --bg-glow-1: rgba(56, 189, 248, .18); --bg-glow-2: rgba(99, 102, 241, .12); --bg-glow-3: rgba(186, 230, 253, .3);
+  --blob-1: #0ea5e9; --blob-2: #818cf8; --blob-3: #6366f1;
+  --hl: linear-gradient(90deg, #e0f2fe, #fff 55%, #c7d2fe); --hero-btn-ink: #1e3a8a;
+  --count-hl: rgba(125, 211, 252, .5);
+}
+:root[data-theme="valentine"] {
+  --sunset: linear-gradient(120deg, #881337 0%, #be123c 38%, #b91c1c 68%, #9f1239 100%);
+  --sunset-ink: linear-gradient(120deg, #881337 0%, #be123c 50%, #9f1239 100%);
+  --rainbow: linear-gradient(90deg, #f43f5e, #fb7185, #facc15, #dc2626, #f9a8d4, #f43f5e);
+  --hot: #e11d48; --orange: #dc2626; --brand: #be123c; --brand-ink: #9f1239;
+  --bg: #fff1f2; --bg-glow-1: rgba(244, 63, 94, .15); --bg-glow-2: rgba(250, 204, 21, .14); --bg-glow-3: rgba(220, 38, 38, .1);
+  --blob-1: #fb7185; --blob-2: #facc15; --blob-3: #f43f5e;
+  --hl: linear-gradient(90deg, #fecdd3, #fff 50%, #fde68a); --hero-btn-ink: #881337;
+  --count-hl: rgba(251, 113, 133, .4);
+}
+:root[data-theme="spring"] {
+  --sunset: linear-gradient(120deg, #be185d 0%, #a21caf 32%, #6d28d9 62%, #0f766e 100%);
+  --sunset-ink: linear-gradient(120deg, #be185d 0%, #86198f 45%, #0f766e 100%);
+  --rainbow: linear-gradient(90deg, #f9a8d4, #fde68a, #bbf7d0, #a5f3fc, #c4b5fd, #f9a8d4);
+  --hot: #db2777; --orange: #db2777; --brand: #a21caf; --brand-ink: #86198f;
+  --bg: #fdf7fb; --bg-glow-1: rgba(249, 168, 212, .28); --bg-glow-2: rgba(187, 247, 208, .3); --bg-glow-3: rgba(196, 181, 253, .25);
+  --blob-1: #f472b6; --blob-2: #a78bfa; --blob-3: #34d399;
+  --hl: linear-gradient(90deg, #fbcfe8, #fff 50%, #bbf7d0); --hero-btn-ink: #86198f;
+  --count-hl: rgba(249, 168, 212, .55);
+}
+:root[data-theme="summer"] {
+  --sunset: linear-gradient(120deg, #115e59 0%, #0e7490 42%, #075985 78%, #1e3a8a 100%);
+  --sunset-ink: linear-gradient(120deg, #0f766e 0%, #0e7490 50%, #0369a1 100%);
+  --rainbow: linear-gradient(90deg, #facc15, #fde047, #22d3ee, #14b8a6, #fb923c, #facc15);
+  --hot: #0891b2; --orange: #f59e0b; --brand: #0f766e; --brand-ink: #115e59;
+  --bg: #f3fdfb; --bg-glow-1: rgba(250, 204, 21, .2); --bg-glow-2: rgba(20, 184, 166, .16); --bg-glow-3: rgba(34, 211, 238, .16);
+  --blob-1: #f59e0b; --blob-2: #0891b2; --blob-3: #ea580c;
+  --hl: linear-gradient(90deg, #fef08a, #fde047 50%, #fff); --hero-btn-ink: #115e59;
+  --count-hl: rgba(250, 204, 21, .55);
+}
+:root[data-theme="backtoschool"] {
+  --sunset: linear-gradient(120deg, #1e3a8a 0%, #1e40af 40%, #9a3412 82%, #7c2d12 100%);
+  --sunset-ink: linear-gradient(120deg, #1e3a8a 0%, #1e40af 50%, #9a3412 100%);
+  --rainbow: linear-gradient(90deg, #dc2626, #f59e0b, #facc15, #16a34a, #2563eb, #dc2626);
+  --hot: #d97706; --orange: #d97706; --brand: #1e40af; --brand-ink: #1e3a8a;
+  --bg: #fffbf2; --bg-glow-1: rgba(245, 158, 11, .16); --bg-glow-2: rgba(37, 99, 235, .12); --bg-glow-3: rgba(220, 38, 38, .08);
+  --blob-1: #f59e0b; --blob-2: #3b82f6; --blob-3: #ef4444;
+  --hl: linear-gradient(90deg, #fde68a, #fff 55%, #fed7aa); --hero-btn-ink: #1e3a8a;
+  --count-hl: rgba(250, 204, 21, .5);
+}
+
+/* ---------- dark mode: deeper backgrounds, lighter link/brand colors ---------- */
+@media (prefers-color-scheme: dark) {
+  :root[data-theme] { --count-hl: rgba(255, 255, 255, .16); }
+  :root[data-theme="halloween"]    { --bg: #120a1c; --brand: #fdba74; --brand-ink: #fed7aa; --bg-glow-1: rgba(249, 115, 22, .16); --bg-glow-2: rgba(126, 34, 206, .22); --bg-glow-3: rgba(250, 204, 21, .06); --count-hl: rgba(249, 115, 22, .4); }
+  :root[data-theme="thanksgiving"] { --bg: #170d08; --brand: #fdba74; --brand-ink: #fde68a; --bg-glow-1: rgba(220, 38, 38, .16); --bg-glow-2: rgba(245, 158, 11, .14); --bg-glow-3: rgba(101, 163, 13, .08); --count-hl: rgba(245, 158, 11, .35); }
+  :root[data-theme="christmas"]    { --bg: #07131f; --brand: #fca5a5; --brand-ink: #fecaca; --bg-glow-1: rgba(220, 38, 38, .16); --bg-glow-2: rgba(22, 163, 74, .16); --bg-glow-3: rgba(125, 211, 252, .12); --count-hl: rgba(22, 163, 74, .45); }
+  :root[data-theme="newyear"]      { --bg: #070b1f; --brand: #fcd34d; --brand-ink: #fde68a; --bg-glow-1: rgba(250, 204, 21, .12); --bg-glow-2: rgba(59, 130, 246, .18); --bg-glow-3: rgba(167, 139, 250, .14); --count-hl: rgba(202, 138, 4, .45); }
+  :root[data-theme="winter"]       { --bg: #08111f; --brand: #93c5fd; --brand-ink: #bfdbfe; --bg-glow-1: rgba(56, 189, 248, .14); --bg-glow-2: rgba(99, 102, 241, .18); --bg-glow-3: rgba(186, 230, 253, .08); --count-hl: rgba(56, 189, 248, .35); }
+  :root[data-theme="valentine"]    { --bg: #1a0a10; --brand: #fda4af; --brand-ink: #fecdd3; --bg-glow-1: rgba(244, 63, 94, .18); --bg-glow-2: rgba(250, 204, 21, .08); --bg-glow-3: rgba(220, 38, 38, .14); --count-hl: rgba(244, 63, 94, .4); }
+  :root[data-theme="spring"]       { --bg: #120c1a; --brand: #f0abfc; --brand-ink: #f5d0fe; --bg-glow-1: rgba(244, 114, 182, .16); --bg-glow-2: rgba(52, 211, 153, .12); --bg-glow-3: rgba(167, 139, 250, .16); --count-hl: rgba(244, 114, 182, .35); }
+  :root[data-theme="summer"]       { --bg: #04161a; --brand: #5eead4; --brand-ink: #99f6e4; --bg-glow-1: rgba(250, 204, 21, .1); --bg-glow-2: rgba(20, 184, 166, .16); --bg-glow-3: rgba(34, 211, 238, .14); --count-hl: rgba(20, 184, 166, .4); }
+  :root[data-theme="backtoschool"] { --bg: #0a0f1f; --brand: #fcd34d; --brand-ink: #fde68a; --bg-glow-1: rgba(245, 158, 11, .12); --bg-glow-2: rgba(37, 99, 235, .18); --bg-glow-3: rgba(220, 38, 38, .08); --count-hl: rgba(245, 158, 11, .35); }
+}
+
+/* ---------- small screens: fewer particles, smaller art ---------- */
+@media (max-width: 720px) {
+  .tp:nth-child(n+8) { display: none; }
+  .td-art, .hero-small .td-art { width: 140px; top: 6px; right: -34px; opacity: .35; }
+  .td-web { width: 84px; height: 84px; opacity: .7; }
+  .td-spider { display: none; }
+}
+
+/* ---------- motion: style.css already stops every animation; keep particles calm and visible ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .tp { opacity: .7; transform: none; }
+  .td-garland.td-glow { opacity: .5; }
+}

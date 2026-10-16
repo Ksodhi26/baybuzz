@@ -281,7 +281,9 @@ def head(title: str, desc: str, path: str, jsonld: list[dict]) -> str:
   <meta name="theme-color" content="#0d0b1e" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="{FAVICON}">
   {HEAD_FONTS}
-  <link rel="stylesheet" href="/style.css">{ld}
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/themes.css">
+  <script src="/themes.js"></script>{ld}
 </head>"""
 
 
