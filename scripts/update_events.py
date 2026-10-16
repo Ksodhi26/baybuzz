@@ -89,11 +89,13 @@ def clean_text(s, limit: int = 400) -> str:
     if not s:
         return ""
     s = html.unescape(re.sub(r"<[^>]+>", " ", str(s)))
-    if "√" in s or "¬" in s:  # repair mac-roman mojibake from some feeds
-        try:
-            s = s.encode("mac_roman").decode("utf-8")
-        except (UnicodeEncodeError, UnicodeDecodeError):
-            pass
+    if "√" in s or "¬" in s or "‚Ä" in s:  # repair mac-roman mojibake from some feeds
+        def _fix(m):
+            try:
+                return m.group(0).encode("mac_roman").decode("utf-8")
+            except (UnicodeEncodeError, UnicodeDecodeError):
+                return m.group(0)
+        s = re.sub(r"[^\x00-\x7f]+", _fix, s)
     s = re.sub(r"\s+", " ", s).strip()
     return (s[: limit - 1].rstrip() + "…") if len(s) > limit else s
 
