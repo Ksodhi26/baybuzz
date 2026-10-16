@@ -473,11 +473,11 @@ hr.rainbow { border: 0; height: 6px; border-radius: 999px; background: var(--rai
 .badge-free, .badge-kid { border: 1.5px solid currentColor; }
 
 /* share + add to calendar */
-.card-actions { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 8px; }
+.card-actions { display: flex; gap: 6px; flex-wrap: wrap; padding-top: 8px; }
 .act {
-  display: inline-flex; align-items: center; gap: 5px; font: inherit; font-size: .84rem; font-weight: 700; cursor: pointer; list-style: none;
+  display: inline-flex; align-items: center; gap: 4px; font: inherit; font-size: .82rem; font-weight: 700; cursor: pointer; list-style: none;
   color: var(--ink); background: color-mix(in srgb, var(--c) 10%, #fff); border: 1.5px solid color-mix(in srgb, var(--c) 40%, transparent);
-  padding: 6px 12px; border-radius: 999px; min-height: 36px; transition: transform .15s ease, background .15s ease;
+  padding: 6px 10px; border-radius: 999px; min-height: 36px; transition: transform .15s ease, background .15s ease;
 }
 .act::-webkit-details-marker { display: none; }
 .act:hover { transform: translateY(-1px); background: color-mix(in srgb, var(--c) 20%, #fff); }
