@@ -145,13 +145,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/events/berkeley/</loc>
+    <loc>https://thebaybuzz.com/events/santa-cruz/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/events/santa-cruz/</loc>
+    <loc>https://thebaybuzz.com/events/berkeley/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -211,12 +211,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/events/napa/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://thebaybuzz.com/events/dublin/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
@@ -233,6 +227,12 @@
     <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/events/napa/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thebaybuzz.com/events/foster-city/</loc>
@@ -307,24 +307,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/events/gilroy/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/kid-friendly/gilroy/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/free-events/gilroy/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://thebaybuzz.com/events/los-altos/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
@@ -338,6 +320,24 @@
   </url>
   <url>
     <loc>https://thebaybuzz.com/free-events/los-altos/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/events/gilroy/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/kid-friendly/gilroy/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/free-events/gilroy/</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -527,42 +527,6 @@
     <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/events/campbell/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/kid-friendly/campbell/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/free-events/campbell/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/events/cupertino/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/kid-friendly/cupertino/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/free-events/cupertino/</loc>
-    <lastmod>2026-10-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thebaybuzz.com/events/san-pablo/</loc>

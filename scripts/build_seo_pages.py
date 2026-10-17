@@ -198,7 +198,9 @@ def iso_for_schema(s: str) -> str:
 
 
 def event_jsonld(e) -> dict:
-    d = {"@type": "Event", "name": e["title"], "startDate": iso_for_schema(e["start"])}
+    d = {"@type": "Event", "name": e["title"], "startDate": iso_for_schema(e["start"]),
+         "eventStatus": "https://schema.org/EventScheduled",
+         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"}
     if e.get("end"):
         d["endDate"] = iso_for_schema(e["end"])
     addr = {"@type": "PostalAddress", "addressRegion": "CA", "addressCountry": "US"}
@@ -213,12 +215,14 @@ def event_jsonld(e) -> dict:
     url = safe_url(e.get("url"))
     if url:
         d["url"] = url
+    if e.get("source"):
+        d["organizer"] = {"@type": "Organization", "name": e["source"], **({"url": url} if url else {})}
     p = e.get("price")
     if e.get("isFree"):
         d["isAccessibleForFree"] = True
-        d["offers"] = {"@type": "Offer", "price": 0, "priceCurrency": "USD", **({"url": url} if url else {})}
+        d["offers"] = {"@type": "Offer", "price": 0, "priceCurrency": "USD", "availability": "https://schema.org/InStock", **({"url": url} if url else {})}
     elif isinstance(p, dict) and (p.get("min") is not None or p.get("max") is not None):
-        offer = {"@type": "Offer", "priceCurrency": p.get("currency") or "USD"}
+        offer = {"@type": "Offer", "priceCurrency": p.get("currency") or "USD", "availability": "https://schema.org/InStock"}
         if p.get("min") is not None:
             offer["price"] = p["min"]
         else:
