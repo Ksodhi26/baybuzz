@@ -249,9 +249,17 @@ HERO_ART = """<svg class="hero-art" viewBox="0 0 320 220" aria-hidden="true" foc
     </svg>"""
 
 
+SOCIAL_IG = "https://www.instagram.com/thebaybuzzevents/"
+SOCIAL_FB = "https://www.facebook.com/profile.php?id=61595417553522"
+SOCIAL_HERO = '<span class="social-row"><a href="https://www.instagram.com/thebaybuzzevents/" target="_blank" rel="noopener" aria-label="BayBuzz on Instagram (opens in a new tab)"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595417553522" target="_blank" rel="noopener" aria-label="BayBuzz on Facebook (opens in a new tab)"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8c-.3 0-1.3-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.6H7.4v3.3h2.8V22z"/></svg></a></span>'
+SOCIAL_FOOTER = '<p class="social-follow">Follow BayBuzz: <span class="social-row social-row-footer"><a href="https://www.instagram.com/thebaybuzzevents/" target="_blank" rel="noopener" aria-label="BayBuzz on Instagram (opens in a new tab)"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.facebook.com/profile.php?id=61595417553522" target="_blank" rel="noopener" aria-label="BayBuzz on Facebook (opens in a new tab)"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8c-.3 0-1.3-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.6H7.4v3.3h2.8V22z"/></svg></a></span></p>'
+ORG_LD = {"@type": "Organization", "name": "BayBuzz", "url": "https://thebaybuzz.com/", "logo": "https://thebaybuzz.com/icon-512.png", "sameAs": [SOCIAL_IG, SOCIAL_FB]}
+
+
 def head(title: str, desc: str, path: str, jsonld: list[dict]) -> str:
     url = page_url(path)
     ld = ""
+    jsonld = list(jsonld) + [ORG_LD]
     if jsonld:
         payload = json.dumps({"@context": "https://schema.org", "@graph": jsonld}, ensure_ascii=False, separators=(",", ":"))
         payload = payload.replace("</", "<\\/")
@@ -307,6 +315,7 @@ def hero(h1_html: str, sub: str, crumbs: list[tuple[str, str]], app_href: str, a
       </div>
       <div class="hero-actions">
         <a class="btn btn-hero" href="{esc(app_href)}">{esc(app_label)}</a>
+        {SOCIAL_HERO}
       </div>
     </div>
     <div class="hero-wave" aria-hidden="true"></div>
@@ -346,6 +355,7 @@ def footer(link_groups: list[tuple[str, list[tuple[str, str]]]], updated: str) -
   </section>
   <footer class="site-footer">
     <div class="wrap">
+      {SOCIAL_FOOTER}
       <p class="attribution"><a href="https://www.ticketmaster.com/" target="_blank" rel="noopener">Events by Ticketmaster</a> · public library, city and venue calendars</p>
       <p class="disclaimer">
         BayBuzz is a free, independent listing site and is not affiliated with event organizers or ticket sellers.

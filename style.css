@@ -604,3 +604,11 @@ hr.rainbow { border: 0; height: 6px; border-radius: 999px; background: var(--rai
 .brand-logo img { display: block; height: 80px; width: auto; max-width: 100%; }
 .brand-logo + .eyebrow { display: flex; width: fit-content; }
 @media (max-width: 480px) { .brand-logo img { height: 64px; } }
+
+/* Social links */
+.social-row { display: inline-flex; gap: 8px; align-items: center; }
+.social-row a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, .16); color: #fff; border: 2px solid rgba(255, 255, 255, .7); backdrop-filter: blur(6px); transition: transform .15s, background .15s; }
+.social-row a:hover, .social-row a:focus-visible { background: rgba(255, 255, 255, .3); transform: translateY(-2px); }
+.social-row-footer a { background: transparent; color: inherit; border: 2px solid currentColor; width: 36px; height: 36px; backdrop-filter: none; }
+.social-row-footer a:hover, .social-row-footer a:focus-visible { background: rgba(127, 127, 127, .18); }
+.social-follow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-weight: 600; }
