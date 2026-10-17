@@ -229,6 +229,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://thebaybuzz.com/events/foster-city/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/kid-friendly/foster-city/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/free-events/foster-city/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://thebaybuzz.com/events/napa/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -248,24 +266,6 @@
   </url>
   <url>
     <loc>https://thebaybuzz.com/free-events/saratoga/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/events/foster-city/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/kid-friendly/foster-city/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/free-events/foster-city/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -325,6 +325,60 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://thebaybuzz.com/events/milpitas/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/kid-friendly/milpitas/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/free-events/milpitas/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/events/east-palo-alto/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/kid-friendly/east-palo-alto/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/free-events/east-palo-alto/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/events/atherton/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/kid-friendly/atherton/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/free-events/atherton/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://thebaybuzz.com/events/palo-alto/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -361,37 +415,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/events/milpitas/</loc>
+    <loc>https://thebaybuzz.com/events/san-carlos/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/kid-friendly/milpitas/</loc>
+    <loc>https://thebaybuzz.com/kid-friendly/san-carlos/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/free-events/milpitas/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/events/atherton/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/kid-friendly/atherton/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/free-events/atherton/</loc>
+    <loc>https://thebaybuzz.com/free-events/san-carlos/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -410,24 +446,6 @@
   </url>
   <url>
     <loc>https://thebaybuzz.com/free-events/castro-valley/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/events/east-palo-alto/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/kid-friendly/east-palo-alto/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/free-events/east-palo-alto/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -469,42 +487,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/events/san-carlos/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/kid-friendly/san-carlos/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/free-events/san-carlos/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/events/redwood-city/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/kid-friendly/redwood-city/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thebaybuzz.com/free-events/redwood-city/</loc>
-    <lastmod>2026-10-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://thebaybuzz.com/events/pacifica/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
@@ -523,19 +505,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/events/san-pablo/</loc>
+    <loc>https://thebaybuzz.com/events/redwood-city/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/kid-friendly/san-pablo/</loc>
+    <loc>https://thebaybuzz.com/kid-friendly/redwood-city/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thebaybuzz.com/free-events/san-pablo/</loc>
+    <loc>https://thebaybuzz.com/free-events/redwood-city/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -560,6 +542,42 @@
   </url>
   <url>
     <loc>https://thebaybuzz.com/free-events/cupertino/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/events/san-pablo/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/kid-friendly/san-pablo/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/free-events/san-pablo/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/events/pleasant-hill/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/kid-friendly/pleasant-hill/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://thebaybuzz.com/free-events/pleasant-hill/</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
