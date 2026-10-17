@@ -145,7 +145,7 @@ type the name `.github/workflows/update.yml` (the slashes create the folders), p
 
 ### Sponsors and analytics
 - **Sponsored slot:** add an entry to `sponsors.json`, e.g. `[{"name":"Joe's Tacos","title":"2-for-1 Taco Tuesday","url":"https://example.com","blurb":"Short line.","image":"https://example.com/pic.jpg","until":"2026-12-31"}]` (`image` optional). It shows at the top of the list, labelled "Sponsored", with `rel="sponsored noopener"` links, and hides itself after the `until` date. `[]` = slot hidden. Advertise page: `advertise.html`.
-- **Analytics (Cloudflare Web Analytics, free, cookie-free):** get the token from the Cloudflare dashboard → Web Analytics → Add site, then paste it into `CF_ANALYTICS_TOKEN` at the top of `app.js`. While it is empty no analytics script loads.
+- **Analytics (Cloudflare Web Analytics, free, cookie-free):** the beacon snippet is hard-coded in the `<head>` of `index.html`, `advertise.html`, `404.html` and in `CF_BEACON` in `scripts/build_seo_pages.py` (so regenerated pages keep it). Leave `CF_ANALYTICS_TOKEN` in `app.js` empty, otherwise the beacon would load twice.
 
 ---
 

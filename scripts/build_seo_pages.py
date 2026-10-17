@@ -56,6 +56,9 @@ NOT_KID_RE = re.compile(r"""\b(all ages or 18|family (history|tree|caregivers?|l
 KID_WORD_TITLE_RE = re.compile(r"\b(kids?|children|family)\b", re.I)
 
 
+# Cloudflare Web Analytics (public beacon token; cookie-free). Included in every generated page's <head>.
+CF_BEACON = """<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1f277d9ec18748b88862dfdffb4996fd"}'></script>"""
+
 def is_kid_friendly(e: dict) -> bool:
     if e.get("category") == "Family":
         return True
@@ -298,6 +301,7 @@ def head(title: str, desc: str, path: str, jsonld: list[dict]) -> str:
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/themes.css">
   <script src="/themes.js"></script>{ld}
+  {CF_BEACON}
 </head>"""
 
 
