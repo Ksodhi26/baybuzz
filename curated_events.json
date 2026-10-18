@@ -1,22 +1,7 @@
 {
- "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-10-17 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
- "lastVerified": "2026-10-17",
+ "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-10-18 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+ "lastVerified": "2026-10-18",
  "events": [
-  {
-   "id": "cur-88fd16fa6e58ac",
-   "title": "Fun on the Farm: Iron Horse",
-   "start": "2026-10-17T11:00:00-07:00",
-   "end": "2026-10-17T14:00:00-07:00",
-   "venue": "Forest Home Farms Historic Park",
-   "city": "San Ramon",
-   "category": "Family",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
-   "source": "City of San Ramon",
-   "description": "Learn the history of trains and the Iron Horse trail in the San Ramon Valley and make a craft to take home. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
-   "image": ""
-  },
   {
    "id": "cur-1ad723fc31b5a0",
    "title": "Trick or Treat on the Farm",
@@ -29,7 +14,7 @@
    "isFree": true,
    "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
    "source": "City of San Ramon",
-   "description": "Come in costume and visit stations around the farm for activities and treats. Free for all ages. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
+   "description": "Come in costume and visit stations around the farm for activities and treats. Free for all ages. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.\u20132 p.m.).",
    "image": ""
   },
   {
@@ -44,7 +29,7 @@
    "isFree": true,
    "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
    "source": "City of San Ramon",
-   "description": "Learn about the many uses of pumpkins and gourds, take home a winter squash recipe and make a craft. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
+   "description": "Learn about the many uses of pumpkins and gourds, take home a winter squash recipe and make a craft. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.\u20132 p.m.).",
    "image": ""
   },
   {
@@ -59,7 +44,7 @@
    "isFree": true,
    "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
    "source": "City of San Ramon",
-   "description": "Learn the history of quilting and create your own paper quilt square. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
+   "description": "Learn the history of quilting and create your own paper quilt square. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.\u20132 p.m.).",
    "image": ""
   },
   {
@@ -74,7 +59,7 @@
    "isFree": true,
    "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
    "source": "City of San Ramon",
-   "description": "Follow wheat from field to table: thresh, grind and sift wheat kernels and learn how they become bread. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
+   "description": "Follow wheat from field to table: thresh, grind and sift wheat kernels and learn how they become bread. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.\u20132 p.m.).",
    "image": ""
   },
   {
@@ -89,7 +74,7 @@
    "isFree": true,
    "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
    "source": "City of San Ramon",
-   "description": "Learn about turkeys and make a craft. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
+   "description": "Learn about turkeys and make a craft. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.\u20132 p.m.).",
    "image": ""
   },
   {
@@ -104,7 +89,7 @@
    "isFree": true,
    "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
    "source": "City of San Ramon",
-   "description": "Learn how candles were made in the 1800s and make your own to take home. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
+   "description": "Learn how candles were made in the 1800s and make your own to take home. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.\u20132 p.m.).",
    "image": ""
   },
   {
@@ -119,7 +104,7 @@
    "isFree": true,
    "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
    "source": "City of San Ramon",
-   "description": "An old-fashioned holiday gathering with visits with Santa, ornament making, a puppet show, holiday entertainment and refreshments. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
+   "description": "An old-fashioned holiday gathering with visits with Santa, ornament making, a puppet show, holiday entertainment and refreshments. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.\u20132 p.m.).",
    "image": ""
   },
   {
@@ -259,7 +244,7 @@
    "isFree": true,
    "url": "https://www.bishopranch.com/event-calendar/",
    "source": "City Center Bishop Ranch",
-   "description": "Free costume parade for pets in Alexander Square with treats from George San Ramon, a selfie station and a mini obstacle course. The Hub by Pack Animals runs a ticketed Haunted Hub 1–5 p.m.",
+   "description": "Free costume parade for pets in Alexander Square with treats from George San Ramon, a selfie station and a mini obstacle course. The Hub by Pack Animals runs a ticketed Haunted Hub 1\u20135 p.m.",
    "image": ""
   },
   {
@@ -482,36 +467,6 @@
    "image": ""
   },
   {
-   "id": "cur-18099dd12073d0",
-   "title": "Public Art Walking Tour: Route 3",
-   "start": "2026-10-17T10:00:00-07:00",
-   "end": "2026-10-17T11:00:00-07:00",
-   "venue": "Walnut Creek BART area business parks",
-   "city": "Walnut Creek",
-   "category": "Arts & Theatre",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.lesherartscenter.org/programs/lesher-center-presents",
-   "source": "Lesher Center for the Arts",
-   "description": "Guided walk around the business parks near the Walnut Creek BART station, California Blvd and N. Main St (involves stairs). Pay What You Can.",
-   "image": ""
-  },
-  {
-   "id": "cur-7a2e1e0224759f",
-   "title": "The Best of The Second City",
-   "start": "2026-10-17T19:30:00-07:00",
-   "end": "2026-10-17T21:30:00-07:00",
-   "venue": "Lesher Center for the Arts",
-   "city": "Walnut Creek",
-   "category": "Comedy",
-   "price": null,
-   "isFree": false,
-   "url": "https://www.lesherartscenter.org/programs/lesher-center-presents",
-   "source": "Lesher Center for the Arts",
-   "description": "One of the oldest and most celebrated improvisational theater troupes.",
-   "image": ""
-  },
-  {
    "id": "cur-90e7742a09209a",
    "title": "Trunk or Treat",
    "start": "2026-10-23T15:00:00-07:00",
@@ -523,7 +478,7 @@
    "isFree": true,
    "url": "https://walnutcreekdowntown.com/do/trunk-or-treat-walnut-creek",
    "source": "Walnut Creek Arts + Rec",
-   "description": "7th annual trunk-or-treat with booths, games, a scavenger hunt and music. A low-sensory hour (no music or jump-scares) runs 3–4 p.m.",
+   "description": "7th annual trunk-or-treat with booths, games, a scavenger hunt and music. A low-sensory hour (no music or jump-scares) runs 3\u20134 p.m.",
    "image": ""
   },
   {
@@ -598,7 +553,7 @@
    "isFree": false,
    "url": "https://www.centerrep.org/what-s-on/25-26-season/dracula-a-comedy-in-terrors",
    "source": "Center REP",
-   "description": "Center REP's comic take on the vampire classic, Oct 25–Nov 15. The first two performances are Pay What You Can.",
+   "description": "Center REP's comic take on the vampire classic, Oct 25\u2013Nov 15. The first two performances are Pay What You Can.",
    "image": ""
   },
   {
@@ -790,40 +745,6 @@
    "image": ""
   },
   {
-   "id": "cur-451e23ae8cf043",
-   "title": "Diwali Celebration",
-   "start": "2026-10-17T13:00:00-07:00",
-   "end": "2026-10-17T15:00:00-07:00",
-   "venue": "Pleasanton Senior Center",
-   "city": "Pleasanton",
-   "category": "Festivals",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.firehousearts.org/calendar-event/diwali-celebration-2026/",
-   "source": "Firehouse Arts Center",
-   "description": "Free community celebration with library storytime, Bharatanatyam dance, music, arts and crafts, and refreshments.",
-   "image": ""
-  },
-  {
-   "id": "cur-c485c99b405525",
-   "title": "Dussehra Diwali Dhamaka",
-   "start": "2026-10-17T12:00:00-07:00",
-   "end": "2026-10-17T23:00:00-07:00",
-   "venue": "Alameda County Fairgrounds",
-   "city": "Pleasanton",
-   "category": "Festivals",
-   "price": {
-    "min": 15,
-    "max": 15,
-    "currency": "USD"
-   },
-   "isFree": false,
-   "url": "https://www.aiaevents.org/diwali-dhamaka-2026",
-   "source": "Alameda County Fairgrounds",
-   "description": "Large Diwali festival with a 40-ft effigy burning, fireworks, Ram Leela dance drama, Bollywood dance and an Indian food festival. General admission $15 online; dandiya $20; kids 5 and under free. Parking $15.",
-   "image": ""
-  },
-  {
    "id": "cur-8c9bd8d898f1c6",
    "title": "Pumpkins After Dark",
    "start": "2026-10-02",
@@ -839,7 +760,7 @@
    "isFree": false,
    "url": "https://alamedacountyfair.com/alameda-county-fairgrounds-events-calendar/",
    "source": "Alameda County Fairgrounds",
-   "description": "Walking trail of 10,000+ hand-carved lit pumpkins with carving demos and roaming performers. Open select evenings (6:30–10 p.m. Oct 22–25 and 29–31). Parking $15.",
+   "description": "Walking trail of 10,000+ hand-carved lit pumpkins with carving demos and roaming performers. Open select evenings (6:30\u201310 p.m. Oct 22\u201325 and 29\u201331). Parking $15.",
    "image": ""
   },
   {
@@ -948,12 +869,12 @@
    "isFree": false,
    "url": "https://www.firehousearts.org/performances/",
    "source": "Firehouse Arts Center",
-   "description": "Pleasanton Youth Theatre Company's one-hour Young Actors Edition of School of Rock. Performances Nov 6, 7 and 13–15.",
+   "description": "Pleasanton Youth Theatre Company's one-hour Young Actors Edition of School of Rock. Performances Nov 6, 7 and 13\u201315.",
    "image": ""
   },
   {
    "id": "cur-846aa74c5b29b4",
-   "title": "Día de los Muertos Celebration",
+   "title": "D\u00eda de los Muertos Celebration",
    "start": "2026-11-07T13:00:00-08:00",
    "end": "2026-11-07T15:00:00-08:00",
    "venue": "Pleasanton Senior Center",
@@ -1031,7 +952,7 @@
    "isFree": false,
    "url": "https://alamedacountyfair.com/alameda-county-fairgrounds-events-calendar/",
    "source": "Alameda County Fairgrounds",
-   "description": "Holiday-season junkin' market with curated vendors, food, drinks and music. Fri 4–9 p.m., Sat 9 a.m.–4 p.m.; kids 12 and under free; parking $15.",
+   "description": "Holiday-season junkin' market with curated vendors, food, drinks and music. Fri 4\u20139 p.m., Sat 9 a.m.\u20134 p.m.; kids 12 and under free; parking $15.",
    "image": ""
   },
   {
@@ -1084,7 +1005,7 @@
    "isFree": false,
    "url": "https://alamedacountyfair.com/alameda-county-fairgrounds-events-calendar/",
    "source": "Alameda County Fairgrounds",
-   "description": "250+ vendors of sports and non-sports trading cards (Pokémon, One Piece, Magic and more). Kids 12 and under free with a paid adult; parking $15.",
+   "description": "250+ vendors of sports and non-sports trading cards (Pok\u00e9mon, One Piece, Magic and more). Kids 12 and under free with a paid adult; parking $15.",
    "image": ""
   },
   {
@@ -1152,7 +1073,7 @@
    "isFree": true,
    "url": "https://www.livermoredowntown.com/events/kidz-town-halloween-hay-day",
    "source": "Downtown Livermore, Inc.",
-   "description": "Free trick-or-treating at participating businesses, live music, games and a costume contest (11 a.m.–1 p.m.) for kids in 5th grade and under.",
+   "description": "Free trick-or-treating at participating businesses, live music, games and a costume contest (11 a.m.\u20131 p.m.) for kids in 5th grade and under.",
    "image": ""
   },
   {
@@ -1351,21 +1272,6 @@
    "image": ""
   },
   {
-   "id": "cur-8140a7f87796fb",
-   "title": "Bay Area Science Festival",
-   "start": "2026-10-17T11:00:00-07:00",
-   "end": "2026-10-17T16:00:00-07:00",
-   "venue": "UCSF Mission Bay Campus (Koret Quad)",
-   "city": "San Francisco",
-   "category": "Family",
-   "price": null,
-   "isFree": true,
-   "url": "https://bayareasciencefestival.org/festival-2026/know-before-you-go/",
-   "source": "Bay Area Science Festival",
-   "description": "Free, no-ticket celebration of science with 125+ hands-on activities, demos, stage events and lab tours (tours need advance registration).",
-   "image": ""
-  },
-  {
    "id": "cur-2616f3e302ae6e",
    "title": "Shipyard Open Studios",
    "start": "2026-10-17T11:00:00-07:00",
@@ -1377,22 +1283,7 @@
    "isFree": true,
    "url": "https://shipyardtrust.org/fos26",
    "source": "Shipyard Trust for the Arts",
-   "description": "130+ artists open their studios with free admission and parking, food, music, kids' activities and a silent auction. Part of ArtSpan's SF Open Studios. Open 11 a.m.–6 p.m. both days.",
-   "image": ""
-  },
-  {
-   "id": "cur-a3dd5b4bdb7c86",
-   "title": "San Francisco Photobook Fair (Day 1)",
-   "start": "2026-10-17T11:00:00-07:00",
-   "end": "2026-10-17T17:00:00-07:00",
-   "venue": "Harvey Milk Photo Center",
-   "city": "San Francisco",
-   "category": "Arts & Theatre",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.harveymilkphotocenter.org/events/san-francisco-photobook-fair/",
-   "source": "Harvey Milk Photo Center",
-   "description": "Free fair with 30+ publishers, artists and independent presses selling photography books, magazines and zines.",
+   "description": "130+ artists open their studios with free admission and parking, food, music, kids' activities and a silent auction. Part of ArtSpan's SF Open Studios. Open 11 a.m.\u20136 p.m. both days.",
    "image": ""
   },
   {
@@ -1411,51 +1302,6 @@
    "image": ""
   },
   {
-   "id": "cur-50cae5e23b0702",
-   "title": "Brava! Block Party",
-   "start": "2026-10-17T11:00:00-07:00",
-   "end": "2026-10-17T17:00:00-07:00",
-   "venue": "24th Street between Bryant and Hampshire",
-   "city": "San Francisco",
-   "category": "Festivals",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.brava.org/all-events/bravablockparty",
-   "source": "Brava for Women in the Arts",
-   "description": "Free block party celebrating Brava's 40th anniversary with live performances, film screenings, art activations and local food discounts. 24th Street closed 8 a.m.–9 p.m.",
-   "image": ""
-  },
-  {
-   "id": "cur-a3d07005adfd4b",
-   "title": "Weekend Sessions: Joe Bataan",
-   "start": "2026-10-17T14:00:00-07:00",
-   "end": "2026-10-17T16:30:00-07:00",
-   "venue": "Yerba Buena Gardens (Great Lawn)",
-   "city": "San Francisco",
-   "category": "Music",
-   "price": null,
-   "isFree": true,
-   "url": "https://ybgfestival.org/event/joe-bataan-2026/",
-   "source": "Yerba Buena Gardens Festival",
-   "description": "Free outdoor concert with Latin soul legend Joe Bataan, opened by MeloDious.",
-   "image": ""
-  },
-  {
-   "id": "cur-18610321305858",
-   "title": "Filipino American International Book Festival (Day 1)",
-   "start": "2026-10-17T10:00:00-07:00",
-   "end": "2026-10-17T17:30:00-07:00",
-   "venue": "San Francisco Main Library",
-   "city": "San Francisco",
-   "category": "Community",
-   "price": null,
-   "isFree": true,
-   "url": "https://sfpl.org/events/2026/10/17/celebration-filipino-american-international-book-festival",
-   "source": "San Francisco Public Library",
-   "description": "Free festival of panels, readings, book signings, children's programming and a book marketplace. Keynote by Randy Ribay.",
-   "image": ""
-  },
-  {
    "id": "cur-59a81d814a188b",
    "title": "Filipino American International Book Festival (Day 2)",
    "start": "2026-10-18T12:00:00-07:00",
@@ -1468,21 +1314,6 @@
    "url": "https://filbookfestival.org/schedule",
    "source": "Filipino American International Book Festival",
    "description": "Free festival of panels, readings, book signings, children's programming and a book marketplace. Keynote by Dr. Robyn Rodriguez.",
-   "image": ""
-  },
-  {
-   "id": "cur-a8983823291690",
-   "title": "Potrero Hill R&B Festival",
-   "start": "2026-10-17T10:00:00-07:00",
-   "end": "2026-10-17T17:00:00-07:00",
-   "venue": "20th Street between Wisconsin and Missouri",
-   "city": "San Francisco",
-   "category": "Festivals",
-   "price": null,
-   "isFree": true,
-   "url": "https://potrerofestival.com/",
-   "source": "Potrero Hill Festival",
-   "description": "Free 51st annual neighborhood festival with live R&B on two stages, food vendors and family activities.",
    "image": ""
   },
   {
@@ -1502,7 +1333,7 @@
   },
   {
    "id": "cur-800a2946be93d6",
-   "title": "NightLife: Día de los Muertos (21+)",
+   "title": "NightLife: D\u00eda de los Muertos (21+)",
    "start": "2026-10-22T18:00:00-07:00",
    "end": "2026-10-22T22:00:00-07:00",
    "venue": "California Academy of Sciences",
@@ -1512,7 +1343,7 @@
    "isFree": false,
    "url": "https://calendar.calacademy.org/daily-calendar-view/2026-10-22",
    "source": "California Academy of Sciences",
-   "description": "The Academy's 21+ Thursday night party with a Día de los Muertos theme. Photo ID required.",
+   "description": "The Academy's 21+ Thursday night party with a D\u00eda de los Muertos theme. Photo ID required.",
    "image": ""
   },
   {
@@ -1637,7 +1468,7 @@
   },
   {
    "id": "cur-dc65796356e074",
-   "title": "Día de los Muertos: Festival of Altars",
+   "title": "D\u00eda de los Muertos: Festival of Altars",
    "start": "2026-11-02T17:00:00-08:00",
    "end": "2026-11-02T21:00:00-08:00",
    "venue": "Potrero del Sol / La Raza Park",
@@ -1652,7 +1483,7 @@
   },
   {
    "id": "cur-71d9fc4134b7bd",
-   "title": "45th Annual Día de los Muertos Procession",
+   "title": "45th Annual D\u00eda de los Muertos Procession",
    "start": "2026-11-02T19:00:00-08:00",
    "end": null,
    "venue": "22nd Street & Bryant Street (the Mission)",
@@ -1661,7 +1492,7 @@
    "price": null,
    "isFree": true,
    "url": "https://events.musicofourdesire.com/event/qkro-45th-annual-dia-de-los-muertos-procession-festival-san-francisco-united-states",
-   "source": "Música of Our Desire",
+   "source": "M\u00fasica of Our Desire",
    "description": "Traditional Mission District procession; danzantes gather at 6 p.m. and the procession begins at 7 p.m.",
    "image": ""
   },
@@ -1681,7 +1512,7 @@
    "isFree": false,
    "url": "https://unionsquareicerink.com/",
    "source": "Union Square Ice Rink",
-   "description": "Opening celebration Nov 4, 5–7 p.m., with on-ice performances. The rink then runs daily through Jan 18. Includes skate rental: $22 general, $17 ages 8 and under.",
+   "description": "Opening celebration Nov 4, 5\u20137 p.m., with on-ice performances. The rink then runs daily through Jan 18. Includes skate rental: $22 general, $17 ages 8 and under.",
    "image": ""
   },
   {
@@ -1756,7 +1587,7 @@
    "isFree": false,
    "url": "https://www.sfitf.com/",
    "source": "SF International Tea Festival",
-   "description": "Two-day tea festival at the Ferry Building, 11 a.m.–5 p.m. (early entry 10 a.m.). Tickets via the festival site.",
+   "description": "Two-day tea festival at the Ferry Building, 11 a.m.\u20135 p.m. (early entry 10 a.m.). Tickets via the festival site.",
    "image": ""
   },
   {
@@ -1820,7 +1651,7 @@
    "isFree": false,
    "url": "https://www.pleasantondowntown.net/magical-holiday-evening",
    "source": "Pleasanton Downtown Association",
-   "description": "The Pleasanton Downtown Association's annual holiday evening in downtown Pleasanton, 4–7 p.m.",
+   "description": "The Pleasanton Downtown Association's annual holiday evening in downtown Pleasanton, 4\u20137 p.m.",
    "image": ""
   },
   {
@@ -1835,7 +1666,7 @@
    "isFree": false,
    "url": "https://www.pleasantondowntown.net/pleasanton-sweater-and-spirit-stroll",
    "source": "Pleasanton Downtown Association",
-   "description": "Festive holiday sip-and-stroll through downtown Pleasanton — this year's theme is onesies. Tickets go on sale at the end of October.",
+   "description": "Festive holiday sip-and-stroll through downtown Pleasanton \u2014 this year's theme is onesies. Tickets go on sale at the end of October.",
    "image": ""
   },
   {
@@ -1869,7 +1700,7 @@
    "isFree": false,
    "url": "https://citycenterbishopranch.com/events/take-a-chance-on-girl-dinner-3/",
    "source": "City Center Bishop Ranch",
-   "description": "Practical Magic-themed evening: cocktail reception at ZENTRL bar (6–6:50 p.m.), then dinner served to your seat during the 7 p.m. screening.",
+   "description": "Practical Magic-themed evening: cocktail reception at ZENTRL bar (6\u20136:50 p.m.), then dinner served to your seat during the 7 p.m. screening.",
    "image": ""
   },
   {
@@ -1884,7 +1715,7 @@
    "isFree": false,
    "url": "https://citycenterbishopranch.com/events/visits-with-santa-at-the-square-5/",
    "source": "City Center Bishop Ranch",
-   "description": "Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12–4 p.m. each day).",
+   "description": "Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12\u20134 p.m. each day).",
    "image": ""
   },
   {
@@ -1899,7 +1730,7 @@
    "isFree": false,
    "url": "https://citycenterbishopranch.com/events/visits-with-santa-in-the-square-2/",
    "source": "City Center Bishop Ranch",
-   "description": "Black Friday through Sunday. Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12–4 p.m. each day).",
+   "description": "Black Friday through Sunday. Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12\u20134 p.m. each day).",
    "image": ""
   },
   {
@@ -1914,7 +1745,7 @@
    "isFree": false,
    "url": "https://citycenterbishopranch.com/events/visits-with-santa-in-the-square/",
    "source": "City Center Bishop Ranch",
-   "description": "Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12–4 p.m. each day).",
+   "description": "Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12\u20134 p.m. each day).",
    "image": ""
   },
   {
@@ -1929,7 +1760,7 @@
    "isFree": false,
    "url": "https://citycenterbishopranch.com/events/visits-with-santa-in-the-square-3/",
    "source": "City Center Bishop Ranch",
-   "description": "Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12–4 p.m. each day).",
+   "description": "Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12\u20134 p.m. each day).",
    "image": ""
   },
   {
@@ -1959,7 +1790,7 @@
    "isFree": false,
    "url": "https://www.lesherartscenter.org/events",
    "source": "Lesher Center for the Arts",
-   "description": "An evening with NASA pioneer Eileen Collins — the first woman to pilot the Space Shuttle and the first woman mission commander in NASA history.",
+   "description": "An evening with NASA pioneer Eileen Collins \u2014 the first woman to pilot the Space Shuttle and the first woman mission commander in NASA history.",
    "image": ""
   },
   {
@@ -2004,7 +1835,7 @@
    "isFree": false,
    "url": "https://www.lesherartscenter.org/events",
    "source": "Lesher Center for the Arts",
-   "description": "The annual Warren Miller ski and snowboard film tour stops in Walnut Creek — winter's greatest tradition is back.",
+   "description": "The annual Warren Miller ski and snowboard film tour stops in Walnut Creek \u2014 winter's greatest tradition is back.",
    "image": ""
   },
   {
@@ -2019,12 +1850,12 @@
    "isFree": false,
    "url": "https://www.lesherartscenter.org/events",
    "source": "Lesher Center for the Arts",
-   "description": "Play by Pulitzer Prize finalist Sarah Ruhl, on stage at the Lesher Center Oct 30–Nov 1.",
+   "description": "Play by Pulitzer Prize finalist Sarah Ruhl, on stage at the Lesher Center Oct 30\u2013Nov 1.",
    "image": ""
   },
   {
    "id": "cur-8a47714034a79f",
-   "title": "Día de Muertos: Leyendas del Mariachi",
+   "title": "D\u00eda de Muertos: Leyendas del Mariachi",
    "start": "2026-11-01T19:00:00-08:00",
    "end": "2026-11-01T21:00:00-08:00",
    "venue": "Lesher Center for the Arts",
@@ -2034,7 +1865,7 @@
    "isFree": false,
    "url": "https://www.lesherartscenter.org/events",
    "source": "Lesher Center for the Arts",
-   "description": "A Día de Muertos mariachi concert at the Lesher Center.",
+   "description": "A D\u00eda de Muertos mariachi concert at the Lesher Center.",
    "image": ""
   },
   {
@@ -2098,36 +1929,6 @@
    "image": ""
   },
   {
-   "id": "cur-dc9857d0bf63ed",
-   "title": "Del Valle Fine Arts: Ilya Yakushev, piano",
-   "start": "2026-10-17T15:00:00-07:00",
-   "end": null,
-   "venue": "Bankhead Theater",
-   "city": "Livermore",
-   "category": "Music",
-   "price": null,
-   "isFree": false,
-   "url": "https://livermorearts.org/events/dvfa-ilya-yakushev-piano-2026/",
-   "source": "Livermore Valley Arts",
-   "description": "Bay Area favorite pianist Ilya Yakushev plays Haydn, Beethoven's \"Appassionata\" sonata, Gershwin, Scriabin, Rachmaninoff and Liszt's Mephisto Waltz No. 1.",
-   "image": ""
-  },
-  {
-   "id": "cur-05afd02d6b4aee",
-   "title": "Comedian Gabriel Rutledge: Don't Read the Comments",
-   "start": "2026-10-17T20:00:00-07:00",
-   "end": null,
-   "venue": "Bankhead Theater",
-   "city": "Livermore",
-   "category": "Comedy",
-   "price": null,
-   "isFree": false,
-   "url": "https://livermorearts.org/events/gabriel-rutledge/",
-   "source": "Livermore Valley Arts",
-   "description": "Stand-up from the winner of the Seattle International Comedy Competition and the Laughing Skull Comedy Festival, with opener Ben Feldman.",
-   "image": ""
-  },
-  {
    "id": "cur-cdc43d12bcaf12",
    "title": "Violins of Hope with Take3 (Sun)",
    "start": "2026-10-18T14:00:00-07:00",
@@ -2159,7 +1960,7 @@
   },
   {
    "id": "cur-b4a3a32e0a1ca4",
-   "title": "Día de los Muertos with Ballet Folklórico Mexicano de Carlos Moreno",
+   "title": "D\u00eda de los Muertos with Ballet Folkl\u00f3rico Mexicano de Carlos Moreno",
    "start": "2026-10-25T15:00:00-07:00",
    "end": null,
    "venue": "Bankhead Theater",
@@ -2169,7 +1970,7 @@
    "isFree": false,
    "url": "https://livermorearts.org/events/ballet-folklorico/",
    "source": "Livermore Valley Arts",
-   "description": "Traditional Mexican folk dance honoring ancestors in a vibrant Día de los Muertos celebration. $25 front-row seats are available in person at the box office only (two-ticket limit).",
+   "description": "Traditional Mexican folk dance honoring ancestors in a vibrant D\u00eda de los Muertos celebration. $25 front-row seats are available in person at the box office only (two-ticket limit).",
    "image": ""
   },
   {
@@ -2274,7 +2075,7 @@
    "isFree": false,
    "url": "https://livermorearts.org/events/las-hope-and-joy/",
    "source": "Livermore Valley Arts",
-   "description": "Barber's Essay No. 1, Michael Tilson Thomas's Notturno and Génin's Carnaval de Venise with flute soloist Annie Wu, then Dvořák's Symphony No. 8.",
+   "description": "Barber's Essay No. 1, Michael Tilson Thomas's Notturno and G\u00e9nin's Carnaval de Venise with flute soloist Annie Wu, then Dvo\u0159\u00e1k's Symphony No. 8.",
    "image": ""
   },
   {
@@ -2334,7 +2135,7 @@
    "isFree": false,
    "url": "https://gggp.org/lightscape/",
    "source": "Gardens of Golden Gate Park",
-   "description": "A reimagined after-dark light trail with new art, color and music. Timed entry; adult tickets from $32, ages 5–17 from $20, 4 and under free. Popular nights sell out, so buy ahead.",
+   "description": "A reimagined after-dark light trail with new art, color and music. Timed entry; adult tickets from $32, ages 5\u201317 from $20, 4 and under free. Popular nights sell out, so buy ahead.",
    "image": ""
   },
   {
@@ -2428,21 +2229,6 @@
    "image": ""
   },
   {
-   "id": "cur-b917a68fa02e8545",
-   "title": "Bay Area Diwali Festival of Lights",
-   "start": "2026-10-17T11:00:00-07:00",
-   "end": "2026-10-17T18:00:00-07:00",
-   "venue": "Cupertino Memorial Park",
-   "city": "Cupertino",
-   "category": "Festivals",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.cupertino.gov/Parks-Recreation/Events/Festivals/Diwali-Festival",
-   "source": "City of Cupertino",
-   "description": "Free city-sponsored Diwali festival at Memorial Park with music and dance, workshops, arts and crafts, food and a kids' zone.",
-   "image": ""
-  },
-  {
    "id": "cur-ada1bce34a4c0e9a",
    "title": "FOG Diwali Mela",
    "start": "2026-10-24T10:00:00-07:00",
@@ -2499,7 +2285,7 @@
    "isFree": false,
    "url": "https://www.livermoretemple.org/",
    "source": "Shiva-Vishnu Temple (HCCC)",
-   "description": "Navaratri garba celebration at the Hindu Community & Cultural Center's Livermore temple, 5–8 p.m.",
+   "description": "Navaratri garba celebration at the Hindu Community & Cultural Center's Livermore temple, 5\u20138 p.m.",
    "image": ""
   },
   {
@@ -2530,6 +2316,536 @@
    "url": "https://calendar.asianart.org/event/first-free-sunday-diwali-celebration/",
    "source": "Asian Art Museum",
    "description": "Free First Sunday Diwali day with rangoli and henna art, Diwali sweets tasting and a South Asian dance performance by Labonee Mohanta.",
+   "image": ""
+  },
+  {
+   "id": "cur-170bd04ef3a3b048",
+   "title": "Art in the Dark (exhibition)",
+   "start": "2026-10-17",
+   "end": "2026-12-18",
+   "venue": "Village Theatre Art Gallery",
+   "city": "Danville",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": false,
+   "url": "https://danville.ca.gov/227/Village-Theatre-Art-Gallery",
+   "source": "Town of Danville",
+   "description": "The Town's fall juried exhibition of 2D and 3D works that glow under black light, use LED illumination or play with light and shadow. On view Oct. 17-Dec. 18.",
+   "image": ""
+  },
+  {
+   "id": "cur-ec0d31c9e33fa937",
+   "title": "Glowing Galaxy Painting",
+   "start": "2026-11-05T16:00:00-08:00",
+   "end": "2026-11-05T17:00:00-08:00",
+   "venue": "233 Front Street",
+   "city": "Danville",
+   "category": "Family",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.danville.ca.gov/Calendar.aspx?EID=4146",
+   "source": "Town of Danville",
+   "description": "Hands-on blacklight painting class inspired by the Art in the Dark exhibition: paint your own glowing galaxy of swirling stars. Registration through the Town.",
+   "image": ""
+  },
+  {
+   "id": "cur-b114d1583a11de86",
+   "title": "Veterans Day Celebration and Open House",
+   "start": "2026-11-11T09:00:00-08:00",
+   "end": "2026-11-11T17:00:00-08:00",
+   "venue": "400 Hartz Avenue",
+   "city": "Danville",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.danville.ca.gov/Calendar.aspx?EID=3928",
+   "source": "Town of Danville",
+   "description": "Danville's Veterans Day observance with an all-day open house at the Veterans Memorial Building on Hartz Avenue.",
+   "image": ""
+  },
+  {
+   "id": "cur-146dd9657a05819d",
+   "title": "Murder Mystery Dinner: \"A Dance with Death\"",
+   "start": "2026-11-13T17:30:00-08:00",
+   "end": "2026-11-13T21:30:00-08:00",
+   "venue": "400 Hartz Avenue",
+   "city": "Danville",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.danville.ca.gov/Calendar.aspx?EID=4073",
+   "source": "Town of Danville",
+   "description": "A 1950s prom-night whodunit dinner where guests work out who caused a death on the dance floor. Retro prom attire encouraged but optional. Registration through the Town.",
+   "image": ""
+  },
+  {
+   "id": "cur-fe66d0760621c461",
+   "title": "Lighting of the Old Oak Tree",
+   "start": "2026-11-27T17:00:00-08:00",
+   "end": "2026-11-27T20:00:00-08:00",
+   "venue": "Hartz & Prospect Avenues",
+   "city": "Danville",
+   "category": "Festivals",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.danville.ca.gov/Calendar.aspx?EID=3929",
+   "source": "Town of Danville",
+   "description": "Danville's annual holiday kickoff the day after Thanksgiving, lighting the Old Oak Tree, with participating downtown businesses offering activities and specials along Hartz and Prospect avenues.",
+   "image": ""
+  },
+  {
+   "id": "cur-5fb0d1f3d96cf2c6",
+   "title": "Holiday Show: The Best Intentions",
+   "start": "2026-11-28T20:00:00-08:00",
+   "end": "2026-11-28T22:00:00-08:00",
+   "venue": "233 Front Street",
+   "city": "Danville",
+   "category": "Music",
+   "price": {
+    "min": 47,
+    "max": 47,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.danville.ca.gov/Calendar.aspx?EID=4141",
+   "source": "Town of Danville",
+   "description": "The Best Intentions return for their yearly holiday concert of seasonal songs, Motown hits and R&B classics. Tickets $47.",
+   "image": ""
+  },
+  {
+   "id": "cur-8800de47656994e5",
+   "title": "Holiday Brunch",
+   "start": "2026-12-15T10:00:00-08:00",
+   "end": "2026-12-15T12:00:00-08:00",
+   "venue": "115 East Prospect Avenue",
+   "city": "Danville",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.danville.ca.gov/Calendar.aspx?EID=4068",
+   "source": "Town of Danville",
+   "description": "Hot buffet brunch and holiday social at the Danville Senior Center. Registration through the Town.",
+   "image": ""
+  },
+  {
+   "id": "cur-ba53daa24f396cef",
+   "title": "Holiday Craft Boutique",
+   "start": "2026-11-07T10:00:00-08:00",
+   "end": "2026-11-07T15:00:00-08:00",
+   "venue": "7600 Amador Valley Blvd.",
+   "city": "Dublin",
+   "category": "Community",
+   "price": null,
+   "isFree": true,
+   "url": "https://dublin.ca.gov/m/calendar/event/detail/8030",
+   "source": "City of Dublin",
+   "description": "Annual holiday shopping boutique with handmade jewelry, pottery, soaps, clothing and gifts from local senior artisans.",
+   "image": ""
+  },
+  {
+   "id": "cur-8b28e40d3ce96b0b",
+   "title": "Night Market at St. Pat's Row",
+   "start": "2026-11-13T17:00:00-08:00",
+   "end": "2026-11-13T21:00:00-08:00",
+   "venue": "St. Pat's Row (between Golden Gate Dr and Regional St)",
+   "city": "Dublin",
+   "category": "Food & Drink",
+   "price": null,
+   "isFree": false,
+   "url": "https://dublin.ca.gov/2832/Friday-Night-Market-at-St-Pats-Row",
+   "source": "City of Dublin",
+   "description": "Friday evening market on St. Pat's Row (between Golden Gate Dr and Regional St) with food vendors, handmade goods and live music.",
+   "image": ""
+  },
+  {
+   "id": "cur-493d6f1a1833d3e9",
+   "title": "Youth Mental Health Forum",
+   "start": "2026-11-14T13:30:00-08:00",
+   "end": "2026-11-14T15:30:00-08:00",
+   "venue": "7600 Amador Valley Blvd.",
+   "city": "Dublin",
+   "category": "Community",
+   "price": null,
+   "isFree": true,
+   "url": "https://dublin.ca.gov/m/calendar/event/detail/8044",
+   "source": "City of Dublin",
+   "description": "Free forum from Dublin's Youth Advisory Committee for students, parents and community members, with resource tables and a panel of counselors, therapists, teachers, coaches and youth.",
+   "image": ""
+  },
+  {
+   "id": "cur-9fc7b0c9c326cc84",
+   "title": "Holiday Tree Lighting",
+   "start": "2026-12-03T18:00:00-08:00",
+   "end": "2026-12-03T20:00:00-08:00",
+   "venue": "100 Civic Plaza",
+   "city": "Dublin",
+   "category": "Festivals",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.dublin.ca.gov/289/Holiday-Events",
+   "source": "City of Dublin",
+   "description": "Local school choirs and bands perform before the 30-foot tree is lit, plus the Clover Express, arts and crafts, letters to Santa, and hot chocolate and cookies.",
+   "image": ""
+  },
+  {
+   "id": "cur-e55ae32f0af00abe",
+   "title": "Holiday DancEscsape at the Dublin Senior Center",
+   "start": "2026-12-04T18:00:00-08:00",
+   "end": "2026-12-04T21:00:00-08:00",
+   "venue": "7600 Amador Valley Blvd.",
+   "city": "Dublin",
+   "category": "Music",
+   "price": {
+    "min": 12,
+    "max": 20,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://dublin.ca.gov/m/calendar/event/detail/8037",
+   "source": "City of Dublin",
+   "description": "Holiday dance party with live music from the Cool Tones Band. $12 residents, $15 non-residents, $20 at the door.",
+   "image": ""
+  },
+  {
+   "id": "cur-4d153abd1c9f18cf",
+   "title": "BATA Deepavali Sambaralu",
+   "start": "2026-11-01T15:00:00-08:00",
+   "end": null,
+   "venue": "Windemere Ranch Middle School",
+   "city": "San Ramon",
+   "category": "Festivals",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.bata.org/events/14",
+   "source": "Bay Area Telugu Association",
+   "description": "The Bay Area Telugu Association's Deepavali celebration, headlined by a concert from Tollywood singer Sameera Bharadwaj and band, with Telugu Idol competitions, dance performances, a festive bazaar and food stalls. Ticketed; free parking.",
+   "image": ""
+  },
+  {
+   "id": "cur-14fdc2ee5ceb9f0d",
+   "title": "Weekend Sessions: Afro-Filipino Jazz Project",
+   "start": "2026-10-24T14:00:00-07:00",
+   "end": "2026-10-24T15:30:00-07:00",
+   "venue": "Yerba Buena Gardens (Great Lawn)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": null,
+   "isFree": true,
+   "url": "https://ybgfestival.org/event/afro-filipino-jazz-project/",
+   "source": "Yerba Buena Gardens Festival",
+   "description": "Free outdoor concert blending jazz with Filipino kulintang gong music, vocals, dance and spoken word. RSVP encouraged.",
+   "image": ""
+  },
+  {
+   "id": "cur-6c89ba2a8c469037",
+   "title": "Vishnu's Cosmic Ocean (exhibition)",
+   "start": "2026-10-23",
+   "end": "2027-01-25",
+   "venue": "Asian Art Museum",
+   "city": "San Francisco",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": false,
+   "url": "https://calendar.asianart.org/event/sunday-sachi-annual-event-calm-and-chaos-of-vishnus-cosmic-ocean/",
+   "source": "Asian Art Museum",
+   "description": "Exhibition centered on a monumental ancient bronze Reclining Vishnu on loan from the National Museum of Cambodia, exploring Hindu cosmic-ocean myths. On view Oct. 23, 2026-Jan. 25, 2027.",
+   "image": ""
+  },
+  {
+   "id": "cur-2bc471b745f70f3b",
+   "title": "Halloween Hoopla",
+   "start": "2026-10-31T12:00:00-07:00",
+   "end": "2026-10-31T15:00:00-07:00",
+   "venue": "Yerba Buena Gardens (Children's Garden)",
+   "city": "San Francisco",
+   "category": "Family",
+   "price": null,
+   "isFree": true,
+   "url": "https://ybgfestival.org/event/halloween-hoopla-2026/",
+   "source": "Yerba Buena Gardens Festival",
+   "description": "Long-running free Halloween party for kids and families in the Children's Garden. RSVP encouraged.",
+   "image": ""
+  },
+  {
+   "id": "cur-7349759c93899ee9",
+   "title": "SACHI Talk: Calm and Chaos of Vishnu's Cosmic Ocean",
+   "start": "2026-11-01T11:00:00-08:00",
+   "end": null,
+   "venue": "Asian Art Museum (Samsung Hall)",
+   "city": "San Francisco",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": true,
+   "url": "https://calendar.asianart.org/event/sunday-sachi-annual-event-calm-and-chaos-of-vishnus-cosmic-ocean/",
+   "source": "Asian Art Museum",
+   "description": "Free First Sunday double talk by curators Natasha Reichle and Forrest McGill on the Reclining Vishnu bronze and how ancient Cambodian rulers drew on Hindu cosmic-ocean myths.",
+   "image": ""
+  },
+  {
+   "id": "cur-bc55a30399b438dd",
+   "title": "Roopa in Flux",
+   "start": "2026-11-01T18:00:00-08:00",
+   "end": null,
+   "venue": "SFJAZZ Center (Joe Henderson Lab)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": {
+    "min": 34,
+    "max": 34,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.sfjazz.org/tickets/productions/26-27/roopa-in-flux/",
+   "source": "SFJAZZ",
+   "description": "Bay Area-raised vocalist Roopa Mahadevan and her ensemble mix Carnatic classical music with jazz, soul and improvisation, with Rohan Krishnamurthy on mridangam and drums. Shows at 6 and 7:30 p.m.; $34.",
+   "image": ""
+  },
+  {
+   "id": "cur-ee401f5c67f0d41d",
+   "title": "NightLife: Pajammy Jam (21+)",
+   "start": "2026-11-12T18:00:00-08:00",
+   "end": "2026-11-12T22:00:00-08:00",
+   "venue": "California Academy of Sciences",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": {
+    "min": 26,
+    "max": 26,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://calendar.calacademy.org/nightlife/nightlife-pajammy-jam",
+   "source": "California Academy of Sciences",
+   "description": "Pajama-party edition of the Academy's Thursday night museum party with music, games and exhibits after hours. 21+ with photo ID; $26.",
+   "image": ""
+  },
+  {
+   "id": "cur-c42b733068a6012a",
+   "title": "NightLife: Naughty or Nice (21+)",
+   "start": "2026-12-03T18:00:00-08:00",
+   "end": "2026-12-03T22:00:00-08:00",
+   "venue": "California Academy of Sciences",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": {
+    "min": 26,
+    "max": 26,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://calendar.calacademy.org/nightlife/nightlife-naughty-or-nice",
+   "source": "California Academy of Sciences",
+   "description": "Holiday-themed NightLife, the last of the year, with music and after-hours museum exploring. 21+ with photo ID; $26.",
+   "image": ""
+  },
+  {
+   "id": "cur-1c96959c4ee037cc",
+   "title": "Katha Munch Social Hour (Diwali Celebration)",
+   "start": "2026-10-24T15:45:00-07:00",
+   "end": "2026-10-24T16:30:00-07:00",
+   "venue": "Lesher Center for the Arts",
+   "city": "Walnut Creek",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "http://www.dlrca.org/programs/lesher-center-presents/diwali-celebration",
+   "source": "Lesher Center for the Arts",
+   "description": "Theatre games and community mixing with the Katha Munch troupe, part of the Lesher Center's two-day Diwali Celebration.",
+   "image": ""
+  },
+  {
+   "id": "cur-f5a4d22462656373",
+   "title": "Veterans Day Ceremony",
+   "start": "2026-11-11T11:00:00-08:00",
+   "end": "2026-11-11T12:00:00-08:00",
+   "venue": "Lesher Center for the Arts",
+   "city": "Walnut Creek",
+   "category": "Community",
+   "price": null,
+   "isFree": true,
+   "url": "https://walnutcreekconcertband.org/tickets/veterans-day-ceremony",
+   "source": "Walnut Creek Concert Band",
+   "description": "Free ceremony from the City of Walnut Creek and the Walnut Creek Concert Band honoring veterans with speakers and music.",
+   "image": ""
+  },
+  {
+   "id": "cur-6983a86d57182565",
+   "title": "Agomoni Durga Puja 2026 (Day 3: Nabami & Dashami)",
+   "start": "2026-10-18T09:00:00-07:00",
+   "end": null,
+   "venue": "2600 Camino Ramon (open-air parking lot)",
+   "city": "San Ramon",
+   "category": "Festivals",
+   "price": null,
+   "isFree": false,
+   "url": "https://agomoni.org/durgapuja-2026/",
+   "source": "Agomoni",
+   "description": "Final day of Agomoni's 10th-anniversary open-air Bengali Durga Puja: morning Nabami and Dashami rituals, pushpanjali at noon, prasad, the fire ritual (1-2 p.m.) and the sindoor farewell to the Goddess, plus Bengali food and vendor stalls. Free parking.",
+   "image": ""
+  },
+  {
+   "id": "cur-328ca903ca1e7262",
+   "title": "After Dark: Death and Life / La muerte y la vida (18+)",
+   "start": "2026-10-22T18:00:00-07:00",
+   "end": "2026-10-22T22:00:00-07:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "Thursday-night adults-only edition celebrating Dia de los Muertos and the science and culture around the circle of life. 18+.",
+   "image": ""
+  },
+  {
+   "id": "cur-2d401fd6152e55cb",
+   "title": "We All Journey: Monarchs & Dia de Muertos",
+   "start": "2026-10-24T11:00:00-07:00",
+   "end": "2026-10-24T14:00:00-07:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Family",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "Learn about monarch butterflies' life cycle and migration to Mexico, which often lines up with Dia de Muertos; paint a butterfly and visit a colorful altar.",
+   "image": ""
+  },
+  {
+   "id": "cur-1c03afcedc3fe230",
+   "title": "Awesome Orchestra Live Rehearsal & Performance",
+   "start": "2026-10-24T11:00:00-07:00",
+   "end": "2026-10-24T16:00:00-07:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "Watch Awesome Orchestra assemble, rehearse and perform in real time, with music from KPop Demon Hunters and works by composer Oscar Navarro.",
+   "image": ""
+  },
+  {
+   "id": "cur-f51c65a28a82c46f",
+   "title": "After Dark: Creepatorium (18+)",
+   "start": "2026-10-29T18:00:00-07:00",
+   "end": "2026-10-29T22:00:00-07:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "The Exploratorium's annual adults-only Halloween party, with Gothicumbia and a science-themed costume contest. 18+.",
+   "image": ""
+  },
+  {
+   "id": "cur-569f2d6b67b82821",
+   "title": "After Dark: Digest This (18+)",
+   "start": "2026-11-05T18:00:00-08:00",
+   "end": "2026-11-05T22:00:00-08:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "Adults-only night on the history and science of how we eat and digest food, from first bite onward. 18+.",
+   "image": ""
+  },
+  {
+   "id": "cur-9a22b9f90ccd1868",
+   "title": "Tri-Valley Veterans Day Parade and Concert",
+   "start": "2026-11-08T13:00:00-08:00",
+   "end": "2026-11-08T15:00:00-08:00",
+   "venue": "Veterans Memorial Building, 301 Main St",
+   "city": "Pleasanton",
+   "category": "Community",
+   "price": null,
+   "isFree": true,
+   "url": "https://www.trivalleyvdp.com/parade-supporters/about-1",
+   "source": "Tri-Valley Veterans Day Parade",
+   "description": "The 29th annual Tri-Valley Veterans Day Parade steps off at 1 p.m. on Main Street, followed by a free Pleasanton Community Concert Band concert (about 1:30-3 p.m.) at the Veterans Memorial Building.",
+   "image": ""
+  },
+  {
+   "id": "cur-b27c9e827df28e00",
+   "title": "After Dark: Unplug and Play (18+)",
+   "start": "2026-11-12T18:00:00-08:00",
+   "end": "2026-11-12T22:00:00-08:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "Screen-free adults-only night at the Exploratorium with games, hands-on exhibits and play. 18+.",
+   "image": ""
+  },
+  {
+   "id": "cur-9142eb17d925c39b",
+   "title": "Glow (winter exhibition)",
+   "start": "2026-11-19",
+   "end": "2027-01-24",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "The Exploratorium's winter tradition of luminous artworks, light science and optical illusions, on view Nov. 19-Jan. 24.",
+   "image": ""
+  },
+  {
+   "id": "cur-131c5ed5fdacee0a",
+   "title": "After Dark: Glow Opening (18+)",
+   "start": "2026-11-19T18:00:00-08:00",
+   "end": "2026-11-19T22:00:00-08:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "Adults-only opening night for Glow, with light-based art, optical illusions and glowing exhibits. 18+.",
+   "image": ""
+  },
+  {
+   "id": "cur-615d3e7ea9b2bba6",
+   "title": "After Dark: Rule Breakers (18+)",
+   "start": "2026-12-03T18:00:00-08:00",
+   "end": "2026-12-03T22:00:00-08:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "Adults-only night about trying new things, with a performance by sound artist Ivana Dama. 18+.",
+   "image": ""
+  },
+  {
+   "id": "cur-bad8386691644fd8",
+   "title": "After Dark: Solstice (18+)",
+   "start": "2026-12-17T18:00:00-08:00",
+   "end": "2026-12-17T22:00:00-08:00",
+   "venue": "Exploratorium (Pier 15)",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.exploratorium.edu/visit/calendar",
+   "source": "Exploratorium",
+   "description": "Adults-only winter-solstice night with light-filled experiences and seasonal traditions. 18+.",
    "image": ""
   }
  ]
