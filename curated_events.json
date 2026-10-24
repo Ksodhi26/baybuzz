@@ -4191,6 +4191,51 @@
    "source": "Livermore Valley Arts",
    "description": "Mariachi Garibaldi de Jaime Cu\u00e9llar and Ballet Folkl\u00f3rico del R\u00edo Grande celebrate Posadas, the Reyes Magos and Mexican holiday traditions.",
    "image": ""
+  },
+  {
+   "id": "cur-e07c6ec569c3fc",
+   "title": "Frunk or Treat 2026 at Unplugged Performance Fremont",
+   "start": "2026-10-24T16:00:00-07:00",
+   "end": "2026-10-24T20:00:00-07:00",
+   "venue": "Unplugged Performance Fremont, 46701 Fremont Blvd",
+   "city": "Fremont",
+   "category": "Family",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://unpluggedperformance.com/events/frunk-or-treat-2026-hosted-by-unplugged-performance-fremont/",
+   "source": "Unplugged Performance",
+   "description": "Decorated Tesla frunks and cars, Scariest Frunk Contest, kid and adult costume contests, food and a haunted walkthrough inside the shop. All makes welcome.",
+   "image": ""
+  },
+  {
+   "id": "cur-01debd93edae1b",
+   "title": "DCARA & The Learning Tree Trunk or Treat",
+   "start": "2026-10-24T12:00:00-07:00",
+   "end": "2026-10-24T16:00:00-07:00",
+   "venue": "The Learning Tree Preschool, 34050 Paseo Padre Pkwy",
+   "city": "Fremont",
+   "category": "Family",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://dcara.org/2026/10/12/trunk-or-treat-october-24-2026/",
+   "source": "DCARA",
+   "description": "4th annual community Trunk or Treat with decorated cars, pumpkin painting, community booths, prizes and a haunted house. Come in costume.",
+   "image": ""
+  },
+  {
+   "id": "cur-70ea8149d36401",
+   "title": "Cars & Coffee: Frunk or Treat Edition",
+   "start": "2026-10-31T10:00:00-07:00",
+   "end": "2026-10-31T12:30:00-07:00",
+   "venue": "Dynamic Detailing, 1725 De La Cruz Blvd Ste 5",
+   "city": "Santa Clara",
+   "category": "Family",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://www.eventbrite.com/e/cars-coffee-frunk-or-treat-edition-tickets-2002091798464",
+   "source": "Dynamic Detailing (Eventbrite)",
+   "description": "Halloween Cars & Coffee with decorated frunks to trick-or-treat, pumpkin decorating, craft coffee and Tesla Sunnyvale, Porsche and McLaren on display. Bring a treat bag.",
+   "image": ""
   }
  ]
 }
