@@ -1,6 +1,6 @@
 {
- "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-10-25 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
- "lastVerified": "2026-10-25",
+ "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-10-26 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+ "lastVerified": "2026-10-26",
  "events": [
   {
    "id": "cur-9161e846311f2a",
@@ -147,21 +147,6 @@
    "url": "https://content.govdelivery.com/accounts/CASRAMON/bulletins/42bdf74",
    "source": "San Ramon Performing Arts",
    "description": "Final show in the 30th-anniversary \"Adventures in Jazz\" series at the San Ramon Library. Performer announced by the series.",
-   "image": ""
-  },
-  {
-   "id": "cur-9ad57ed55e4e27",
-   "title": "Howl-O-Ween Costumed Pet Parade",
-   "start": "2026-10-25T14:00:00-07:00",
-   "end": "2026-10-25T15:00:00-07:00",
-   "venue": "City Center Bishop Ranch (Alexander Square)",
-   "city": "San Ramon",
-   "category": "Family",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.bishopranch.com/event-calendar/",
-   "source": "City Center Bishop Ranch",
-   "description": "Free costume parade for pets in Alexander Square with treats from George San Ramon, a selfie station and a mini obstacle course. The Hub by Pack Animals runs a ticketed Haunted Hub 1\u20135 p.m.",
    "image": ""
   },
   {
@@ -1039,36 +1024,6 @@
    "image": ""
   },
   {
-   "id": "cur-173191367e3cee",
-   "title": "World of Dumplings",
-   "start": "2026-10-25T11:00:00-07:00",
-   "end": "2026-10-25T17:00:00-07:00",
-   "venue": "Ferry Building",
-   "city": "San Francisco",
-   "category": "Food & Drink",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.ferrybuildingmarketplace.com/events/world-of-dumplings/",
-   "source": "Ferry Building Marketplace",
-   "description": "Free dumpling festival with 25+ vendors, eating contests, cooking demos, music and family activities.",
-   "image": ""
-  },
-  {
-   "id": "cur-580172fa1eeba0",
-   "title": "SF Music Day 2026",
-   "start": "2026-10-25T12:00:00-07:00",
-   "end": "2026-10-25T18:00:00-07:00",
-   "venue": "San Francisco War Memorial & Performing Arts Center",
-   "city": "San Francisco",
-   "category": "Music",
-   "price": null,
-   "isFree": true,
-   "url": "https://intermusicsf.org/sf-music-day/",
-   "source": "InterMusic SF",
-   "description": "Free day of 20+ ensembles in Herbst Theatre, the Green Room and Taube Atrium Theater, plus an outdoor jam session. Suggested donation $30.",
-   "image": ""
-  },
-  {
    "id": "cur-e84f31a559f06c",
    "title": "NightLife: Fright NightLife (21+)",
    "start": "2026-10-29T18:00:00-07:00",
@@ -1317,25 +1272,6 @@
    "image": ""
   },
   {
-   "id": "cur-2c9e4ed855d74f",
-   "title": "The Hub's 3rd Annual Haunted Hub",
-   "start": "2026-10-25T13:00:00-07:00",
-   "end": "2026-10-25T17:00:00-07:00",
-   "venue": "The Hub, City Center Bishop Ranch",
-   "city": "San Ramon",
-   "category": "Family",
-   "price": {
-    "min": 20,
-    "max": 30,
-    "currency": "USD"
-   },
-   "isFree": false,
-   "url": "https://citycenterbishopranch.com/events/the-hubs-3rd-annual-haunted-hub/",
-   "source": "City Center Bishop Ranch",
-   "description": "Halloween afternoon for dogs and their people: themed activity stations, oversized inflatables, dog-safe goodie bags and professional pet photography with one print to take home. $30 per dog ($20 for Hub members), up to three people per ticket; guests without dogs welcome.",
-   "image": ""
-  },
-  {
    "id": "cur-6889d3c6da382b",
    "title": "Girl Dinner & a Movie: Practical Magic",
    "start": "2026-10-29T18:00:00-07:00",
@@ -1408,21 +1344,6 @@
    "url": "https://citycenterbishopranch.com/events/visits-with-santa-in-the-square-3/",
    "source": "City Center Bishop Ranch",
    "description": "Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12\u20134 p.m. each day).",
-   "image": ""
-  },
-  {
-   "id": "cur-146d252095e9a0",
-   "title": "Northern Spirits: Sibelius Symphony No. 2",
-   "start": "2026-10-25T14:00:00-07:00",
-   "end": "2026-10-25T16:00:00-07:00",
-   "venue": "Lesher Center for the Arts",
-   "city": "Walnut Creek",
-   "category": "Music",
-   "price": null,
-   "isFree": false,
-   "url": "https://www.lesherartscenter.org/events",
-   "source": "Lesher Center for the Arts",
-   "description": "Orchestral concert featuring Sibelius's Symphony No. 2.",
    "image": ""
   },
   {
@@ -1528,21 +1449,6 @@
    "url": "https://www.headwestmarketplace.com/nmainstreet",
    "source": "HEAD WEST",
    "description": "Open-air holiday market on North Main Street with local makers, artisans and small businesses. Kid- and pet-friendly; light rain or shine.",
-   "image": ""
-  },
-  {
-   "id": "cur-b4a3a32e0a1ca4",
-   "title": "D\u00eda de los Muertos with Ballet Folkl\u00f3rico Mexicano de Carlos Moreno",
-   "start": "2026-10-25T15:00:00-07:00",
-   "end": null,
-   "venue": "Bankhead Theater",
-   "city": "Livermore",
-   "category": "Arts & Theatre",
-   "price": null,
-   "isFree": false,
-   "url": "https://livermorearts.org/events/ballet-folklorico/",
-   "source": "Livermore Valley Arts",
-   "description": "Traditional Mexican folk dance honoring ancestors in a vibrant D\u00eda de los Muertos celebration. $25 front-row seats are available in person at the box office only (two-ticket limit).",
    "image": ""
   },
   {
@@ -1798,21 +1704,6 @@
    "url": "https://www.sfsymphony.org/Buy-Tickets/2026-27/Deck-The-Hall",
    "source": "San Francisco Symphony",
    "description": "Family holiday concert of favorites and sing-alongs led by Daniel Bartholomew-Poyser with members of the SF Symphony, guest artists and costumed characters. Kids' tickets half off.",
-   "image": ""
-  },
-  {
-   "id": "cur-6da789a8e003ccb4",
-   "title": "Navaratri Garba Celebration",
-   "start": "2026-10-25T17:00:00-07:00",
-   "end": "2026-10-25T20:00:00-07:00",
-   "venue": "Shiva-Vishnu Temple (Lakireddy Auditorium)",
-   "city": "Livermore",
-   "category": "Community",
-   "price": null,
-   "isFree": false,
-   "url": "https://www.livermoretemple.org/",
-   "source": "Shiva-Vishnu Temple (HCCC)",
-   "description": "Navaratri garba celebration at the Hindu Community & Cultural Center's Livermore temple, 5\u20138 p.m.",
    "image": ""
   },
   {
@@ -2466,21 +2357,6 @@
    "image": ""
   },
   {
-   "id": "cur-83eb6c2049b53c",
-   "title": "Harvest Festival Original Art & Craft Show",
-   "start": "2026-10-23T10:00:00-07:00",
-   "end": "2026-10-25T16:00:00-07:00",
-   "venue": "Alameda County Fairgrounds",
-   "city": "Pleasanton",
-   "category": "Arts & Theatre",
-   "price": "$4-$9",
-   "isFree": false,
-   "url": "https://alamedacountyfair.com/alameda-county-fairgrounds-events-calendar/",
-   "source": "Alameda County Fairgrounds",
-   "description": "Long-running art and craft show with original artwork, handmade jewelry, ceramics, decor and specialty foods, plus live entertainment and a KidZone. Fri 10-4, Sat 10-5, Sun 10-4; kids 12 and under free, $5 all day Sunday. Enter Gate 8 or 12.",
-   "image": ""
-  },
-  {
    "id": "cur-496fbf1a27ff12",
    "title": "Trick-or-Treat Haunted Winery Crawl",
    "start": "2026-10-30",
@@ -2658,21 +2534,6 @@
    "url": "https://www.prabasi.org/events",
    "source": "Bay Area Prabasi",
    "description": "Bengali community Diwali mela with festive shopping, food stalls, mehendi, rangoli, diya painting and kids' activities, an evening light show, 108-diya lighting, cultural performances and traditional Kali (Shyama) Puja.",
-   "image": ""
-  },
-  {
-   "id": "cur-3d7bfc483facaf",
-   "title": "Opening Celebration for Vishnu's Cosmic Ocean",
-   "start": "2026-10-25T11:30:00-07:00",
-   "end": "2026-10-25T14:00:00-07:00",
-   "venue": "Asian Art Museum (Bogart Court)",
-   "city": "San Francisco",
-   "category": "Festivals",
-   "price": null,
-   "isFree": false,
-   "url": "https://calendar.asianart.org/event/opening-celebration-vishnus-cosmic-ocean/",
-   "source": "Asian Art Museum",
-   "description": "Opening day for the monumental Reclining Vishnu bronze from Cambodia: a Cambodian Buddhist temple water blessing at 11:30 a.m., Khmer dance at noon, plus tours, family storytelling and drop-in art activities. Free with museum admission.",
    "image": ""
   },
   {
@@ -2922,21 +2783,6 @@
    "url": "https://www.lvwine.org/events/2026/12/December.html",
    "source": "Livermore Valley Wine Community",
    "description": "Holiday Motown and old-school R&B show by the vocal group The Best Intentions; second night of a two-night run that usually sells out.",
-   "image": ""
-  },
-  {
-   "id": "cur-264dd765cafa47",
-   "title": "Flannel & Foliage: An Autumn Weekend in Danville",
-   "start": "2026-10-23",
-   "end": "2026-10-25",
-   "venue": "Historic Downtown Danville",
-   "city": "Danville",
-   "category": "Festivals",
-   "price": "Free general admission",
-   "isFree": true,
-   "url": "https://thesmalltownventure.com/",
-   "source": "Small Town Venture",
-   "description": "Three-day small-town autumn fan weekend downtown with cast photo ops and panels (Scott Patterson, Kelly Bishop, Sean Gunn and more), live music, trivia, scavenger hunts, screenings and artisan markets. General admission is free; limited All-Access tickets.",
    "image": ""
   },
   {
@@ -3330,21 +3176,6 @@
    "image": ""
   },
   {
-   "id": "cur-06558f3a0c88c5",
-   "title": "Cruise for Kids (Halloween Car Show)",
-   "start": "2026-10-25T09:00:00-07:00",
-   "end": "2026-10-25T13:00:00-07:00",
-   "venue": "Blackhawk Museum, 3700 Blackhawk Plaza Circle",
-   "city": "Danville",
-   "category": "Family",
-   "price": "Free for spectators; museum admission separate; $30 to show a car",
-   "isFree": true,
-   "url": "https://blackhawkmuseum.org/events/cruise-for-kids/",
-   "source": "Blackhawk Museum",
-   "description": "Halloween-themed fundraising car show for Lucile Packard Children's Hospital Stanford; costumes and decorated cars encouraged.",
-   "image": ""
-  },
-  {
    "id": "cur-c33318f3912a89",
    "title": "Changemaker Speaker Series: Casey Anderson - Among Wild Predators",
    "start": "2026-10-29T19:00:00-07:00",
@@ -3612,21 +3443,6 @@
    "url": "https://www.presidiotheatre.org/show-details/alice-in-wonderland",
    "source": "Presidio Theatre",
    "description": "Holiday panto with pop songs, fairytale mashups, wild costumes and flying candy; 23 performances Nov 28-Dec 27.",
-   "image": ""
-  },
-  {
-   "id": "cur-5f75927eb1000c",
-   "title": "ArtSpan SF Open Studios at Sports Basement",
-   "start": "2026-10-24T09:00:00-07:00",
-   "end": "2026-10-25T19:00:00-07:00",
-   "venue": "Sports Basement Presidio, 610 Old Mason St",
-   "city": "San Francisco",
-   "category": "Arts & Theatre",
-   "price": "Free",
-   "isFree": true,
-   "url": "https://presidio.gov/explore/events/artspan-sf-open-studios-at-sports-basement/2026-10-24/",
-   "source": "Presidio of San Francisco",
-   "description": "Weekend showcase of local San Francisco artists; meet the artists and browse work for sale (9 a.m.-7 p.m. both days).",
    "image": ""
   },
   {
@@ -4137,6 +3953,141 @@
    "url": "https://gracecathedral.org/christmas/",
    "source": "Grace Cathedral",
    "description": "Destiny Muhammad and her Sonic Ensemble reimagine the holidays with jazz, gospel, soul and storytelling. About 75 minutes.",
+   "image": ""
+  },
+  {
+   "id": "cur-e864d9a1b577a9",
+   "title": "Cinema at the Cemetery: Psycho",
+   "start": "2026-10-30T18:00:00-07:00",
+   "end": "2026-10-30T20:45:00-07:00",
+   "venue": "Dublin Heritage Park & Museums, 6600 Donlon Way",
+   "city": "Dublin",
+   "category": "Film",
+   "price": null,
+   "isFree": true,
+   "url": "https://www.dublin.ca.gov/2937/Cinema-at-the-Cemetery",
+   "source": "City of Dublin",
+   "description": "Hitchcock's Psycho projected onto the historic 1910 Kolb hay barn, with free Pioneer Cemetery tours before the movie starts at dusk. Bring a blanket or lawn chair. Parental discretion advised.",
+   "image": ""
+  },
+  {
+   "id": "cur-e6cbfc769b5afd",
+   "title": "Sri Maa Kali Puja",
+   "start": "2026-11-07T20:00:00-08:00",
+   "end": "2026-11-08T01:30:00-08:00",
+   "venue": "Shiva-Vishnu Temple, 1232 Arrowhead Ave",
+   "city": "Livermore",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.livermoretemple.org/",
+   "source": "Shiva-Vishnu Temple (HCCC)",
+   "description": "Overnight Kali Puja at the Hindu Community & Cultural Center temple, running from 8 p.m. Saturday to 1:30 a.m. Sunday during Deepavali weekend.",
+   "image": ""
+  },
+  {
+   "id": "cur-c3597e49bd1472",
+   "title": "Deepavali Celebrations at the Livermore Temple",
+   "start": "2026-11-07",
+   "end": "2026-11-08",
+   "venue": "Shiva-Vishnu Temple, 1232 Arrowhead Ave",
+   "city": "Livermore",
+   "category": "Festivals",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.livermoretemple.org/",
+   "source": "Shiva-Vishnu Temple (HCCC)",
+   "description": "Two days of Deepavali pujas at the Hindu Community & Cultural Center temple: Dhanalakshmi Puja on Saturday and Lakshmi Kubera Puja on Sunday. Check the temple's flyers for timings.",
+   "image": ""
+  },
+  {
+   "id": "cur-69c7a9264b6707",
+   "title": "Pet Night with Santa",
+   "start": "2026-11-16T16:00:00-08:00",
+   "end": "2026-11-16T19:00:00-08:00",
+   "venue": "Santa's Workshop near True Food Kitchen, Broadway Plaza",
+   "city": "Walnut Creek",
+   "category": "Family",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.broadwayplaza.com/Events/Details/574231",
+   "source": "Broadway Plaza",
+   "description": "Bring your dog (no exotic pets) for a photo with Santa. Also Nov 23 and 30 and Dec 7 and 14, 4 to 7 p.m. Regular Santa photo prices apply.",
+   "image": ""
+  },
+  {
+   "id": "cur-66bcd07a229b5a",
+   "title": "Sari Ki Saree: Ria Sharma Exhibition Reception",
+   "start": "2026-11-21T13:00:00-08:00",
+   "end": "2026-11-21T15:00:00-08:00",
+   "venue": "Firehouse Arts Center, 4444 Railroad Ave",
+   "city": "Pleasanton",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": true,
+   "url": "https://www.firehousearts.org/calendar-event/ria-sharma-sari-ki-saree-reception/",
+   "source": "Firehouse Arts Center",
+   "description": "Free reception for mixed-media artist Ria Sharma's solo show, which turns whole rescued sarees into geometric, textured artworks rooted in South Asian heritage.",
+   "image": ""
+  },
+  {
+   "id": "cur-e5bf786c6a3726",
+   "title": "Winter Wonderland Hanukkah Celebration at Thrive City",
+   "start": "2026-12-06T16:00:00-08:00",
+   "end": "2026-12-06T19:00:00-08:00",
+   "venue": "Thrive City at Chase Center",
+   "city": "San Francisco",
+   "category": "Festivals",
+   "price": null,
+   "isFree": true,
+   "url": "https://www.jccsf.org/event/hanukkah-at-thrive-city-2026/",
+   "source": "JCCSF",
+   "description": "Free, all-ages Hanukkah gathering by the Warriors' arena with a menorah lighting, live entertainment, festive treats and arts and crafts.",
+   "image": ""
+  },
+  {
+   "id": "cur-eb281ba419e6ca",
+   "title": "Pop-Ups on the Plaza: Black Holiday Market",
+   "start": "2026-12-12T09:00:00-08:00",
+   "end": "2026-12-12T14:00:00-08:00",
+   "venue": "Ferry Building south arcade (Ferry Plaza Farmers Market)",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": null,
+   "isFree": true,
+   "url": "https://foodwise.org/events/pop-ups-on-the-plaza-black-holiday-market/",
+   "source": "Foodwise",
+   "description": "Free holiday market at the Saturday farmers market featuring Bay Area Black-owned food makers and designers.",
+   "image": ""
+  },
+  {
+   "id": "cur-1dd8bbcd4f6761",
+   "title": "SoulSearch Holiday Enlightenment Expo",
+   "start": "2026-12-12T10:00:00-08:00",
+   "end": "2026-12-13T18:00:00-08:00",
+   "venue": "Holiday Inn Dublin, 6680 Regional St",
+   "city": "Dublin",
+   "category": "Community",
+   "price": "$15 at door",
+   "isFree": false,
+   "url": "https://www.soulsearch.io/pleasantonexpo",
+   "source": "SoulSearch",
+   "description": "Two-day wellness and metaphysical fair with readers, healers, exhibitors and talks. Free with advance registration, $15 at the door; kids welcome.",
+   "image": ""
+  },
+  {
+   "id": "cur-75a9ed2892b776",
+   "title": "Makers Market Outdoor Market",
+   "start": "2026-12-19T11:00:00-08:00",
+   "end": "2026-12-19T17:00:00-08:00",
+   "venue": "Broadway Plaza (street between Nordstrom & Macy's)",
+   "city": "Walnut Creek",
+   "category": "Community",
+   "price": null,
+   "isFree": true,
+   "url": "https://www.broadwayplaza.com/Events",
+   "source": "Broadway Plaza",
+   "description": "Free open-air market of local makers, handy for last-minute holiday gifts.",
    "image": ""
   }
  ]
