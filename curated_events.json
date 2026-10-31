@@ -1,6 +1,6 @@
 {
- "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-10-30 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
- "lastVerified": "2026-10-30",
+ "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-10-31 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+ "lastVerified": "2026-10-31",
  "events": [
   {
    "id": "cur-9161e846311f2a",
@@ -90,25 +90,6 @@
    "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
    "source": "City of San Ramon",
    "description": "An old-fashioned holiday gathering with visits with Santa, ornament making, a puppet show, holiday entertainment and refreshments. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.\u20132 p.m.).",
-   "image": ""
-  },
-  {
-   "id": "cur-475940d2f03b29",
-   "title": "Victorian Mourning Tours (ages 12+)",
-   "start": "2026-10-30T18:00:00-07:00",
-   "end": "2026-10-30T20:30:00-07:00",
-   "venue": "Forest Home Farms Historic Park",
-   "city": "San Ramon",
-   "category": "Community",
-   "price": {
-    "min": 10,
-    "max": 12,
-    "currency": "USD"
-   },
-   "isFree": false,
-   "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
-   "source": "City of San Ramon",
-   "description": "A spooky specialty tour of the San Ramon Glass House exploring Victorian mourning traditions. Ages 12+, geared for adults. Four timed sessions; registration required.",
    "image": ""
   },
   {
@@ -826,21 +807,6 @@
    "url": "https://www.firehousearts.org/performances/",
    "source": "Firehouse Arts Center",
    "description": "Senior performers present a holiday song-and-dance show. Check the event page for showtime.",
-   "image": ""
-  },
-  {
-   "id": "cur-3464c81f8c19da",
-   "title": "Jazz Singer Laura Anglade",
-   "start": "2026-10-30T20:00:00-07:00",
-   "end": null,
-   "venue": "Bankhead Theater",
-   "city": "Livermore",
-   "category": "Music",
-   "price": null,
-   "isFree": false,
-   "url": "https://livermorearts.org/bankhead-presents-2026-2027-season/",
-   "source": "Livermore Valley Arts",
-   "description": "Jazz vocalist Laura Anglade. Listed as sold out; call the box office for returns.",
    "image": ""
   },
   {
@@ -2282,36 +2248,6 @@
    "image": ""
   },
   {
-   "id": "cur-f130cfbb5d4a5a",
-   "title": "Moonlit Masquerade at McGrail",
-   "start": "2026-10-30T19:00:00-07:00",
-   "end": "2026-10-30T22:00:00-07:00",
-   "venue": "McGrail Vineyards and Winery",
-   "city": "Livermore",
-   "category": "Music",
-   "price": "$50",
-   "isFree": false,
-   "url": "https://www.lvwine.org/events/2026/10/October.html",
-   "source": "Livermore Valley Wine Community",
-   "description": "Masked Halloween evening overlooking the valley: welcome glass of wine and live strings, then a DJ dance party after dark.",
-   "image": ""
-  },
-  {
-   "id": "cur-095c49fb1365f2",
-   "title": "D\u00eda de los Muertos Fiesta! with Patr\u00f3n Latin Rhythms",
-   "start": "2026-10-30T19:30:00-07:00",
-   "end": null,
-   "venue": "Almost Famous Wine Company",
-   "city": "Livermore",
-   "category": "Music",
-   "price": "$18",
-   "isFree": false,
-   "url": "https://www.lvwine.org/events/2026/10/October.html",
-   "source": "Livermore Valley Wine Community",
-   "description": "Live-band dance party of Latin rock, salsa and R&B with a costume contest at intermission.",
-   "image": ""
-  },
-  {
    "id": "cur-0739640d7d815e",
    "title": "Halloween Bash at Concannon",
    "start": "2026-10-31T19:00:00-07:00",
@@ -2693,21 +2629,6 @@
    "url": "https://www.lvwine.org/events/2026/12/December.html",
    "source": "Livermore Valley Wine Community",
    "description": "Holiday Motown and old-school R&B show by the vocal group The Best Intentions; second night of a two-night run that usually sells out.",
-   "image": ""
-  },
-  {
-   "id": "cur-3cbab96a6fe174",
-   "title": "Halloween Improv Night at the Village Theatre",
-   "start": "2026-10-30T19:00:00-07:00",
-   "end": "2026-10-30T21:00:00-07:00",
-   "venue": "Village Theatre",
-   "city": "Danville",
-   "category": "Comedy",
-   "price": "$20",
-   "isFree": false,
-   "url": "https://www.danville.ca.gov/Calendar.aspx?EID=4077",
-   "source": "Town of Danville",
-   "description": "Halloween-themed, fully unscripted scene-based improv games built on audience suggestions, from Spontaneous Mind.",
    "image": ""
   },
   {
@@ -3776,21 +3697,6 @@
    "image": ""
   },
   {
-   "id": "cur-e864d9a1b577a9",
-   "title": "Cinema at the Cemetery: Psycho",
-   "start": "2026-10-30T18:00:00-07:00",
-   "end": "2026-10-30T20:45:00-07:00",
-   "venue": "Dublin Heritage Park & Museums, 6600 Donlon Way",
-   "city": "Dublin",
-   "category": "Film",
-   "price": null,
-   "isFree": true,
-   "url": "https://www.dublin.ca.gov/2937/Cinema-at-the-Cemetery",
-   "source": "City of Dublin",
-   "description": "Hitchcock's Psycho projected onto the historic 1910 Kolb hay barn, with free Pioneer Cemetery tours before the movie starts at dusk. Bring a blanket or lawn chair. Parental discretion advised.",
-   "image": ""
-  },
-  {
    "id": "cur-e6cbfc769b5afd",
    "title": "Sri Maa Kali Puja",
    "start": "2026-11-07T20:00:00-08:00",
@@ -3908,21 +3814,6 @@
    "url": "https://www.broadwayplaza.com/Events",
    "source": "Broadway Plaza",
    "description": "Free open-air market of local makers, handy for last-minute holiday gifts.",
-   "image": ""
-  },
-  {
-   "id": "cur-2a81f84244d641",
-   "title": "Japantown Halloween Carnival 2026",
-   "start": "2026-10-30T18:00:00-07:00",
-   "end": "2026-10-30T20:00:00-07:00",
-   "venue": "JCCCNC, 1840 Sutter St",
-   "city": "San Francisco",
-   "category": "Family",
-   "price": "$7",
-   "isFree": false,
-   "url": "https://www.jcccnc.org/events/halloween-carnival-2026/",
-   "source": "JCCCNC",
-   "description": "Kids' Halloween night with JCYC: crafts, cultural performances, a bounce house and a costume parade and contest with prizes.",
    "image": ""
   },
   {
@@ -4607,6 +4498,66 @@
    "url": "https://tickets.sanramon.ca.gov/eventperformances.asp?evt=257",
    "source": "San Ramon Performing Arts",
    "description": "A fast-paced, 75-minute Nutcracker mixing ballet with other dance styles and pantomime. Dec 5 at 7:30 p.m., Dec 6 at 1 and 3:30 p.m.; $37. General sale opens Nov 3 at noon.",
+   "image": ""
+  },
+  {
+   "id": "cur-240e77897cf99e",
+   "title": "Nupoor Dances: Beyond Bollywood 2026",
+   "start": "2026-11-15T16:00:00-08:00",
+   "end": "2026-11-15T19:00:00-08:00",
+   "venue": "Dougherty Valley Performing Arts Center, 10550 Albion Rd",
+   "city": "San Ramon",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": false,
+   "url": "https://tickets.sanramon.ca.gov/eventperformances.asp?evt=259",
+   "source": "San Ramon Performing Arts",
+   "description": "Nupoor Dances' 18th annual recital, with students from the youngest dancers to seasoned performers dancing to Bollywood and beyond. Reserved seating; tickets go on sale Nov 1 at noon.",
+   "image": ""
+  },
+  {
+   "id": "cur-8bf5788ff0d2a1",
+   "title": "NAVRANG: Naach by Nisha Season 9 Showcase",
+   "start": "2026-11-21T18:00:00-08:00",
+   "end": null,
+   "venue": "Brava Theater Center, 2781 24th St",
+   "city": "San Francisco",
+   "category": "Arts & Theatre",
+   "price": null,
+   "isFree": false,
+   "url": "https://naachbynisha.com/",
+   "source": "Naach by Nisha",
+   "description": "Season-ending showcase from San Francisco Indian dance school Naach by Nisha, with students taking the Brava stage after a season of Bollywood, bhangra and semi-classical classes.",
+   "image": ""
+  },
+  {
+   "id": "cur-dc88d6f499ceba",
+   "title": "Mochi Pounding (Omochitsuki)",
+   "start": "2026-12-27T11:00:00-08:00",
+   "end": null,
+   "venue": "Asian Art Museum, 200 Larkin St",
+   "city": "San Francisco",
+   "category": "Family",
+   "price": null,
+   "isFree": false,
+   "url": "https://calendar.asianart.org/event/sunday-mochi-pounding-omochitsuki/",
+   "source": "Asian Art Museum",
+   "description": "Ring in the Japanese New Year with a mochi-pounding demonstration, a turn at the wooden mallet and fresh mochi tastings. Sessions listed at 11 a.m. and 2 p.m.; included with general admission.",
+   "image": ""
+  },
+  {
+   "id": "cur-34fafa7b0b05e8",
+   "title": "Downtown Danville Wreath Walk",
+   "start": "2026-11-27",
+   "end": "2027-01-03",
+   "venue": "Downtown Danville",
+   "city": "Danville",
+   "category": "Community",
+   "price": null,
+   "isFree": true,
+   "url": "https://www.danville.ca.gov/1068/Holidays-in-Danville",
+   "source": "Town of Danville",
+   "description": "Stroll downtown Danville to see dozens of storefronts decorated for the town's holiday wreath contest, starting the night of the Old Oak Tree lighting.",
    "image": ""
   }
  ]
