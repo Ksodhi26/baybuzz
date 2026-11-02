@@ -1,6 +1,6 @@
 {
- "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-01 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
- "lastVerified": "2026-11-01",
+ "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-02 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+ "lastVerified": "2026-11-02",
  "events": [
   {
    "id": "cur-d52a827269ea25",
@@ -508,40 +508,6 @@
    "image": ""
   },
   {
-   "id": "cur-31af9bb53fceab",
-   "title": "Pirates of Emerson Haunted Houses",
-   "start": "2026-10-02",
-   "end": "2026-11-01",
-   "venue": "Alameda County Fairgrounds",
-   "city": "Pleasanton",
-   "category": "Other",
-   "price": {
-    "min": 38,
-    "max": 108,
-    "currency": "USD"
-   },
-   "isFree": false,
-   "url": "https://alamedacountyfair.com/alameda-county-fairgrounds-events-calendar/",
-   "source": "Alameda County Fairgrounds",
-   "description": "Four walk-through haunted houses, VR ride and games. Not geared for children. Evenings from about 7:05 p.m. Parking $15.",
-   "image": ""
-  },
-  {
-   "id": "cur-d384d0a15aa160",
-   "title": "Paint & Sip 2026 (Pleasanton Lions Club)",
-   "start": "2026-11-01",
-   "end": null,
-   "venue": "Garre Winery",
-   "city": "Pleasanton",
-   "category": "Community",
-   "price": null,
-   "isFree": false,
-   "url": "https://pleasantonlionsclub.org/upcoming-events/",
-   "source": "Pleasanton Lions Club",
-   "description": "Paint-and-sip fundraiser hosted by the Pleasanton Lions Club. See the club's page for time and tickets.",
-   "image": ""
-  },
-  {
    "id": "cur-d57a43b564ec36",
    "title": "PYTC | School of Rock: Young Actors Edition",
    "start": "2026-11-06",
@@ -758,21 +724,6 @@
    "url": "https://www.livermoredowntown.com/do/cyt-disneys-frozen-5",
    "source": "Downtown Livermore, Inc.",
    "description": "Christian Youth Theater's stage production of Disney's Frozen.",
-   "image": ""
-  },
-  {
-   "id": "cur-c5c4e022552f4b",
-   "title": "Occasio Winery: At the Harvest Table",
-   "start": "2026-11-01T13:00:00-08:00",
-   "end": "2026-11-01T15:00:00-08:00",
-   "venue": "Occasio Winery",
-   "city": "Livermore",
-   "category": "Food & Drink",
-   "price": null,
-   "isFree": false,
-   "url": "https://occasiowinery.com/events/",
-   "source": "Occasio Winery",
-   "description": "Harvest-season food and wine experience at a Livermore Valley winery. See the winery's page for tickets.",
    "image": ""
   },
   {
@@ -1159,36 +1110,6 @@
    "image": ""
   },
   {
-   "id": "cur-fdc9d4c151159a",
-   "title": "Dead Man's Cell Phone",
-   "start": "2026-10-30",
-   "end": "2026-11-01",
-   "venue": "Lesher Center for the Arts",
-   "city": "Walnut Creek",
-   "category": "Arts & Theatre",
-   "price": null,
-   "isFree": false,
-   "url": "https://www.lesherartscenter.org/events",
-   "source": "Lesher Center for the Arts",
-   "description": "Play by Pulitzer Prize finalist Sarah Ruhl, on stage at the Lesher Center Oct 30\u2013Nov 1.",
-   "image": ""
-  },
-  {
-   "id": "cur-8a47714034a79f",
-   "title": "D\u00eda de Muertos: Leyendas del Mariachi",
-   "start": "2026-11-01T19:00:00-08:00",
-   "end": "2026-11-01T21:00:00-08:00",
-   "venue": "Lesher Center for the Arts",
-   "city": "Walnut Creek",
-   "category": "Music",
-   "price": null,
-   "isFree": false,
-   "url": "https://www.lesherartscenter.org/events",
-   "source": "Lesher Center for the Arts",
-   "description": "A D\u00eda de Muertos mariachi concert at the Lesher Center.",
-   "image": ""
-  },
-  {
    "id": "cur-70c4823f593bfa",
    "title": "Diablo Ballet: The Nutcracker Suite",
    "start": "2026-11-13",
@@ -1519,21 +1440,6 @@
    "image": ""
   },
   {
-   "id": "cur-a2eb57936b24b9b3",
-   "title": "Diwali Celebration (Free First Sunday)",
-   "start": "2026-11-01T13:00:00-08:00",
-   "end": "2026-11-01T16:30:00-08:00",
-   "venue": "Asian Art Museum",
-   "city": "San Francisco",
-   "category": "Festivals",
-   "price": null,
-   "isFree": true,
-   "url": "https://calendar.asianart.org/event/first-free-sunday-diwali-celebration/",
-   "source": "Asian Art Museum",
-   "description": "Free First Sunday Diwali day with rangoli and henna art, Diwali sweets tasting and a South Asian dance performance by Labonee Mohanta.",
-   "image": ""
-  },
-  {
    "id": "cur-170bd04ef3a3b048",
    "title": "Art in the Dark (exhibition)",
    "start": "2026-10-17",
@@ -1722,21 +1628,6 @@
    "image": ""
   },
   {
-   "id": "cur-4d153abd1c9f18cf",
-   "title": "BATA Deepavali Sambaralu",
-   "start": "2026-11-01T15:00:00-08:00",
-   "end": null,
-   "venue": "Windemere Ranch Middle School",
-   "city": "San Ramon",
-   "category": "Festivals",
-   "price": null,
-   "isFree": false,
-   "url": "https://www.bata.org/events/14",
-   "source": "Bay Area Telugu Association",
-   "description": "The Bay Area Telugu Association's Deepavali celebration, headlined by a concert from Tollywood singer Sameera Bharadwaj and band, with Telugu Idol competitions, dance performances, a festive bazaar and food stalls. Ticketed; free parking.",
-   "image": ""
-  },
-  {
    "id": "cur-6c89ba2a8c469037",
    "title": "Vishnu's Cosmic Ocean (exhibition)",
    "start": "2026-10-23",
@@ -1749,40 +1640,6 @@
    "url": "https://calendar.asianart.org/event/sunday-sachi-annual-event-calm-and-chaos-of-vishnus-cosmic-ocean/",
    "source": "Asian Art Museum",
    "description": "Exhibition centered on a monumental ancient bronze Reclining Vishnu on loan from the National Museum of Cambodia, exploring Hindu cosmic-ocean myths. On view Oct. 23, 2026-Jan. 25, 2027.",
-   "image": ""
-  },
-  {
-   "id": "cur-7349759c93899ee9",
-   "title": "SACHI Talk: Calm and Chaos of Vishnu's Cosmic Ocean",
-   "start": "2026-11-01T11:00:00-08:00",
-   "end": null,
-   "venue": "Asian Art Museum (Samsung Hall)",
-   "city": "San Francisco",
-   "category": "Arts & Theatre",
-   "price": null,
-   "isFree": true,
-   "url": "https://calendar.asianart.org/event/sunday-sachi-annual-event-calm-and-chaos-of-vishnus-cosmic-ocean/",
-   "source": "Asian Art Museum",
-   "description": "Free First Sunday double talk by curators Natasha Reichle and Forrest McGill on the Reclining Vishnu bronze and how ancient Cambodian rulers drew on Hindu cosmic-ocean myths.",
-   "image": ""
-  },
-  {
-   "id": "cur-bc55a30399b438dd",
-   "title": "Roopa in Flux",
-   "start": "2026-11-01T18:00:00-08:00",
-   "end": null,
-   "venue": "SFJAZZ Center (Joe Henderson Lab)",
-   "city": "San Francisco",
-   "category": "Music",
-   "price": {
-    "min": 34,
-    "max": 34,
-    "currency": "USD"
-   },
-   "isFree": false,
-   "url": "https://www.sfjazz.org/tickets/productions/26-27/roopa-in-flux/",
-   "source": "SFJAZZ",
-   "description": "Bay Area-raised vocalist Roopa Mahadevan and her ensemble mix Carnatic classical music with jazz, soul and improvisation, with Rohan Krishnamurthy on mridangam and drums. Shows at 6 and 7:30 p.m.; $34.",
    "image": ""
   },
   {
@@ -3015,36 +2872,6 @@
    "url": "https://www.kqed.org/event/6835/masa-making-party-with-bolita-masa",
    "source": "KQED",
    "description": "Chef Emmanuel Galvan teaches nixtamal and tortilla-making from scratch, then press and taste together.",
-   "image": ""
-  },
-  {
-   "id": "cur-f02c88f009af45",
-   "title": "Pickwick Vintage Show",
-   "start": "2026-11-01T10:00:00-08:00",
-   "end": "2026-11-01T16:00:00-08:00",
-   "venue": "Ferry Building Grand Hall, 1 Ferry Building",
-   "city": "San Francisco",
-   "category": "Community",
-   "price": null,
-   "isFree": false,
-   "url": "https://www.ferrybuildingmarketplace.com/events/pickwick-vintage-show-oct/",
-   "source": "Ferry Building",
-   "description": "40+ California exhibitors of vintage clothing, jewelry, accessories and textiles from all eras.",
-   "image": ""
-  },
-  {
-   "id": "cur-da93d7b2936fe9",
-   "title": "HEAD WEST at the Ferry Building",
-   "start": "2026-11-01T11:00:00-08:00",
-   "end": "2026-11-01T17:00:00-08:00",
-   "venue": "Ferry Building Back Plaza, 1 Ferry Building",
-   "city": "San Francisco",
-   "category": "Community",
-   "price": "Free",
-   "isFree": true,
-   "url": "https://www.ferrybuildingmarketplace.com/events/head-west-at-the-ferry-building-2/",
-   "source": "Ferry Building",
-   "description": "First-Sunday marketplace of local makers and small businesses, from ceramics to vintage.",
    "image": ""
   },
   {
@@ -4539,6 +4366,191 @@
    "url": "https://www.firehousearts.org/calendar-event/lynda-briggs-meet-greet/",
    "source": "Firehouse Arts Center",
    "description": "Meet the artist behind 15 vibrant acrylic paintings on the Nancy Thompson Memorial Wall (on view Oct 31 to Dec 19).",
+   "image": ""
+  },
+  {
+   "id": "cur-fa6d940cb488f7",
+   "title": "Rafiki Kwanzaa Celebration",
+   "start": "2026-12-29T13:00:00-08:00",
+   "end": "2026-12-29T16:00:00-08:00",
+   "venue": "Rafiki Coalition for Health and Wellness, 601 Cesar Chavez St",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://rafikicoalition.org/event/rafiki-kwanzaa-celebration/",
+   "source": "Rafiki Coalition for Health and Wellness",
+   "description": "Learn the history of Kwanzaa, with music and drumming, African dance and a Kwanzaa feast in the Bayview.",
+   "image": ""
+  },
+  {
+   "id": "cur-fbce145f827d06",
+   "title": "Adam Shulman Trio plays 'A Charlie Brown Christmas'",
+   "start": "2026-12-12T19:30:00-08:00",
+   "end": null,
+   "venue": "SFJAZZ Center, 201 Franklin St (Miner Auditorium)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": {
+    "min": 45,
+    "max": 120,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.sfjazz.org/tickets/productions/26-27/adam-shulman-trio-charlie-brown-christmas/",
+   "source": "SFJAZZ",
+   "description": "San Francisco pianist Adam Shulman and his trio reprise Vince Guaraldi's score to the 1965 Peanuts holiday special, from \"Linus and Lucy\" to \"Christmas Time Is Here.\"",
+   "image": ""
+  },
+  {
+   "id": "cur-163670355c2154",
+   "title": "Cyrus Chestnut plays 'A Charlie Brown Christmas'",
+   "start": "2026-12-18T19:30:00-08:00",
+   "end": null,
+   "venue": "SFJAZZ Center, 201 Franklin St (Miner Auditorium)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": {
+    "min": 55,
+    "max": 140,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.sfjazz.org/tickets/productions/26-27/cyrus-chestnut-charlie-brown-christmas/",
+   "source": "SFJAZZ",
+   "description": "Pianist Cyrus Chestnut and band play Vince Guaraldi's music from A Charlie Brown Christmas.",
+   "image": ""
+  },
+  {
+   "id": "cur-3a7bd291af5ebe",
+   "title": "Christian Sands Trio: Holiday Concert",
+   "start": "2026-12-11T19:00:00-08:00",
+   "end": "2026-12-12T22:00:00-08:00",
+   "venue": "SFJAZZ Center, 201 Franklin St (Joe Henderson Lab)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": {
+    "min": 35,
+    "max": 55,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.sfjazz.org/tickets/productions/26-27/christian-sands-trio/",
+   "source": "SFJAZZ",
+   "description": "Pianist Christian Sands and his trio play their takes on holiday classics. Sets at 7 and 8:30 p.m. on Dec 11 and 12; general admission, pay-what-you-wish ticketing.",
+   "image": ""
+  },
+  {
+   "id": "cur-bee4e040c7ee27",
+   "title": "Combo Tezeta: Cumbia Christmas",
+   "start": "2026-12-22T19:00:00-08:00",
+   "end": null,
+   "venue": "SFJAZZ Center, 201 Franklin St (Joe Henderson Lab)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": {
+    "min": 30,
+    "max": 50,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.sfjazz.org/tickets/productions/26-27/combo-tezeta/",
+   "source": "SFJAZZ",
+   "description": "East Bay seven-piece Combo Tezeta plays a holiday set of instrumental cumbias, chichas and musica tropical. Sets at 7 and 8:30 p.m.; pay-what-you-wish general admission.",
+   "image": ""
+  },
+  {
+   "id": "cur-0405bfaeafe6dc",
+   "title": "Marcus Shelby New Orchestra: Duke Ellington's Nutcracker Suite feat. Tiffany Austin",
+   "start": "2026-12-23T19:30:00-08:00",
+   "end": null,
+   "venue": "SFJAZZ Center, 201 Franklin St (Miner Auditorium)",
+   "city": "San Francisco",
+   "category": "Music",
+   "price": {
+    "min": 55,
+    "max": 125,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.sfjazz.org/tickets/productions/26-27/marcus-shelby-new-orchestra-nutcracker-suite/",
+   "source": "SFJAZZ",
+   "description": "Bassist Marcus Shelby's big band plays Ellington and Strayhorn's 1960 jazz Nutcracker Suite with vocalist Tiffany Austin, plus holiday music and spirituals.",
+   "image": ""
+  },
+  {
+   "id": "cur-98dfc568d2fdb3",
+   "title": "Pacific Chamber Orchestra: Dreams & Magic",
+   "start": "2026-12-27T15:00:00-08:00",
+   "end": null,
+   "venue": "Bankhead Theater, 2400 First St",
+   "city": "Livermore",
+   "category": "Music",
+   "price": null,
+   "isFree": false,
+   "url": "https://livermorearts.org/events/pco-dreams-magic/",
+   "source": "Livermore Valley Arts",
+   "description": "Maestro Lawrence Kohl and the orchestra play Disney favorites from Beauty and the Beast, The Little Mermaid and more, with Livermore's Nicole King, tenor Ken Christopher and the PCO Chorus.",
+   "image": ""
+  },
+  {
+   "id": "cur-b58df62c931f6f",
+   "title": "San Ramon Community Chorus Holiday Concert",
+   "start": "2026-12-13T14:00:00-08:00",
+   "end": "2026-12-13T15:00:00-08:00",
+   "venue": "Dougherty Station Community Arts Center (Ridge View Room), 17011 Bollinger Canyon Rd",
+   "city": "San Ramon",
+   "category": "Music",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://www.sanramon.ca.gov/workspaces/one.aspx?contextId=11665736&objectId=21411340",
+   "source": "City of San Ramon",
+   "description": "The Community Chorus sings holiday favorites in a free concert for the whole family.",
+   "image": ""
+  },
+  {
+   "id": "cur-b4f29f5d2e607d",
+   "title": "Diwali Celebration at MA Center San Ramon",
+   "start": "2026-11-14T17:30:00-08:00",
+   "end": "2026-11-14T20:30:00-08:00",
+   "venue": "MA Center San Ramon, 10200 Crow Canyon Rd",
+   "city": "San Ramon",
+   "category": "Community",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://na.amma.org/centers-groups/north-america/san-ramon/events/saturday-satsang-diwali-celebration-person",
+   "source": "Amma North America (MA Center San Ramon)",
+   "description": "Diwali at the weekly satsang: diya lighting, a children's skit on the stories of Diwali, bhajans and arati, then prasad for all and a poori dinner by donation (RSVP for dinner). Festive Indian attire welcome.",
+   "image": ""
+  },
+  {
+   "id": "cur-544843858ab8b8",
+   "title": "Sounds of the Street Performance",
+   "start": "2026-11-08T12:00:00-08:00",
+   "end": "2026-11-08T14:00:00-08:00",
+   "venue": "Broadway Plaza, 1275 Broadway Plaza",
+   "city": "Walnut Creek",
+   "category": "Music",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://www.broadwayplaza.com/Events",
+   "source": "Broadway Plaza",
+   "description": "Local bands and solo artists play live on Broadway Plaza Street. Also Nov 14, 21 and 27, noon to 2 p.m.",
+   "image": ""
+  },
+  {
+   "id": "cur-fcbad311e864db",
+   "title": "The Price is Merry",
+   "start": "2026-12-07T10:00:00-08:00",
+   "end": "2026-12-07T11:00:00-08:00",
+   "venue": "Danville Senior Center, 115 E Prospect Ave",
+   "city": "Danville",
+   "category": "Community",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://www.danville.ca.gov/199/Activity-Guides",
+   "source": "Town of Danville",
+   "description": "Holiday-themed Price Is Right game for ages 55 and up: guess prices for a chance to win a prize. Free; register via the Town's activity guide (#40396).",
    "image": ""
   }
  ]
