@@ -1,6 +1,6 @@
 {
- "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-02 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
- "lastVerified": "2026-11-02",
+ "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-03 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+ "lastVerified": "2026-11-03",
  "events": [
   {
    "id": "cur-d52a827269ea25",
@@ -859,36 +859,6 @@
    "url": "https://livermorearts.org/bankhead-presents-2026-2027-season/",
    "source": "Livermore Valley Arts",
    "description": "Mostly Kosher in concert at the Bankhead Theater.",
-   "image": ""
-  },
-  {
-   "id": "cur-dc65796356e074",
-   "title": "D\u00eda de los Muertos: Festival of Altars",
-   "start": "2026-11-02T17:00:00-08:00",
-   "end": "2026-11-02T21:00:00-08:00",
-   "venue": "Potrero del Sol / La Raza Park",
-   "city": "San Francisco",
-   "category": "Festivals",
-   "price": null,
-   "isFree": true,
-   "url": "https://lagentemusicsf.com/event/6754656/782037616/the-marigold-project-presents-dia-de-muertos-festival-of-altars",
-   "source": "The Marigold Project",
-   "description": "Free community festival of altars at Potrero del Sol Park, 2827 Cesar Chavez St.",
-   "image": ""
-  },
-  {
-   "id": "cur-71d9fc4134b7bd",
-   "title": "45th Annual D\u00eda de los Muertos Procession",
-   "start": "2026-11-02T19:00:00-08:00",
-   "end": null,
-   "venue": "22nd Street & Bryant Street (the Mission)",
-   "city": "San Francisco",
-   "category": "Festivals",
-   "price": null,
-   "isFree": true,
-   "url": "https://events.musicofourdesire.com/event/qkro-45th-annual-dia-de-los-muertos-procession-festival-san-francisco-united-states",
-   "source": "M\u00fasica of Our Desire",
-   "description": "Traditional Mission District procession; danzantes gather at 6 p.m. and the procession begins at 7 p.m.",
    "image": ""
   },
   {
@@ -3550,21 +3520,6 @@
    "image": ""
   },
   {
-   "id": "cur-da64dbd8aa43fa",
-   "title": "TEAM Theatre: Hadestown (Teen Edition)",
-   "start": "2026-10-30",
-   "end": "2026-11-02",
-   "venue": "Dougherty Valley Performing Arts Center, 10550 Albion Rd",
-   "city": "San Ramon",
-   "category": "Arts & Theatre",
-   "price": null,
-   "isFree": false,
-   "url": "https://tickets.sanramon.ca.gov/eventperformances.asp?evt=253",
-   "source": "San Ramon Performing Arts",
-   "description": "Local teens perform the folk-opera musical retelling Orpheus and Eurydice. Six shows: Oct 30 at 7 p.m., Oct 31 at noon and 4:30 p.m., Nov 1 at 2 and 7 p.m., Nov 2 at 7 p.m. Rated PG-13.",
-   "image": ""
-  },
-  {
    "id": "cur-fb4f12706171f5",
    "title": "H\u014dk\u016b & Mistletoe: A Polynesian Style Holiday",
    "start": "2026-12-19T16:00:00-08:00",
@@ -4551,6 +4506,134 @@
    "url": "https://www.danville.ca.gov/199/Activity-Guides",
    "source": "Town of Danville",
    "description": "Holiday-themed Price Is Right game for ages 55 and up: guess prices for a chance to win a prize. Free; register via the Town's activity guide (#40396).",
+   "image": ""
+  },
+  {
+   "id": "cur-6f8517806a431a",
+   "title": "Kannada Rajyotsava 2026",
+   "start": "2026-11-14T10:00:00-08:00",
+   "end": "2026-11-14T21:00:00-08:00",
+   "venue": "Barbara F. Mertes Center for the Arts, Las Positas College",
+   "city": "Livermore",
+   "category": "Festivals",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.tvksangha.org/kannada-rajyothsava-2026.php",
+   "source": "Tri-Valley Kannada Sangha",
+   "description": "Tri-Valley Kannada Sangha's day-long celebration of Karnataka Formation Day, with cultural performances and a feast of Karnataka dishes.",
+   "image": ""
+  },
+  {
+   "id": "cur-60a97135adeef6",
+   "title": "Once Upon a Street: Evergreen & Elegance",
+   "start": "2026-11-21T11:00:00-08:00",
+   "end": "2026-11-21T14:00:00-08:00",
+   "venue": "Broadway Plaza Street, 1275 Broadway Plaza",
+   "city": "Walnut Creek",
+   "category": "Family",
+   "price": null,
+   "isFree": false,
+   "url": "https://walnutcreekdowntown.com/do/once-upon-a-street-evergreen-and-elegance",
+   "source": "Walnut Creek Downtown",
+   "description": "Holiday edition of Broadway Plaza's Once Upon A Street series, with seasonal activities and family-friendly fun on Broadway Plaza Street.",
+   "image": ""
+  },
+  {
+   "id": "cur-da13c61e7482b3",
+   "title": "Oakland Symphony: In Eternal Hands (Walnut Creek)",
+   "start": "2026-11-22T14:00:00-08:00",
+   "end": "2026-11-22T16:00:00-08:00",
+   "venue": "Del Valle Theater, 1963 Tice Valley Blvd",
+   "city": "Walnut Creek",
+   "category": "Music",
+   "price": {
+    "min": 15,
+    "max": 35,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.oaklandsymphony.org/event/in-eternal-hands-del-valle-theater/",
+   "source": "Oakland Symphony",
+   "description": "Kedrick Armstrong conducts the Oakland Symphony and Chorus in Villa-Lobos' Nonetto, Brahms' Song of the Fates, Schreker's Chamber Symphony and M\u00e1rquez's Danz\u00f3n No. 1. Adults $35, students $15.",
+   "image": ""
+  },
+  {
+   "id": "cur-2d75cb091d1417",
+   "title": "Lights of Livermore Trolley Tour",
+   "start": "2026-12-05T18:00:00-08:00",
+   "end": "2026-12-23T20:30:00-08:00",
+   "venue": "Livermore Wine Trolley, Downtown Livermore",
+   "city": "Livermore",
+   "category": "Family",
+   "price": {
+    "min": 35,
+    "max": 35,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://www.livermorewinetrolley.com/experiences/lights-of-livermore-family",
+   "source": "Livermore Wine Trolley",
+   "description": "About one-hour decorated trolley ride from downtown Livermore past popular holiday light displays. Nightly departures at 6 and 7:30 p.m., Dec 5-23; kids 4 and under ride free on a lap.",
+   "image": ""
+  },
+  {
+   "id": "cur-827b31901f2b2f",
+   "title": "Bill Graham Menorah Day",
+   "start": "2026-12-06T14:00:00-08:00",
+   "end": "2026-12-06T18:30:00-08:00",
+   "venue": "Union Square",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": "Free",
+   "isFree": true,
+   "url": "http://www.billgrahammenorah.org/schedule",
+   "source": "Chabad of SF / Bill Graham Menorah",
+   "description": "Afternoon of Chanukah festivities around the giant Union Square menorah: Dreidel House kids' crafts, live music and the Bill Graham All Stars, with the lighting ceremony at 5 p.m. Nightly lightings run Dec 4-11.",
+   "image": ""
+  },
+  {
+   "id": "cur-6d226dca526c2d",
+   "title": "Santa Paws in Downtown Danville",
+   "start": "2026-12-06T13:00:00-08:00",
+   "end": "2026-12-06T16:00:00-08:00",
+   "venue": "Railroad Plaza, 100 Railroad Ave",
+   "city": "Danville",
+   "category": "Community",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.danville.ca.gov/242/Community-Events",
+   "source": "Danville Area Chamber of Commerce",
+   "description": "Danville Area Chamber of Commerce's holiday pet event downtown; Joybound People & Pets brings adoptable dogs and cats to Railroad Plaza.",
+   "image": ""
+  },
+  {
+   "id": "cur-96fa0573ba4eda",
+   "title": "Castro Menorah Lighting",
+   "start": "2026-12-07T18:00:00-08:00",
+   "end": "2026-12-07T19:00:00-08:00",
+   "venue": "Jane Warner Plaza",
+   "city": "San Francisco",
+   "category": "Community",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://castromerchants.com/events/castro-menorah-lighting",
+   "source": "Castro Merchants Association",
+   "description": "Hanukkah menorah lighting ceremony in the Castro, presented by the Castro Community Benefit District, Castro Merchants Association and Sha'ar Zahav.",
+   "image": ""
+  },
+  {
+   "id": "cur-3a78d00bafba30",
+   "title": "Weekend Wonders: Winter Wreath Workshop",
+   "start": "2026-12-12T10:00:00-08:00",
+   "end": "2026-12-12T12:00:00-08:00",
+   "venue": "Heritage Park and Museums, 6600 Donlon Way",
+   "city": "Dublin",
+   "category": "Family",
+   "price": null,
+   "isFree": false,
+   "url": "https://www.dublin.ca.gov/289/Holiday-Events",
+   "source": "City of Dublin",
+   "description": "Make a winter wreath to take home in the Heritage Park small classroom; hot chocolate and tea provided. Registration required.",
    "image": ""
   }
  ]
