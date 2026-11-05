@@ -1,6 +1,6 @@
 {
- "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-04 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
- "lastVerified": "2026-11-04",
+ "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-05 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+ "lastVerified": "2026-11-05",
  "events": [
   {
    "id": "cur-d52a827269ea25",
@@ -1936,21 +1936,6 @@
    "image": ""
   },
   {
-   "id": "cur-330916c6187a09",
-   "title": "The Killer Dueling Pianos at Concannon",
-   "start": "2026-11-04T19:00:00-08:00",
-   "end": "2026-11-04T21:00:00-08:00",
-   "venue": "Concannon Vineyard (Barrel Room)",
-   "city": "Livermore",
-   "category": "Music",
-   "price": "$70",
-   "isFree": false,
-   "url": "https://www.lvwine.org/events/2026/11/November.html",
-   "source": "Livermore Valley Wine Community",
-   "description": "Request-driven dueling-piano show covering everything from Sinatra and Elvis to Bruno Mars. Doors 6 p.m. with a welcome sparkling pour.",
-   "image": ""
-  },
-  {
    "id": "cur-9c4a2bd3895cc3",
    "title": "Gather, Gobble, Cheers with McGrail",
    "start": "2026-11-12T19:00:00-08:00",
@@ -2737,21 +2722,6 @@
    "url": "https://blackhawkmuseum.org/events/santa-meet-greet/",
    "source": "Blackhawk Museum",
    "description": "Meet Santa inside the museum and take a free photo, then explore the galleries.",
-   "image": ""
-  },
-  {
-   "id": "cur-68db0e4b9e1b1f",
-   "title": "Golden Circle Holiday Boutique",
-   "start": "2026-11-03T09:00:00-08:00",
-   "end": "2026-11-04T16:00:00-08:00",
-   "venue": "Robert Livermore Community Center, 4444 East Ave",
-   "city": "Livermore",
-   "category": "Community",
-   "price": "Free entry",
-   "isFree": true,
-   "url": "https://www.larpd.org/2026-11-03-golden-circle-holiday-boutique",
-   "source": "Livermore Area Recreation and Park District",
-   "description": "Holiday bazaar of hand-crafted gifts made by LARPD's Golden Circle group (9 a.m.-4 p.m. both days).",
    "image": ""
   },
   {
@@ -4784,6 +4754,81 @@
    "url": "https://citycenterbishopranch.com/events/visits-with-santa-at-the-square-3/",
    "source": "City Center Bishop Ranch",
    "description": "Visit Santa in front of the big decorated Christmas tree in Alexander Square for a festive photo opportunity and a sweet holiday treat (12-4 p.m. each day).",
+   "image": ""
+  },
+  {
+   "id": "cur-48fb040084d3f4",
+   "title": "Chanukah Celebration at Broadway Plaza",
+   "start": "2026-12-06T16:00:00-08:00",
+   "end": "2026-12-06T17:30:00-08:00",
+   "venue": "Broadway Plaza, 1275 Broadway Plaza",
+   "city": "Walnut Creek",
+   "category": "Community",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://www.jewishcontracosta.com/templates/articlecco_cdo/aid/7583879/jewish/Broadway-Plaza.htm",
+   "source": "Chabad of Contra Costa",
+   "description": "Family Chanukah afternoon with Chabad of Contra Costa: grand menorah lighting, live music, entertainment, latkes and doughnuts (4-5:30 p.m.).",
+   "image": ""
+  },
+  {
+   "id": "cur-efc194451d8688",
+   "title": "Mads Tolling & John R. Burr: Ramblin' + Matt Finders & Friends",
+   "start": "2027-01-02T20:00:00-08:00",
+   "end": null,
+   "venue": "Bankhead Theater, 2400 First St",
+   "city": "Livermore",
+   "category": "Music",
+   "price": null,
+   "isFree": false,
+   "url": "https://livermorearts.org/events/club-bankhead-matt-finders/",
+   "source": "Livermore Valley Arts",
+   "description": "Double bill: violinist Mads Tolling and pianist John R. Burr open with a genre-spanning set from Ornette Coleman to Paul McCartney, then Matt Finders and an all-star Bay Area jazz nonet swing through the 1930s-40s Great American Songbook.",
+   "image": ""
+  },
+  {
+   "id": "cur-90ba4682210b40",
+   "title": "Young Virtuoso Concert (Fall 2026)",
+   "start": "2026-11-22T09:00:00-08:00",
+   "end": "2026-11-22T11:00:00-08:00",
+   "venue": "Front Row Theater, 17011 Bollinger Canyon Rd",
+   "city": "San Ramon",
+   "category": "Music",
+   "price": null,
+   "isFree": false,
+   "url": "https://tickets.sanramon.ca.gov/eventperformances.asp?evt=262",
+   "source": "San Ramon Performing Arts",
+   "description": "San Ramon Academy of Music and the City of San Ramon present the San Ramon Youth Orchestra and chamber ensembles in their fall Young Virtuoso Concert.",
+   "image": ""
+  },
+  {
+   "id": "cur-e002077f0ba725",
+   "title": "MAPP: Mission Arts & Performance Project (December)",
+   "start": "2026-12-05T12:00:00-08:00",
+   "end": null,
+   "venue": "Venues across the Mission District",
+   "city": "San Francisco",
+   "category": "Arts & Theatre",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://mappsf.com/event/6463886/753719296/december-5th-mapp",
+   "source": "Mission Arts Performance Project",
+   "description": "The long-running, always-free MAPP crawl takes over cafes, galleries, homes, street corners and public spaces around the Mission with live music, spoken word, performance art and film screenings.",
+   "image": ""
+  },
+  {
+   "id": "cur-d4945cd6e05655",
+   "title": "Waterfront Walkabout: The Holiday Season Finale",
+   "start": "2026-11-19T17:00:00-08:00",
+   "end": "2026-11-19T20:00:00-08:00",
+   "venue": "Embarcadero near the Ferry Building",
+   "city": "San Francisco",
+   "category": "Arts & Theatre",
+   "price": "Free",
+   "isFree": true,
+   "url": "https://downtownsf.org/do/waterfront-walkabout-free-sf-art-stroll",
+   "source": "Downtown SF Partnership",
+   "description": "Free evening art stroll along the downtown waterfront with artist vignettes, live music and holiday drinks (5-8 p.m.).",
    "image": ""
   }
  ]
