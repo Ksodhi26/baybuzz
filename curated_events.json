@@ -4830,6 +4830,25 @@
    "source": "Downtown SF Partnership",
    "description": "Free evening art stroll along the downtown waterfront with artist vignettes, live music and holiday drinks (5-8 p.m.).",
    "image": ""
+  },
+  {
+   "id": "cur-73a1b5f3a5be1b",
+   "title": "Gather & Glow: Women's Networking & Connection Event",
+   "start": "2026-11-14T14:00:00-08:00",
+   "end": "2026-11-14T17:00:00-08:00",
+   "venue": "Industrious, Broadway Plaza",
+   "city": "Walnut Creek",
+   "category": "Community",
+   "price": {
+    "min": 20,
+    "max": 35,
+    "currency": "USD"
+   },
+   "isFree": false,
+   "url": "https://luma.com/oqqqzsls",
+   "source": "Chandra Lynn",
+   "description": "An afternoon of women's networking, friendship and meaningful connections, with food and beverages. Award-winning author and life coach Chandra Lynn gives a short, inspiring talk on setting intentions for the holiday season. Come solo or bring a friend. Tickets: General $20 (food, drinks), VIP $35 (adds gift bag); code GLOW50OFF or GLOW50VIP takes 50% off.",
+   "image": ""
   }
  ]
 }
