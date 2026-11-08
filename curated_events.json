@@ -1,7 +1,45 @@
 {
-  "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-07 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
-  "lastVerified": "2026-11-07",
+  "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-08 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+  "lastVerified": "2026-11-08",
   "events": [
+    {
+      "id": "cur-aa1d84bf5182d5",
+      "title": "Union Square Holiday Ice Rink",
+      "start": "2026-11-04T10:00:00-08:00",
+      "end": "2027-01-18T23:00:00-08:00",
+      "venue": "Union Square, 333 Post St",
+      "city": "San Francisco",
+      "category": "Family",
+      "price": {
+        "min": 17,
+        "max": 22,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://unionsquareicerink.com/",
+      "source": "Safeway Holiday Ice Rink in Union Square",
+      "description": "Outdoor holiday skating in Union Square, open daily 10 a.m.-11 p.m. with hour-long sessions every 90 minutes; admission includes skate rental ($17 kids 8 and under). Closes 9:30 p.m. on Dec 31.",
+      "image": ""
+    },
+    {
+      "id": "cur-ff2dbb0fbbc7a8",
+      "title": "San Francisco On Ice at Fisherman's Wharf",
+      "start": "2026-11-04T10:00:00-08:00",
+      "end": "2027-01-18T23:00:00-08:00",
+      "venue": "San Francisco On Ice, 80 Jefferson St (next to SkyStar Wheel)",
+      "city": "San Francisco",
+      "category": "Family",
+      "price": {
+        "min": 19,
+        "max": 23,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://sanfranciscoonice.com/",
+      "source": "San Francisco On Ice",
+      "description": "New 6,500-square-foot outdoor rink of real ice on the Fisherman's Wharf waterfront, with daily 75-minute sessions, skate rental included, and themed skate nights through the season.",
+      "image": ""
+    },
     {
       "id": "cur-d57a43b564ec36",
       "title": "PYTC | School of Rock: Young Actors Edition",
@@ -52,6 +90,25 @@
       "image": ""
     },
     {
+      "id": "cur-8730e1aa42684c",
+      "title": "Kristi Yamaguchi Holiday Ice Rink",
+      "start": "2026-11-06T18:00:00-08:00",
+      "end": "2027-01-03T21:00:00-08:00",
+      "venue": "City Center Bishop Ranch, 6000 Bollinger Canyon Rd",
+      "city": "San Ramon",
+      "category": "Family",
+      "price": {
+        "min": 16,
+        "max": 23,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://bishopranch.ticketspice.com/city-center-ice-rink-2026",
+      "source": "City Center Bishop Ranch",
+      "description": "San Ramon's holiday rink returns with a new overhead canopy for rain-or-shine skating; 90-minute sessions with skate rental included, $16 weekday value sessions, and rinkside fire pits.",
+      "image": ""
+    },
+    {
       "id": "cur-c5f90d8a448248",
       "title": "San Francisco Coffee Festival",
       "start": "2026-11-07",
@@ -64,21 +121,6 @@
       "url": "https://www.sfcoffeefestival.com/",
       "source": "San Francisco Coffee Festival",
       "description": "Two days of coffee tastings with top roasters and exhibitors. Timed ticket sessions; some sessions are sold out.",
-      "image": ""
-    },
-    {
-      "id": "cur-88036f2425baa7",
-      "title": "Bay Area Prabasi Diwali Mela & Kali Puja 2026",
-      "start": "2026-11-07",
-      "end": null,
-      "venue": "Newark Pavilion",
-      "city": "Newark",
-      "category": "Festivals",
-      "price": null,
-      "isFree": false,
-      "url": "https://www.prabasi.org/events",
-      "source": "Bay Area Prabasi",
-      "description": "Bengali community Diwali mela with festive shopping, food stalls, mehendi, rangoli, diya painting and kids' activities, an evening light show, 108-diya lighting, cultural performances and traditional Kali (Shyama) Puja.",
       "image": ""
     },
     {
@@ -127,51 +169,6 @@
       "image": ""
     },
     {
-      "id": "cur-ad3574088446fe",
-      "title": "Kristi Yamaguchi Skating Clinic",
-      "start": "2026-11-07T09:00:00-08:00",
-      "end": "2026-11-07T10:00:00-08:00",
-      "venue": "City Center Bishop Ranch",
-      "city": "San Ramon",
-      "category": "Sports",
-      "price": null,
-      "isFree": false,
-      "url": "https://www.bishopranch.com/event-calendar/",
-      "source": "City Center Bishop Ranch",
-      "description": "Skating tips and an intro lesson from Kristi Yamaguchi. Ticket includes skate rental; ticket info to be announced.",
-      "image": ""
-    },
-    {
-      "id": "cur-ba53daa24f396cef",
-      "title": "Holiday Craft Boutique",
-      "start": "2026-11-07T10:00:00-08:00",
-      "end": "2026-11-07T15:00:00-08:00",
-      "venue": "7600 Amador Valley Blvd.",
-      "city": "Dublin",
-      "category": "Community",
-      "price": null,
-      "isFree": true,
-      "url": "https://dublin.ca.gov/m/calendar/event/detail/8030",
-      "source": "City of Dublin",
-      "description": "Annual holiday shopping boutique with handmade jewelry, pottery, soaps, clothing and gifts from local senior artisans.",
-      "image": ""
-    },
-    {
-      "id": "cur-0f7b80f639fef9",
-      "title": "Día de los Muertos and Diwali Festival",
-      "start": "2026-11-07T10:00:00-08:00",
-      "end": "2026-11-07T15:00:00-08:00",
-      "venue": "Presidio Tunnel Tops",
-      "city": "San Francisco",
-      "category": "Festivals",
-      "price": null,
-      "isFree": true,
-      "url": "https://presidio.gov/explore/events/dia-de-los-muertos-and-diwali-festival",
-      "source": "Presidio Trust",
-      "description": "Free all-ages park festival honoring South Asian and Latinx fall traditions with live performances, cultural dance and song, storytelling, arts and crafts and a fire ceremony. Registration requested.",
-      "image": ""
-    },
-    {
       "id": "cur-b3bd054fa342be",
       "title": "Zhang Xuezhi Pop-Up Art Exhibition: The Call of Antiquity",
       "start": "2026-11-07T10:00:00-08:00",
@@ -184,138 +181,6 @@
       "url": "https://blackhawkmuseum.org/events/zhang-xuezhi-pop-up-art-exhibition-the-call-of-antiquity/",
       "source": "Blackhawk Museum",
       "description": "Two-day pop-up of Chinese Impression Rock Art paintings, with the artist present both days.",
-      "image": ""
-    },
-    {
-      "id": "cur-d52a827269ea25",
-      "title": "Fun on the Farm: Quality Quilts",
-      "start": "2026-11-07T11:00:00-08:00",
-      "end": "2026-11-07T14:00:00-08:00",
-      "venue": "Forest Home Farms Historic Park",
-      "city": "San Ramon",
-      "category": "Family",
-      "price": null,
-      "isFree": true,
-      "url": "https://www.sanramon.ca.gov/our_city/departments_and_divisions/parks_community_services/forest_home_farms_historic_park/events",
-      "source": "City of San Ramon",
-      "description": "Learn the history of quilting and create your own paper quilt square. Part of the free Saturday \"Fun on the Farm\" series (11 a.m.–2 p.m.).",
-      "image": ""
-    },
-    {
-      "id": "cur-e759b9231e4146b0",
-      "title": "Dublin Diwali Mela",
-      "start": "2026-11-07T11:00:00-08:00",
-      "end": "2026-11-07T20:00:00-08:00",
-      "venue": "Emerald Glen Park",
-      "city": "Dublin",
-      "category": "Festivals",
-      "price": null,
-      "isFree": true,
-      "url": "https://trivalleyhinduconnect.org/",
-      "source": "Tri-Valley Hindu Connect",
-      "description": "Free community Diwali mela with a Rath Yatra procession, Diwali bazaar, food circle, live music, dance, henna, rangoli and dandiya.",
-      "image": ""
-    },
-    {
-      "id": "cur-0efbe1efe6cc62",
-      "title": "Diwali Paper Lanterns with SCRAP SF",
-      "start": "2026-11-07T11:00:00-08:00",
-      "end": "2026-11-07T14:00:00-08:00",
-      "venue": "Union Square Park",
-      "city": "San Francisco",
-      "category": "Family",
-      "price": "Free",
-      "isFree": true,
-      "url": "https://visitunionsquaresf.com/park-programs",
-      "source": "Union Square Alliance",
-      "description": "Free drop-in Winter Crafts session in Union Square where families make Diwali paper lanterns with SCRAP SF.",
-      "image": ""
-    },
-    {
-      "id": "cur-78c7ce09b0bffa",
-      "title": "He 'Ohana Kakau: We Are Family (1 p.m.)",
-      "start": "2026-11-07T13:00:00-08:00",
-      "end": null,
-      "venue": "Dougherty Valley Performing Arts Center",
-      "city": "San Ramon",
-      "category": "Arts & Theatre",
-      "price": {
-        "min": 44.85,
-        "max": 44.85,
-        "currency": "USD"
-      },
-      "isFree": false,
-      "url": "https://content.govdelivery.com/accounts/CASRAMON/bulletins/42bdf74",
-      "source": "San Ramon Performing Arts",
-      "description": "Hula and 'ori Tahiti with live music celebrating family bonds.",
-      "image": ""
-    },
-    {
-      "id": "cur-846aa74c5b29b4",
-      "title": "Día de los Muertos Celebration",
-      "start": "2026-11-07T13:00:00-08:00",
-      "end": "2026-11-07T15:00:00-08:00",
-      "venue": "Pleasanton Senior Center",
-      "city": "Pleasanton",
-      "category": "Festivals",
-      "price": null,
-      "isFree": true,
-      "url": "https://www.firehousearts.org/calendar-event/dia-de-los-muertos-2026/",
-      "source": "Firehouse Arts Center",
-      "description": "Free community event with ofrenda viewings, live performances, bilingual storytime, arts and crafts, face painting and refreshments.",
-      "image": ""
-    },
-    {
-      "id": "cur-03fd7a0b6ae794",
-      "title": "Meyhouse Jazz: Christian Artmann Quintet",
-      "start": "2026-11-07T17:00:00-08:00",
-      "end": "2026-11-07T22:00:00-08:00",
-      "venue": "Meyhouse, City Center Bishop Ranch",
-      "city": "San Ramon",
-      "category": "Music",
-      "price": null,
-      "isFree": false,
-      "url": "https://citycenterbishopranch.com/events/planet-comedy-an-international-stand-up-experience/",
-      "source": "City Center Bishop Ranch",
-      "description": "Flutist and composer Christian Artmann and his quintet mix contemporary jazz with classical, Eastern European folk, Brazilian and prog-rock influences. Two seatings, 5 and 8 p.m.; food and drinks sold separately.",
-      "image": ""
-    },
-    {
-      "id": "cur-41d7e7a0736663",
-      "title": "He 'Ohana Kakau: We Are Family (6 p.m.)",
-      "start": "2026-11-07T18:00:00-08:00",
-      "end": null,
-      "venue": "Dougherty Valley Performing Arts Center",
-      "city": "San Ramon",
-      "category": "Arts & Theatre",
-      "price": {
-        "min": 44.85,
-        "max": 44.85,
-        "currency": "USD"
-      },
-      "isFree": false,
-      "url": "https://content.govdelivery.com/accounts/CASRAMON/bulletins/42bdf74",
-      "source": "San Ramon Performing Arts",
-      "description": "Hula and 'ori Tahiti with live music celebrating family bonds.",
-      "image": ""
-    },
-    {
-      "id": "cur-1bb24cd498a56c",
-      "title": "California Symphony: From Tchaikovsky to Copland (Sat)",
-      "start": "2026-11-07T19:30:00-08:00",
-      "end": null,
-      "venue": "Hofmann Theatre, Lesher Center",
-      "city": "Walnut Creek",
-      "category": "Music",
-      "price": {
-        "min": 50,
-        "max": 110,
-        "currency": "USD"
-      },
-      "isFree": false,
-      "url": "https://www.californiasymphony.org/shows/from-tchaikovsky-to-copland/",
-      "source": "California Symphony",
-      "description": "Works by Arensky, Tchaikovsky, Barber and Copland, with Cory Tiffin on Copland's Clarinet Concerto.",
       "image": ""
     },
     {
@@ -470,6 +335,21 @@
       "url": "https://www.californiasymphony.org/shows/from-tchaikovsky-to-copland/",
       "source": "California Symphony",
       "description": "Works by Arensky, Tchaikovsky, Barber and Copland, with Cory Tiffin on Copland's Clarinet Concerto.",
+      "image": ""
+    },
+    {
+      "id": "cur-2c2b25d17bf4eb",
+      "title": "Deepavali, Govardhan Puja & 56 Bhog at ISKCON Tri-Central Valley",
+      "start": "2026-11-08",
+      "end": "2026-11-09",
+      "venue": "ISKCON Tri-Central Valley, 6711 Sierra Ct Suite B",
+      "city": "Dublin",
+      "category": "Festivals",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.iskcontricentralvalley.com/iskcon-festivals-calendar",
+      "source": "ISKCON Tri-Central Valley",
+      "description": "Deepavali and Govardhan Puja celebrations with the traditional 56-item food offering (56 Bhog) at the Dublin center.",
       "image": ""
     },
     {
@@ -639,6 +519,36 @@
       "url": "https://www.kqed.org/event/6829/object-stories-san-francisco",
       "source": "KQED",
       "description": "Bay Area artists and makers each share a handmade object and the story behind it; with the American Craft Council.",
+      "image": ""
+    },
+    {
+      "id": "cur-bf00e8a02f487c",
+      "title": "Girl Dinner & a Movie: Twilight",
+      "start": "2026-11-12T18:00:00-08:00",
+      "end": "2026-11-12T21:00:00-08:00",
+      "venue": "THE LOT, City Center Bishop Ranch",
+      "city": "San Ramon",
+      "category": "Film",
+      "price": null,
+      "isFree": false,
+      "url": "https://citycenterbishopranch.com/events/girl-dinner-a-movie/",
+      "source": "City Center Bishop Ranch",
+      "description": "Themed cocktail reception at ZENTRL bar followed by a screening of Twilight (2008) with a 'girl dinner' served to your seat; film at 7 p.m.",
+      "image": ""
+    },
+    {
+      "id": "cur-eea72207f1160c",
+      "title": "Naga Chaturthi at the Livermore Temple",
+      "start": "2026-11-12T09:00:00-08:00",
+      "end": "2026-11-12T12:00:00-08:00",
+      "venue": "Shiva-Vishnu Temple, 1232 Arrowhead Ave",
+      "city": "Livermore",
+      "category": "Community",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.livermoretemple.org/",
+      "source": "Shiva-Vishnu Temple (HCCC)",
+      "description": "Morning Naga Chaturthi observance with pujas to the serpent deities at the Hindu Community & Cultural Center temple.",
       "image": ""
     },
     {
@@ -1247,6 +1157,21 @@
       "image": ""
     },
     {
+      "id": "cur-40f0889969bc32",
+      "title": "Ayyappa Mandala Puja Season at the Livermore Temple",
+      "start": "2026-11-16",
+      "end": "2026-12-26",
+      "venue": "Shiva-Vishnu Temple, 1232 Arrowhead Ave",
+      "city": "Livermore",
+      "category": "Community",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.livermoretemple.org/",
+      "source": "Shiva-Vishnu Temple (HCCC)",
+      "description": "Six-week Mandala season of pujas for Lord Ayyappa, leading up to the Maha Padi Puja on Dec 13. Check the temple's flyers for daily timings.",
+      "image": ""
+    },
+    {
       "title": "Hindi Storytime at Dublin Library",
       "start": "2026-11-17T18:30:00-08:00",
       "end": "2026-11-17T19:30:00-08:00",
@@ -1319,6 +1244,21 @@
       "url": "https://www.lvwine.org/events/2026/11/November.html",
       "source": "Livermore Valley Wine Community",
       "description": "Singer-songwriter Josh Rouse plays an intimate show ahead of his 15th album, Museums and Women.",
+      "image": ""
+    },
+    {
+      "id": "cur-fede442aba96fa",
+      "title": "Free Art Workshop: Velveteen Rabbit Pop-up Book",
+      "start": "2026-11-18T14:00:00-08:00",
+      "end": "2026-11-18T16:00:00-08:00",
+      "venue": "Yerba Buena Center for the Arts, 701 Mission St (Grand Lobby)",
+      "city": "San Francisco",
+      "category": "Family",
+      "price": "Free",
+      "isFree": true,
+      "url": "https://ybca.org/event/free-art-workshop-velveteen-rabbit-pop-up-book-11-18-26/",
+      "source": "Yerba Buena Center for the Arts",
+      "description": "Design a pop-up book starring characters from The Velveteen Rabbit, ahead of ODC/Dance's holiday run at YBCA. Free with registration.",
       "image": ""
     },
     {
@@ -2043,6 +1983,21 @@
       "image": ""
     },
     {
+      "id": "cur-6521c749c7bcca",
+      "title": "Sudarshana Homam",
+      "start": "2026-11-24T16:00:00-08:00",
+      "end": "2026-11-24T18:30:00-08:00",
+      "venue": "Shiva-Vishnu Temple, 1232 Arrowhead Ave",
+      "city": "Livermore",
+      "category": "Community",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.livermoretemple.org/",
+      "source": "Shiva-Vishnu Temple (HCCC)",
+      "description": "Evening fire ritual (homam) invoking Lord Vishnu's Sudarshana Chakra at the Livermore Shiva-Vishnu Temple.",
+      "image": ""
+    },
+    {
       "id": "cur-5ac3f3a81e8623",
       "title": "Bishop Ranch Turkey Trot",
       "start": "2026-11-26",
@@ -2370,6 +2325,21 @@
       "id": "cur-507c77308e91ef4c"
     },
     {
+      "id": "cur-22a6805cf4c601",
+      "title": "Pleasanton Community Concert Band: Holiday Concert",
+      "start": "2026-11-29T15:00:00-08:00",
+      "end": "2026-11-29T16:30:00-08:00",
+      "venue": "Firehouse Arts Center, 4444 Railroad Ave",
+      "city": "Pleasanton",
+      "category": "Music",
+      "price": "Free",
+      "isFree": true,
+      "url": "https://pleasantonband.org/event/holiday-concert-7/",
+      "source": "Pleasanton Community Concert Band",
+      "description": "Free afternoon concert of seasonal music by the Pleasanton Community Concert Band; donations welcome.",
+      "image": ""
+    },
+    {
       "id": "cur-d94d4899b93594",
       "title": "Castro Holiday Tree Lighting Ceremony",
       "start": "2026-11-30T18:00:00-08:00",
@@ -2382,6 +2352,21 @@
       "url": "https://castromerchants.com/events",
       "source": "Castro Merchants Association",
       "description": "The Castro kicks off the holiday season by lighting its neighborhood tree; shop local afterward.",
+      "image": ""
+    },
+    {
+      "id": "cur-7755d5fa2956fe",
+      "title": "Kaala Bhairava Jayanthi",
+      "start": "2026-11-30",
+      "end": null,
+      "venue": "Shiva-Vishnu Temple, 1232 Arrowhead Ave",
+      "city": "Livermore",
+      "category": "Community",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.livermoretemple.org/",
+      "source": "Shiva-Vishnu Temple (HCCC)",
+      "description": "Observance of the appearance day of Kaala Bhairava, a fierce form of Lord Shiva, at the Livermore temple. Check the temple's flyers for timings.",
       "image": ""
     },
     {
@@ -2574,6 +2559,25 @@
       "url": "https://www.sfjazz.org/tickets/productions/26-27/jake-shimabukuro/",
       "source": "SFJAZZ",
       "description": "Ukulele virtuoso Jake Shimabukuro brings back his holiday-favorites program. Dec 3-5 at 7:30 p.m. and Dec 6 at 3 p.m.; $45-$140.",
+      "image": ""
+    },
+    {
+      "id": "cur-f711383e8cdbd8",
+      "title": "Drag on Ice at Union Square",
+      "start": "2026-12-03T18:30:00-08:00",
+      "end": "2026-12-03T20:00:00-08:00",
+      "venue": "Union Square Holiday Ice Rink, 333 Post St",
+      "city": "San Francisco",
+      "category": "Arts & Theatre",
+      "price": {
+        "min": 35,
+        "max": 35,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://unionsquareicerink.com/san-francisco-events/",
+      "source": "Safeway Holiday Ice Rink in Union Square",
+      "description": "Local drag performers take over the Union Square rink with holiday performances; book ahead to skate with them, or watch from the sidelines.",
       "image": ""
     },
     {
@@ -3531,6 +3535,25 @@
       "image": ""
     },
     {
+      "id": "cur-0c9897b7d2bf4b",
+      "title": "Silent Skate at Union Square",
+      "start": "2026-12-10T19:00:00-08:00",
+      "end": null,
+      "venue": "Union Square Holiday Ice Rink, 333 Post St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 35,
+        "max": 35,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://unionsquareicerink.com/san-francisco-events/",
+      "source": "Safeway Holiday Ice Rink in Union Square",
+      "description": "One-night silent disco on ice with three live DJ channels on wireless headphones; 7 p.m. and 8:30 p.m. sessions.",
+      "image": ""
+    },
+    {
       "id": "cur-aeb0ce08327558",
       "title": "Mads Tolling's Cool Yule: A Nordic Holiday Celebration",
       "start": "2026-12-11",
@@ -3641,6 +3664,21 @@
       "url": "https://www.lvwine.org/events/2026/12/December.html",
       "source": "Livermore Valley Wine Community",
       "description": "Six-piece Talking Heads tribute band and dance party.",
+      "image": ""
+    },
+    {
+      "id": "cur-5bfd8bbda2dd8c",
+      "title": "Santa's Magic Bag",
+      "start": "2026-12-11",
+      "end": "2026-12-13",
+      "venue": "Village Theatre, 233 Front St",
+      "city": "Danville",
+      "category": "Family",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.danville.ca.gov/1068/Holidays-in-Danville",
+      "source": "Town of Danville",
+      "description": "Family holiday play: when Santa's magic bag goes missing just before Christmas, a festive mystery unfolds. Friday through Sunday.",
       "image": ""
     },
     {
@@ -4550,6 +4588,25 @@
       "image": ""
     },
     {
+      "id": "cur-ea3776fd9cf04b",
+      "title": "Mochitsuki Workshops at JCCCNC",
+      "start": "2026-12-19T11:00:00-08:00",
+      "end": "2026-12-19T17:00:00-08:00",
+      "venue": "JCCCNC, 1840 Sutter St (Japantown)",
+      "city": "San Francisco",
+      "category": "Family",
+      "price": {
+        "min": 20,
+        "max": 25,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.jcccnc.org/events/mochitsuki-workshops-2026/",
+      "source": "Japanese Cultural and Community Center of Northern California",
+      "description": "Learn how rice is pounded into mochi for Japanese New Year and take home up to 2 lbs of fresh mochi; half-hour sign-up shifts, $20 members / $25 non-members.",
+      "image": ""
+    },
+    {
       "title": "Geeta Jayanti Recitation at ISKCON Tri-Central Valley",
       "start": "2026-12-20",
       "end": null,
@@ -4807,6 +4864,25 @@
       "url": "https://calendar.asianart.org/event/41st-annual-japanese-new-year-bell-ringing-ceremony/",
       "source": "Asian Art Museum",
       "description": "Ring the museum's 16th-century Japanese temple bell 108 times to welcome the new year, with a chant, guided meditation and short Dharma talk. Included with admission; numbered bell-ringing tickets handed out at Samsung Hall.",
+      "image": ""
+    },
+    {
+      "id": "cur-534aa3fedbc255",
+      "title": "New Year's Day Polar Bear Skate",
+      "start": "2027-01-01T14:30:00-08:00",
+      "end": "2027-01-01T15:30:00-08:00",
+      "venue": "Union Square Holiday Ice Rink, 333 Post St",
+      "city": "San Francisco",
+      "category": "Family",
+      "price": {
+        "min": 30,
+        "max": 30,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://unionsquareicerink.com/san-francisco-events/",
+      "source": "Safeway Holiday Ice Rink in Union Square",
+      "description": "Start 2027 by skating in your most outrageous swimwear in Union Square; prizes for the best-dressed skaters.",
       "image": ""
     },
     {
