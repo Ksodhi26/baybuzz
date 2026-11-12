@@ -1,6 +1,6 @@
 {
-  "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-11 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
-  "lastVerified": "2026-11-11",
+  "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-12 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+  "lastVerified": "2026-11-12",
   "events": [
     {
       "id": "cur-aa1d84bf5182d5",
@@ -94,21 +94,6 @@
       "image": ""
     },
     {
-      "id": "cur-469ac949488d11",
-      "title": "Performing Arts Studio: Charlie and the Chocolate Factory Jr.",
-      "start": "2026-11-07",
-      "end": "2026-11-11",
-      "venue": "Lesher Center for the Arts",
-      "city": "Walnut Creek",
-      "category": "Arts & Theatre",
-      "price": null,
-      "isFree": false,
-      "url": "https://www.lesherartscenter.org/events/theatre",
-      "source": "Lesher Center for the Arts",
-      "description": "Performing Arts Studio's pre-teen company stages the Roald Dahl musical.",
-      "image": ""
-    },
-    {
       "id": "cur-18e93db8ff133b",
       "title": "Skanda Shashti Celebrations at the Livermore Temple",
       "start": "2026-11-09",
@@ -121,36 +106,6 @@
       "url": "https://www.livermoretemple.org/",
       "source": "Shiva-Vishnu Temple (HCCC)",
       "description": "Week-long Skanda Shashti observance honoring Lord Murugan (Skanda) at the Hindu Community & Cultural Center temple, Monday through Sunday. Check the temple's flyers for daily puja timings.",
-      "image": ""
-    },
-    {
-      "id": "cur-b114d1583a11de86",
-      "title": "Veterans Day Celebration and Open House",
-      "start": "2026-11-11T09:00:00-08:00",
-      "end": "2026-11-11T17:00:00-08:00",
-      "venue": "400 Hartz Avenue",
-      "city": "Danville",
-      "category": "Community",
-      "price": null,
-      "isFree": false,
-      "url": "https://www.danville.ca.gov/Calendar.aspx?EID=3928",
-      "source": "Town of Danville",
-      "description": "Danville's Veterans Day observance with an all-day open house at the Veterans Memorial Building on Hartz Avenue.",
-      "image": ""
-    },
-    {
-      "id": "cur-f5a4d22462656373",
-      "title": "Veterans Day Ceremony",
-      "start": "2026-11-11T11:00:00-08:00",
-      "end": "2026-11-11T12:00:00-08:00",
-      "venue": "Lesher Center for the Arts",
-      "city": "Walnut Creek",
-      "category": "Community",
-      "price": null,
-      "isFree": true,
-      "url": "https://walnutcreekconcertband.org/tickets/veterans-day-ceremony",
-      "source": "Walnut Creek Concert Band",
-      "description": "Free ceremony from the City of Walnut Creek and the Walnut Creek Concert Band honoring veterans with speakers and music.",
       "image": ""
     },
     {
@@ -5033,21 +4988,6 @@
       "image": ""
     },
     {
-      "id": "cur-df86dd38746e69",
-      "title": "Veterans Day Interfaith Service at the Presidio Chapel",
-      "start": "2026-11-11T11:00:00-08:00",
-      "end": "2026-11-11T12:00:00-08:00",
-      "venue": "Presidio Chapel, 130 Fisher Loop",
-      "city": "San Francisco",
-      "category": "Community",
-      "price": null,
-      "isFree": true,
-      "url": "https://presidio.gov/explore/events/veterans-day-interfaith-service/",
-      "source": "Interfaith Center at the Presidio",
-      "description": "A free interfaith Veterans Day service, with a keynote from Michael Blecker, executive director emeritus of Swords to Plowshares. RSVP requested.",
-      "image": ""
-    },
-    {
       "id": "cur-76ad5a24076cfc",
       "title": "Christmas Eve Carols & Mass at the Presidio Chapel",
       "start": "2026-12-24T19:00:00-08:00",
@@ -5191,21 +5131,6 @@
       "image": ""
     },
     {
-      "id": "cur-afb700359ba3f5",
-      "title": "Elephant Talk with Mini Nagendran",
-      "start": "2026-11-11T12:00:00-08:00",
-      "end": "2026-11-11T14:30:00-08:00",
-      "venue": "Stockmen's Park",
-      "city": "Livermore",
-      "category": "Talks",
-      "price": null,
-      "isFree": true,
-      "url": "https://livermorearts.org/events/elephant-talk-with-mini-nagendran/",
-      "source": "Livermore Valley Arts",
-      "description": "Wildlife conservation biologist Mini Nagendran of Asian Elephant Support talks about human-elephant conflict and coexistence and efforts to protect Asian elephants and their habitat. Free and open to the public.",
-      "image": ""
-    },
-    {
       "id": "cur-12a3f00c782940",
       "title": "CYT Tri-Valley: Frozen",
       "start": "2026-11-13T18:30:00-08:00",
@@ -5338,6 +5263,195 @@
       "url": "https://www.sfmasonic.com/",
       "source": "The Masonic",
       "description": "The R&B group Jodeci marks 35 years of their debut album Forever My Lady with an 8 p.m. show at The Masonic.",
+      "image": ""
+    },
+    {
+      "id": "cur-bcdcb8c8adae70",
+      "title": "Dublin Turkey Trot: Run, Walk, Give Thanks",
+      "start": "2026-11-26T09:00:00-08:00",
+      "end": "2026-11-26T10:30:00-08:00",
+      "venue": "Emerald Glen Park, 4201 Central Pkwy",
+      "city": "Dublin",
+      "category": "Sports",
+      "price": {
+        "min": 27.5,
+        "max": 27.5,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://runsignup.com/Race/CA/Dublin/DublinTurkeyTrotRunWalkGiveThanks",
+      "source": "Rotary Club of Dublin",
+      "description": "The Rotary Club of Dublin's first Thanksgiving-morning 5K walk/run, starting at 9 a.m. All paces and strollers welcome, and costumes are encouraged. Proceeds go to Toys for Tots, the Rotary bike build for kids and local student scholarships. Online registration closes Nov 25 at noon.",
+      "image": ""
+    },
+    {
+      "id": "cur-31565fde006cca",
+      "title": "Non Stop Bhangra Dance Party (21+)",
+      "start": "2026-11-13T22:00:00-08:00",
+      "end": "2026-11-14T02:00:00-08:00",
+      "venue": "Thriller Social Club, 508 4th St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 15,
+        "max": 20,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://nonstopbhangra.com/",
+      "source": "Non Stop Bhangra",
+      "description": "Late-night Punjabi dance party from the long-running SF collective Non Stop Bhangra, with DJs and dhol, following the Bhangra & Beats Diwali night market. 21+; $15 early bird, $20 general admission.",
+      "image": ""
+    },
+    {
+      "id": "cur-4cf3572f928978",
+      "title": "21st Annual World Tree of Hope Celebration",
+      "start": "2026-12-07T18:30:00-08:00",
+      "end": "2026-12-07T20:00:00-08:00",
+      "venue": "Grace Cathedral, 1100 California St",
+      "city": "San Francisco",
+      "category": "Community",
+      "price": null,
+      "isFree": false,
+      "url": "https://gracecathedral.org/calendar-events/21st-annual-world-tree-of-hope-celebration/",
+      "source": "Grace Cathedral",
+      "description": "Rainbow World Fund and Grace Cathedral light the World Tree of Hope, an origami holiday tree covered with thousands of hand-folded cranes and stars that carry wishes for the world. The tree stays on view at the cathedral through Jan 8, 2027.",
+      "image": ""
+    },
+    {
+      "id": "cur-4e9ea132aa3261",
+      "title": "Winter Wonderland 2026 at the Bayview Opera House",
+      "start": "2026-12-12T12:00:00-08:00",
+      "end": "2026-12-12T18:00:00-08:00",
+      "venue": "Ruth Williams Bayview Opera House, 4705 3rd St",
+      "city": "San Francisco",
+      "category": "Family",
+      "price": "Free",
+      "isFree": true,
+      "url": "https://rwoh.org/event/winter-wonderland-2026/",
+      "source": "Ruth Williams Bayview Opera House",
+      "description": "The Bayview Opera House's 14th annual holiday celebration, with a holiday movie, arts and crafts with the Museum of Craft and Design, a local vendor market, live performances, free family portraits, a bike raffle, giveaways while supplies last and a visit from Santa. RSVP on the organizer's page.",
+      "image": ""
+    },
+    {
+      "id": "cur-f1f84126784ecf",
+      "title": "Ursa Major 2026: EGL & J-Fashion Convention",
+      "start": "2026-12-11T00:00:00-08:00",
+      "end": "2026-12-13T23:00:00-08:00",
+      "venue": "Hotel Kabuki, 1625 Post St (Japantown)",
+      "city": "San Francisco",
+      "category": "Community",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.bayareakei.org/ursa-major",
+      "source": "Bay Area Kei",
+      "description": "Bay Area Kei's weekend J-fashion and EGL convention in Japantown, with panels and workshops, photo meetups, an artist alley and vendor hall, dance lessons, a Saturday Holiday Ball with a coord contest, and a Sunday swap meet. Registration required; the detailed schedule is still to be posted.",
+      "image": ""
+    },
+    {
+      "id": "cur-66d3f321f171bb",
+      "title": "Monthly Hanuman Chalisa Chanting (108 times)",
+      "start": "2026-11-21T09:00:00-08:00",
+      "end": "2026-11-21T13:00:00-08:00",
+      "venue": "Sri Datta Sai Temple, 1901 San Ramon Valley Blvd",
+      "city": "San Ramon",
+      "category": "Community",
+      "price": "Free",
+      "isFree": true,
+      "url": "https://sridattasaimandir.org/temple/calendar/upcoming-events/",
+      "source": "Sri Datta Sai Temple",
+      "description": "Devotees gather on the third Saturday of the month to chant the Hanuman Chalisa 108 times. Chanting starts at 9 a.m. and usually takes up to four hours.",
+      "image": ""
+    },
+    {
+      "id": "cur-6dbcb6ba98d983",
+      "title": "Tiny Tuesday: Winter Wildlife",
+      "start": "2026-12-08T10:00:00-08:00",
+      "end": "2026-12-08T12:00:00-08:00",
+      "venue": "Lindsay Wildlife Experience, 1931 First Ave",
+      "city": "Walnut Creek",
+      "category": "Family",
+      "price": {
+        "min": 10,
+        "max": 12,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://lindsaywildlife.org/events/tiny-tuesday-winter-wildlife-3/",
+      "source": "Lindsay Wildlife Experience",
+      "description": "A morning for kids ages 2 to 5 and their caregivers to learn what animals do in winter, with animal ambassadors, a sing-along, a puppet show, crafts, games and storytime with Contra Costa Library. $10 members, $12 non-members per person; online registration closes Dec 6.",
+      "image": ""
+    },
+    {
+      "id": "cur-3c967ae297153b",
+      "title": "Comedy with Liz Grant & Friends: Reggie Steele and Andrew Orolfo",
+      "start": "2026-12-06T19:30:00-08:00",
+      "end": "2026-12-06T21:30:00-08:00",
+      "venue": "Village Theatre, 233 Front St",
+      "city": "Danville",
+      "category": "Comedy",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.danville.ca.gov/CivicSend/ViewMessage/message/99289",
+      "source": "Town of Danville",
+      "description": "Host Liz Grant brings back Bay Area comic Reggie Steele, with Orinda's Andrew Orolfo, for a holiday-season night of stand-up at 7:30 p.m. The box office opens an hour before. Some material is mature; recommended for ages 16 and up.",
+      "image": ""
+    },
+    {
+      "id": "cur-11e1ad127d01c6",
+      "title": "Stella Cole: Merry Christmas, Darling",
+      "start": "2026-12-15T19:30:00-08:00",
+      "end": "2026-12-15T21:30:00-08:00",
+      "venue": "SFJAZZ Center, Miner Auditorium, 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 45,
+        "max": 105,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/stella-cole/",
+      "source": "SFJAZZ",
+      "description": "Jazz vocalist Stella Cole makes her Miner Auditorium debut with a holiday program for voice and strings, joined by the Bay Area's Del Sol Quartet.",
+      "image": ""
+    },
+    {
+      "id": "cur-0aa9b3703e154c",
+      "title": "Kenny Garrett",
+      "start": "2026-12-11T19:30:00-08:00",
+      "end": "2026-12-11T21:30:00-08:00",
+      "venue": "SFJAZZ Center, Miner Auditorium, 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 50,
+        "max": 110,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/kenny-garrett/",
+      "source": "SFJAZZ",
+      "description": "The 2023 NEA Jazz Master and Miles Davis alumnus brings his latest band to SFJAZZ for a 7:30 p.m. show, also livestreamed.",
+      "image": ""
+    },
+    {
+      "id": "cur-5445a73a95b0c4",
+      "title": "Chris Botti",
+      "start": "2027-01-07T19:30:00-08:00",
+      "end": "2027-01-12T21:30:00-08:00",
+      "venue": "SFJAZZ Center, Miner Auditorium, 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 65,
+        "max": 205,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/chris-botti/",
+      "source": "SFJAZZ",
+      "description": "Trumpeter Chris Botti's New Year residency at SFJAZZ, with eight shows Jan 7-12: evenings at 7:30 p.m. (7 p.m. on Sun Jan 10) and 3 p.m. matinees on Jan 9 and 10. These shows usually sell out early.",
       "image": ""
     }
   ]
