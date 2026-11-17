@@ -5529,6 +5529,21 @@
       "source": "Patchwork Show",
       "description": "European-style holiday market with a rotating lineup of independent makers on Maiden Lane. Soft opening Dec 8, grand opening Dec 9, closed Dec 25. Open 11 a.m.–7 p.m. Monday–Wednesday and 11 a.m.–8 p.m. Thursday–Sunday.",
       "image": ""
+    },
+    {
+      "id": "cur-f15c267111bb73",
+      "title": "Pet Night with Santa",
+      "start": "2026-11-23T16:00:00-08:00",
+      "end": "2026-11-23T19:00:00-08:00",
+      "venue": "Santa's Workshop near True Food Kitchen, Broadway Plaza",
+      "city": "Walnut Creek",
+      "category": "Family",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.broadwayplaza.com/Events/Details/574231",
+      "source": "Broadway Plaza",
+      "description": "Bring your dog (no exotic pets) for a photo with Santa. Also Nov 30 and Dec 7 and 14, 4 to 7 p.m. Regular Santa photo prices apply.",
+      "image": ""
     }
   ]
 }
