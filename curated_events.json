@@ -1,6 +1,6 @@
 {
-  "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-23 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
-  "lastVerified": "2026-11-23",
+  "_help": "Hand-curated events for cities whose calendars block automated access. Each entry was checked on or before 2026-11-24 against the organizer's or venue's own public page, linked in 'url'. scripts/update_events.py merges this file into events.json, drops past events and removes duplicates. Edit freely; keep ISO dates in Pacific time.",
+  "lastVerified": "2026-11-24",
   "events": [
     {
       "id": "cur-aa1d84bf5182d5",
@@ -166,21 +166,6 @@
       "url": "https://www.ruthbancroftgarden.org/garden-of-dlights/",
       "source": "Ruth Bancroft Garden",
       "description": "Self-guided holiday light show of illuminated cacti, succulents, sculptures and lasers on select evenings; timed entry at 5:30, 6:30 and 7:30 p.m. Dog-friendly.",
-      "image": ""
-    },
-    {
-      "id": "cur-6b7368faa531ba",
-      "title": "Karthika Poornima Sri Satyanarayana Puja (Group)",
-      "start": "2026-11-23T17:00:00-08:00",
-      "end": "2026-11-23T19:00:00-08:00",
-      "venue": "Shiva-Vishnu Temple, 1232 Arrowhead Ave",
-      "city": "Livermore",
-      "category": "Community",
-      "price": null,
-      "isFree": false,
-      "url": "https://www.livermoretemple.org/",
-      "source": "Shiva-Vishnu Temple (HCCC)",
-      "description": "Group Sri Satyanarayana Puja on the Karthika full-moon evening at the Livermore Shiva-Vishnu Temple; families can sponsor and take part.",
       "image": ""
     },
     {
@@ -4682,36 +4667,6 @@
       "image": ""
     },
     {
-      "id": "cur-f15c267111bb73",
-      "title": "Pet Night with Santa",
-      "start": "2026-11-23T16:00:00-08:00",
-      "end": "2026-11-23T19:00:00-08:00",
-      "venue": "Santa's Workshop near True Food Kitchen, Broadway Plaza",
-      "city": "Walnut Creek",
-      "category": "Family",
-      "price": null,
-      "isFree": false,
-      "url": "https://www.broadwayplaza.com/Events/Details/574231",
-      "source": "Broadway Plaza",
-      "description": "Bring your dog (no exotic pets) for a photo with Santa. Also Nov 30 and Dec 7 and 14, 4 to 7 p.m. Regular Santa photo prices apply.",
-      "image": ""
-    },
-    {
-      "title": "Karthika Masa Somavara Shiva Abhishekam",
-      "start": "2026-11-23T18:00:00-08:00",
-      "end": "2026-11-23T19:30:00-08:00",
-      "venue": "Shiva-Vishnu Temple, 1232 Arrowhead Ave",
-      "city": "Livermore",
-      "category": "Community",
-      "price": null,
-      "isFree": false,
-      "url": "https://www.livermoretemple.org/",
-      "source": "Shiva-Vishnu Temple (HCCC)",
-      "description": "Monday-evening abhishekam to Lord Shiva for the Karthika month. Also Monday, Nov 30 at 6 p.m., and Monday, Dec 7 at 4:30 p.m., when it is a Mahanyasa Ekadasa Rudrabhishekam, following a 108 Shankhabhishekam at 4 p.m. Devotees can sponsor an abhishekam.",
-      "image": "",
-      "id": "cur-da649782155b85"
-    },
-    {
       "title": "New Year's Day Annadana at the Livermore Temple",
       "start": "2027-01-01",
       "end": null,
@@ -5674,21 +5629,6 @@
       "image": ""
     },
     {
-      "id": "cur-6c705f3a42aa6a",
-      "title": "Group Satyanarayana Puja (Pournami)",
-      "start": "2026-11-23",
-      "end": null,
-      "venue": "Sri Datta Sai Temple, 1901 San Ramon Valley Blvd",
-      "city": "San Ramon",
-      "category": "Community",
-      "price": null,
-      "isFree": false,
-      "url": "https://sridattasaimandir.org/temple/calendar/upcoming-events/",
-      "source": "Sri Datta Sai Temple",
-      "description": "The temple's group Satyanarayana Swamy Vratam, done every full-moon day. Check the time with the temple (925-232-1368).",
-      "image": ""
-    },
-    {
       "id": "cur-e87e446c0e6452",
       "title": "A Brass and Organ Christmas",
       "start": "2026-12-21T19:30:00-08:00",
@@ -6046,6 +5986,229 @@
       "url": "https://sridattasaimandir.org/temple/calendar/upcoming-events",
       "source": "Sri Datta Sai Temple",
       "description": "Shiva Pradosha puja (abhishekam and archana) at sunset on Trayodashi; the temple says it is typically performed around 7 p.m.",
+      "image": ""
+    },
+    {
+      "id": "cur-cf7ef5a9c6f69b",
+      "title": "Lau Noah & Adam Neely",
+      "start": "2026-12-03T19:00:00-08:00",
+      "end": "2026-12-03T22:00:00-08:00",
+      "venue": "SFJAZZ Center (Joe Henderson Lab), 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 35,
+        "max": 55,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/lau-noah-adam-neely/",
+      "source": "SFJAZZ",
+      "description": "Spanish guitarist-singer Lau Noah teams up with bassist Adam Neely (Sungazer) for an intimate duo set drawing on their EP The Way Under. Two sets, 7 and 8:30 p.m.; pay-what-you-wish tiers $35-$55.",
+      "image": ""
+    },
+    {
+      "id": "cur-34556ea26711f9",
+      "title": "Aaron Shaw: And So It Is",
+      "start": "2026-12-06T18:00:00-08:00",
+      "end": "2026-12-06T21:00:00-08:00",
+      "venue": "SFJAZZ Center (Joe Henderson Lab), 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 30,
+        "max": 50,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/aaron-shaw/",
+      "source": "SFJAZZ",
+      "description": "L.A. tenor saxophonist Aaron Shaw, a spiritual-jazz voice from the Leimert Park scene, plays music from his debut album And So It Is. Sets at 6 and 7:30 p.m.; pay-what-you-wish $30-$50.",
+      "image": ""
+    },
+    {
+      "id": "cur-455a0437a10783",
+      "title": "Skylar Tang Quartet",
+      "start": "2026-12-18T19:00:00-08:00",
+      "end": "2026-12-18T22:00:00-08:00",
+      "venue": "SFJAZZ Center (Joe Henderson Lab), 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 30,
+        "max": 50,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/skylar-tang-quartet/",
+      "source": "SFJAZZ",
+      "description": "Homecoming bandleader debut for Bay Area-raised trumpeter Skylar Tang, an SFJAZZ High School All-Stars alum now working in New York. Sets at 7 and 8:30 p.m. (the early set is nearly sold out); $30-$50.",
+      "image": ""
+    },
+    {
+      "id": "cur-954161d4d071d7",
+      "title": "Maz Jobrani at Cobb's Comedy Club",
+      "start": "2026-12-11T19:00:00-08:00",
+      "end": "2026-12-12T23:00:00-08:00",
+      "venue": "Cobb's Comedy Club, 915 Columbus Ave",
+      "city": "San Francisco",
+      "category": "Comedy",
+      "price": null,
+      "isFree": false,
+      "url": "https://www.livenation.com/event/G5vYZ_2Yus0fK/maz-jobrani",
+      "source": "Cobb's Comedy Club",
+      "description": "Comedian and actor Maz Jobrani brings his stand-up to North Beach for a weekend run. Shows Friday Dec 11 and Saturday Dec 12 at 7 and 9:15 p.m.; see the venue's ticket page for prices.",
+      "image": ""
+    },
+    {
+      "id": "cur-7984be73180336",
+      "title": "Group Satyanarayana Vratam (Pournami) at Sri Datta Sai Temple",
+      "start": "2026-12-23",
+      "end": null,
+      "venue": "Sri Datta Sai Temple, 1901 San Ramon Valley Blvd",
+      "city": "San Ramon",
+      "category": "Community",
+      "price": null,
+      "isFree": false,
+      "url": "https://sridattasaimandir.org/temple/calendar/upcoming-events/",
+      "source": "Sri Datta Sai Temple",
+      "description": "The temple's monthly full-moon group Sri Satyanarayana Swamy Vratam, where families perform the puja together. Check the temple calendar for timing and sponsorship details.",
+      "image": ""
+    },
+    {
+      "id": "cur-f1d4ef6a3b9680",
+      "title": "Jenny Scheinman Quintet: One Hundred Years Today",
+      "start": "2027-01-07T19:00:00-08:00",
+      "end": "2027-01-08T22:00:00-08:00",
+      "venue": "SFJAZZ Center (Joe Henderson Lab), 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 35,
+        "max": 55,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/jenny-scheinman-quintet/",
+      "source": "SFJAZZ",
+      "description": "Violinist Jenny Scheinman, who moves between jazz and Americana, plays music from her new album inspired by her grandmother's 1920s-30s travels. Jan 7-8, sets at 7 and 8:30 p.m.; $35-$55.",
+      "image": ""
+    },
+    {
+      "id": "cur-6b83b85ffd30c3",
+      "title": "Kendrick Scott Quintet",
+      "start": "2027-01-09T19:00:00-08:00",
+      "end": "2027-01-10T21:00:00-08:00",
+      "venue": "SFJAZZ Center (Joe Henderson Lab), 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 40,
+        "max": 65,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/kendrick-scott-quintet/",
+      "source": "SFJAZZ",
+      "description": "SFJAZZ Collective drummer Kendrick Scott leads an all-star quintet with trumpeter Marquis Hill and saxophonist Walter Smith III in the 100-seat Lab. Sat 7 and 8:30 p.m., Sun 6 and 7:30 p.m.; $40-$65.",
+      "image": ""
+    },
+    {
+      "id": "cur-3b14292d893579",
+      "title": "Film Screening & Discussion: The Eyes of Ghana",
+      "start": "2027-01-09T14:00:00-08:00",
+      "end": "2027-01-09T16:30:00-08:00",
+      "venue": "Museum of the African Diaspora, 685 Mission St",
+      "city": "San Francisco",
+      "category": "Film",
+      "price": "Free",
+      "isFree": true,
+      "url": "https://www.moadsf.org/event/film-screening-discussion-the-eyes-of-ghana",
+      "source": "Museum of the African Diaspora",
+      "description": "Free screening of Ben Proudfoot's documentary about cinematographer Chris Hesse's effort to save a trove of films from Ghana's independence era, followed by a talk with producer Nana Adwoa Frimpong and Prof. Amina Mama. Part of MoAD's free Thrive community day.",
+      "image": ""
+    },
+    {
+      "id": "cur-95b19a9117fc77",
+      "title": "Tiny Tuesday: Puddles and Plants",
+      "start": "2027-01-12T10:00:00-08:00",
+      "end": "2027-01-12T12:00:00-08:00",
+      "venue": "Lindsay Wildlife Experience, 1931 First Ave",
+      "city": "Walnut Creek",
+      "category": "Family",
+      "price": "$10-$15 pre-registered; $12-$17 walk-up",
+      "isFree": false,
+      "url": "https://lindsaywildlife.org/events/tiny-tuesday-puddles-and-plants/",
+      "source": "Lindsay Wildlife Experience",
+      "description": "A wetlands-themed morning for kids 2-5 and their grown-ups, with animal ambassadors, a puppet show, sing-along, crafts and a library storytime. Pre-registration closes Jan 10.",
+      "image": ""
+    },
+    {
+      "id": "cur-93590a164ee00d",
+      "title": "Goldings, Bernstein, Stewart Organ Trio",
+      "start": "2027-01-15T19:00:00-08:00",
+      "end": "2027-01-17T21:00:00-08:00",
+      "venue": "SFJAZZ Center (Joe Henderson Lab), 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 40,
+        "max": 65,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/peter-bernstein-larry-goldings-bill-stewart/",
+      "source": "SFJAZZ",
+      "description": "Organist Larry Goldings, guitarist Peter Bernstein and drummer Bill Stewart, together for three-plus decades, play three nights behind their 2026 album Rhombus. Fri-Sat 7 and 8:30 p.m., Sun 6 and 7:30 p.m.; $40-$65.",
+      "image": ""
+    },
+    {
+      "id": "cur-3e3be04122e9f0",
+      "title": "San Francisco Art Week at YBCA (free admission)",
+      "start": "2027-01-16",
+      "end": "2027-01-24",
+      "venue": "Yerba Buena Center for the Arts, 701 Mission St",
+      "city": "San Francisco",
+      "category": "Arts",
+      "price": "Free",
+      "isFree": true,
+      "url": "https://ybca.org/yerba-buena-center-for-the-arts-announces-2027-spring-season-across-exhibitions-performances-and-more/",
+      "source": "Yerba Buena Center for the Arts",
+      "description": "YBCA hosts the official SF Art Week kickoff on Jan 16 and keeps gallery admission and programs free all week, with an Art Week lounge, a Burning An Illusion screening (Jan 16) and a curator tour of the Stauffacher Solomon show (Jan 21).",
+      "image": ""
+    },
+    {
+      "id": "cur-9bd860c45b3870",
+      "title": "Yerba Buena Illuminated: Anna Luisa Petrisko",
+      "start": "2027-01-16",
+      "end": "2027-04-16",
+      "venue": "Humboldt Bank Building facade, 785 Market St",
+      "city": "San Francisco",
+      "category": "Arts",
+      "price": "Free",
+      "isFree": true,
+      "url": "https://ybca.org/yerba-buena-center-for-the-arts-announces-2027-spring-season-across-exhibitions-performances-and-more/",
+      "source": "Yerba Buena Center for the Arts",
+      "description": "A new outdoor video work of cloud, water and tree 'portals' projected across the 95-foot Beaux-Arts face of the Humboldt Bank Building, viewable free from the street after dark.",
+      "image": ""
+    },
+    {
+      "id": "cur-34667a7b07db12",
+      "title": "Eliane Elias Quartet: Jobim Centennial & The Art of Bossa Nova",
+      "start": "2027-01-22T19:30:00-08:00",
+      "end": "2027-01-24T21:30:00-08:00",
+      "venue": "SFJAZZ Center (Miner Auditorium), 201 Franklin St",
+      "city": "San Francisco",
+      "category": "Music",
+      "price": {
+        "min": 45,
+        "max": 115,
+        "currency": "USD"
+      },
+      "isFree": false,
+      "url": "https://www.sfjazz.org/tickets/productions/26-27/eliane-elias-quartet/",
+      "source": "SFJAZZ",
+      "description": "Brazilian pianist-singer Eliane Elias marks Antonio Carlos Jobim's 100th with two Jobim nights (Jan 22-23, 7:30 p.m.), then a bossa nova program on Sunday Jan 24 at 7 p.m. Tickets $45-$115.",
       "image": ""
     }
   ]
